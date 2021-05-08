@@ -7,17 +7,16 @@ permalink: /about/
 # Security Robotics - Japan
 
 Since 2018 I've been based in Tokyo as a software engineer at [SEQSENSE](https://www.seqsense.com/). The company is a start-up making indoor security robots for the Japanese market. These robots primarily operate in corporate office foyers. My contributions here are mostly around indoor mapping and robot simulation. Most robot software is ROS-based and runs inside Docker containers.
-
-![SQ2 on patrol](https://markhedleyjones.com/storage/about_me/DxubnPpU0AAwKa8.jpg){:width="49.7%"} ![Test robots](https://deviceplus.jp/wp-content/uploads/2018/11/DSC_0230.jpg){:width="49.7%"}
+![SQ2 on patrol](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/DxubnPpU0AAwKa8.jpg){:width="49.7%"} ![Test robots](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/DSC_0230.jpg){:width="49.7%"}
 
 # Horticultural Robotics - New Zealand
 
 While in New Zealand, I spent four years as a post-doctoral researcher at [Robotics Plus](https://www.roboticsplus.co.nz/), a growing start-up company developing robotics for horticulture. There, I was mostly involved with the development of an autonomous vehicle capable of self-driving in kiwifruit orchards. This environment is particularly challenging due to an inability to reliably receive GNSS signals. This means autonomous vehicles must use perception based sensors such as LiDAR and cameras. Other projects I was involved with there were a robotic kiwifruit harvesting system and a targeted kiwifruit pollination system. Both used machine vision and deep learning to detect fuit or flowers. In the case of the harvester, four robotic arms were coordinated to harvest detected fruit. In the case of the pollinator, a height adjustable spray boom would deliver a precise dosage of pollen to individual flowers.
 
-![AMMP](https://elk.adalidda.com/2017/10/robotics-orchard-800px.jpg)
+![AMMP](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/robotics-orchard-800px.jpg)
 
-![Pollination](https://media.giphy.com/media/3o6fJ97pOkspRmzBmM/giphy.gif){:width="43.7%"}
-![Harvesting](https://elk.adalidda.com/2017/10/kiwi-harvester-800px.jpg){:width="55.7%"}
+![Pollination](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/3o6fJ97pOkspRmzBmM/giphy.gif){:width="43.7%"}
+![Harvesting](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/kiwi-harvester-800px.jpg){:width="55.7%"}
 
 That role was varied and involved team leadership, mechanical design (Solidworks), machine vision (OpenCV), writing and debugging ROS based software, designing PCBs and programming embedded devices (STM32), integrating and tuning SLAM packages (Google Cartographer), point-cloud based filtering and processing (PCL Library), and training and integrating deep neural networks (TensorFlow & Caffe).
 
