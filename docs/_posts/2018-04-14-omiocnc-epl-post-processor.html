@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "OmioCNC EPL Post-Processor"
+date:   2018-04-14 09:01:13 +0000
+permalink: /projects/omiocnc-epl-post-processor
+image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/omiocnc-epl-post-processor/omiocnc-epl-post-processor.PNG
+description: An HSM Works / Fusions360 compatible post-processor for the OmioCNC-EPL controller
+excerpt_separator: \{% endhighlight %\}
+---
+<p style="text-align: justify;">
+After purchasing a
+<a href="https://www.omiocnc.com/products/x8-2200epl.html">
+  X8-2200EPL
+</a>
+from Omio CNC I quickly found incompatabilities between the "orange box" that drives with the machine and Autocad CAM software such as HSM Express, HSM Works and Fusion 360.
+The built-in GRBL postprocessor could be used with the machine but the controller misinterpreted the commands for curves/arcs.
+</p>
+<p style="text-align: justify;">
+By creating various test cases I determined the issues lay with how the controller was interpreting the compact .nc files that the GRBL postprocessor was generating.
+I noticed that the default GRBL postprocessor omits X, Y, and Z coordinates between commands if those coordinates don't change between commands.
+The orange box doesn't like this.
+Instead of assuming those coordinates remain the same and continuing on, it would use different values (I didn't spend the time to figure out where those values came from).
+To prevent this happening I created a custom postprocessor for the OmioCNC Orange Box that solves this and modifies the numerical precision to match the controllers internal precision.
+Using this custom post-processor the OmioCNC Orange Box runs smoothly.
+</p>
+<p style="text-align: center;">
+<a style="
+  background-color: #489be0;
+  color: #fff;
+  border: none;
+  vertical-align: middle;
+  line-height: 40px;
+  min-height: 42px;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0 25px;
+  " href="https://github.com/MarkHedleyJones/OmioCNC-Postprocessor">
+  View/Download via GitHub
+</a>
+</p>
