@@ -15,7 +15,7 @@ While in New Zealand, I spent four years as a post-doctoral researcher at [Robot
 
 ![AMMP](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/robotics-orchard-800px.jpg)
 
-![Pollination](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/3o6fJ97pOkspRmzBmM/giphy.gif){:width="43.7%"}
+![Pollination](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/giphy.gif){:width="43.7%"}
 ![Harvesting](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/kiwi-harvester-800px.jpg){:width="55.7%"}
 
 That role was varied and involved team leadership, mechanical design (Solidworks), machine vision (OpenCV), writing and debugging ROS based software, designing PCBs and programming embedded devices (STM32), integrating and tuning SLAM packages (Google Cartographer), point-cloud based filtering and processing (PCL Library), and training and integrating deep neural networks (TensorFlow & Caffe).
