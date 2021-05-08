@@ -1,6 +1,8 @@
 BASE_IMAGE ?= debian:buster-slim
 IMAGE_NAME := $(shell basename $(CURDIR))
 IMAGE_TAG  := latest
+USER_GID   := 1000
+USER_UID   := 1000
 WORKDIR    := /workspace
 
 .PHONY: development
@@ -15,6 +17,8 @@ build-development-image:
 	docker build \
 		--target development-image \
 		--build-arg BASE_IMAGE=$(BASE_IMAGE) \
+		--build-arg USER_GID=$(USER_GID) \
+		--build-arg USER_UID=$(USER_UID) \
 		--build-arg WORKDIR=$(WORKDIR) \
 		--tag $(IMAGE_NAME):$(IMAGE_TAG) \
 		.
@@ -31,6 +35,8 @@ build-production-image:
 	docker build \
 		--target production-image \
 		--build-arg BASE_IMAGE=$(BASE_IMAGE) \
+		--build-arg USER_GID=$(USER_GID) \
+		--build-arg USER_UID=$(USER_UID) \
 		--build-arg WORKDIR=$(WORKDIR) \
 		--tag $(IMAGE_NAME):$(IMAGE_TAG) \
 		.
