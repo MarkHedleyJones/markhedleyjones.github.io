@@ -4,7 +4,6 @@ title:  "Aluminium Foundry"
 date:   2019-04-14 09:01:13 +0000
 permalink: /projects/aluminium-foundry
 ---
-
 <img src="https://lh3.googleusercontent.com/_qRmwbL5ESerpGvRFcBkcbh3B2VmWaKkJi5TVALeuX6kMaf37B03sugT2m6tirhVr_FErEYpkKio3rx0AHKDpVYWtOxWiZ_yWSBIb8tDApH64DLK3RSMXk4foojkR4j0kLRCDHpbGzkbaJCwqVXYzXTzdjH4L-1rkgYkAD6hSjtyqNS0BOes8Ad5Bm7GgxNoAzFURIVqWprcgAk-ZkrYGVyK484LTHszS6IbOYxijlDne1GxGEFESSG5c0YlVqcpJULiLJvqvtZy76OZKMNHwzmZL3Mhso_UHGNMhWeGn4g1_4gbRzSxOZUgBGs_wgRhNhjI7yyAlovrk96kuyMSLEMnnh2t9cVHWgiNJT9Mz1akARLNApq9Pg_oh6KUYxG7r0gYVKUBan34uAi9Fxp2mC3KwXD8nNWrgz-PBOpGrL3GP4pQbsRlQ3AXzjhSPnif60-Ga87s9BGbKvvd94gkBXQvaV0-gbvu-aF58zap4LNiLrlXSND9l0uPXTwdBEMAWObkxdD-Y0vPSTbWAMkl_iAp7lJxCgmC9G3rt0gWDw9TgMaD5pjWA-pjdxqkvcxp22eFJoQe4z6MTjk2mFnwE9LNzmv0CBZsfnKZI2jv7qnIOE03d0GhWDpvXbbjf153uLPPR3dVEqFsvx_n_cEGC2KZJFKcpJjY=w1560-h1170-no">
 
 After taking inspiration from a number of furnaces seen you YouTube, I decided to build a furnace, or home foundary, for melting aluminium. I didn't have anything in-particular that I wanted to cast, but was just generally interested in creating a foundary hot enough to melt metal.
