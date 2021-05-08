@@ -1,0 +1,127 @@
+---
+layout: post
+title:  "Electronics Tutorial Website"
+date:   2017-10-19 09:01:13 +0000
+permalink: /projects/electronics-tutorial-website
+image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/electronics-tutorial-website/electronics-tutorial-website.PNG
+description: A tutorial website for Electronic Engineering students
+excerpt_separator: \{% endhighlight %\}
+---
+<p>
+  During my studies I helped to build an online tutorial website for first year students at The University of Waikato.
+  My job was to revamp an existing site and turn it into something more professional.
+  A large part of the code-base was rewritten, utilising libraries for page generation (PHP HTMLifier), restructured MySQL database, and creating a fresh looking front-end.
+</p>
+<p style="text-align: center;">
+  <a style="
+  background-color: #489be0;
+  color: #fff;
+  border: none;
+  vertical-align: middle;
+  line-height: 40px;
+  min-height: 42px;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  padding: 0 25px;
+  " href="https://enel111.waikato.ac.nz">
+  Goto Live Site
+</a>
+</p>
+<div style="text-align: center;">
+  <div style="display: inline-block; width: 48%;">
+    <p style="text-align: center;">
+      Before:
+    </p>
+    <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/electronics-tutorial-website/etutorials_original.png" alt="Etutorials original">
+  </div>
+  <div style="display: inline-block; width: 48%;">
+    <p style="text-align: center;">
+      After:
+    </p>
+    <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/electronics-tutorial-website/etutorials_revision.png" alt="Etutorials revision">
+  </div>
+</div>
+<h2 style="text-align: left;">Answering questions:</h2>
+<p style="text-align: center;">
+  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/electronics-tutorial-website/projects_etutorial_responseAnimated.gif" alt="Animated Screenshot showing a tutorial question being answered.">
+</p>
+<p style="text-align: center;">
+</p>
+<h2 style="text-align: left;">Back-end:</h2>
+<p style="text-align: justify;">
+  Almost all of the existing code was replaced.
+  My HTML generation library for PHP (<a href="http://markhedleyjones2.com/projects/PHP-HTMLifier">PHP-HTMLifier</a>) was used throughout to generate pages.
+  This library removes the need to spread echo statements throughout an otherwise HTML document, making the code much easier to read and maintain.
+  The SQL database had redundant fields removed and inconsistent field names made consistent.
+  New linker tables were added to remove data duplication and facilitate simpler updates.
+</p>
+<p style="text-align: justify;">
+  One thing I really liked about
+  <a href="https://www.djangoproject.com/">
+    Django
+  </a>
+  was the way database tables are handled directly as
+  <a href="https://www.python.org/">
+    Python
+  </a>
+  classes.
+  This makes things much simpler for the programmer because they don't have write a query to get a row from the database.
+  Imitating this, I implemented wrappers around database tables that handled rows the same way.
+  This made dealing with the database much cleaner and simpler.
+</p>
+<p style="text-align: justify;">
+  The following code snippet gives an example of how compact the page generation logic has been made.
+  Note the
+  <code>
+  $section = new Section($sectionId)
+  </code>
+  line, which creates and fetches the relevant question from the database.
+  If fields within the object are changed during run-time, they are automatically saved to the database when the object is destroyed.
+</p>
+{% highlight php %}
+// This code creates the practise tutorial page.
+//
+// It loads our bootstrapping code, checks the client is logged in,
+// retrieves any GET variables and parses them (with safety checks),
+// checks the user is allowed to practise on this section,
+// gets a suitable question for the client to practise with and
+// renders the page using the PHP-HTMLifier renderer.
+//
+
+include(dirname($_SERVER['DOCUMENT_ROOT']).'/lib/functions.php');
+$client->require_loggedIn();
+
+$sectionId = getVar('get', 'section', 'int', True);
+
+if ($client->current_section &lt;= $sectionId) redirect('/messages/?msg=mustPass');
+else $section = new Section($sectionId);
+
+$question = $objectFactory->question_client_getNext_practise($client, $section);
+
+$page = new BasePage($section->name, $client);
+$page->append(View::question_header($section, $question));
+$page->append(View::pose_question($question, True));
+{% endhighlight %}
+<h2>Course editor:</h2>
+<p>
+  The site had to make it easy for lectures to add new content.
+</p>
+<p>
+  Usability improvements made here were
+</p>
+<ul>
+  <li>
+    Ability to navigate through all questions while in the editor (no need hit the back button).
+  </li>
+  <li>
+    Asynchronous saving and image uploading to prevent interruptions while adding content.
+  </li>
+  <li>
+    Automatic answer shuffling - so the content editor doesn't have to worry about correct answer position patterns.
+  </li>
+</ul>
+<p>
+  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/electronics-tutorial-website/project_etutorials_courseeditor.png" alt="eTutorials course editor screenshot">
+</p>
