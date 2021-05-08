@@ -5,6 +5,7 @@ date:   2018-06-21 09:01:13 +0000
 permalink: /projects/duplicating-keys-from-photographs
 image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/thumb.jpg
 description: Can people copy your keys by taking a photo of them? Yes.
+excerpt_separator: \{% endhighlight %\}
 ---
 <p style="text-align: justify;">
   Can you copy a key from a photo? It turns out you can. I wanted to try it for myself and see if I could use my CNC milling machine to cut the key from a blank key purchased at a hardware store. The duplicated key worked perfectly on the first try. And yes, this guide is showing you how to break into my house.
@@ -67,80 +68,86 @@ To duplicate the key, this guide will take you through each of the following ste
   The code used to calibrate the camera and undistort the photo of the key is given below. This code came straight from the OpenCV camera calibration tutorial so there is nothing special here. I have put it here purely for convenience.
 </p>
 {% highlight python %}
+
 import numpy as np
 import cv2
 import glob
 import os
 import sys
 
-# termination criteria
+# Termination criteria
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
-# prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
-objp = np.zeros((6*8,3), np.float32)
-objp[:,:2] = np.mgrid[0:8,0:6].T.reshape(-1,2)
+# Prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
+objp = np.zeros((6*8, 3), np.float32)
+objp[:, :2] = np.mgrid[0:8, 0:6].T.reshape(-1, 2)
 
 # Arrays to store object points and image points from all the images.
-objpoints = [] # 3d point in real world space
-imgpoints = [] # 2d points in image plane.
+objpoints = []  # 3d point in real world space
+imgpoints = []  # 2d points in image plane.
 
 images = glob.glob('*.JPG')
 
 for fname in images:
-  print(fname)
+    print(fname)
 
 for fname in images:
-  img = cv2.imread(fname)
-  print("Opened",fname)
-  gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-  print("Converted to grey")
-  # Find the chess board corners
-  ret, corners = cv2.findChessboardCorners(gray, (8,6),None)
-  # If found, add object points, image points (after refining them)
-  if ret == True:
-    print("Found corners")
-    objpoints.append(objp)
-    img1 = img.copy()
-    img2 = img.copy()
-    cv2.drawChessboardCorners(img1, (8,6), corners,ret)
-    cv2.cornerSubPix(gray,corners,(11,11),(-1,-1),criteria)
-    cv2.drawChessboardCorners(img2, (8,6), corners,ret)
-    imgpoints.append(corners)
-    cv2.imwrite('found/'+fname,img)
-  else:
-    cv2.imwrite('not_found/'+fname,img)
-    print("Corners not found")
+    img = cv2.imread(fname)
+    print("Opened", fname)
 
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    print("Converted to grey")
 
-ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None)
+    # Find the chess board corners
+    ret, corners = cv2.findChessboardCorners(gray, (8, 6), None)
+
+    # If found, add object points, image points (after refining them)
+    if ret == True:
+        print("Found corners")
+        objpoints.append(objp)
+        img1 = img.copy()
+        img2 = img.copy()
+        cv2.drawChessboardCorners(img1, (8, 6), corners, ret)
+        cv2.cornerSubPix(gray, corners, (11, 11), (-1, -1), criteria)
+        cv2.drawChessboardCorners(img2, (8, 6), corners, ret)
+        imgpoints.append(corners)
+        cv2.imwrite('found/'+fname, img)
+    else:
+        cv2.imwrite('not_found/'+fname, img)
+        print("Corners not found")
+
+ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(
+    objpoints, imgpoints, gray.shape[::-1], None, None)
 
 images = glob.glob('keys/*.JPG')
 
 for fname in images:
-  print(fname)
+    print(fname)
 
 for fname in images:
-  img = cv2.imread(fname)
-  h, w = img.shape[:2]
-  newcameramtx, roi=cv2.getOptimalNewCameraMatrix(mtx,dist,(w,h),1,(w,h))
+    img = cv2.imread(fname)
+    h, w = img.shape[:2]
+    newcameramtx, roi = cv2.getOptimalNewCameraMatrix(
+        mtx, dist, (w, h), 1, (w, h))
 
-  # undistort
-  dst = cv2.undistort(img, mtx, dist, None, newcameramtx)
+    # Undistort
+    dst = cv2.undistort(img, mtx, dist, None, newcameramtx)
 
-  # crop the image
-  x,y,w,h = roi
-  dst = dst[y:y+h, x:x+w]
-  cv2.imwrite(fname[:-4]+'_undistorted_shortest.JPG',dst)
-  # cv2.imwrite('results_shortest/' + fname[:-4]+'_calib.JPG',dst)
+    # Crop the image
+    x, y, w, h = roi
+    dst = dst[y:y+h, x:x+w]
+    cv2.imwrite(fname[:-4]+'_undistorted_shortest.JPG', dst)
 
-  # undistort
-  mapx,mapy = cv2.initUndistortRectifyMap(mtx,dist,None,newcameramtx,(w,h),5)
-  dst = cv2.remap(img,mapx,mapy,cv2.INTER_LINEAR)
+    # Undistort
+    mapx, mapy = cv2.initUndistortRectifyMap(
+        mtx, dist, None, newcameramtx, (w, h), 5)
+    dst = cv2.remap(img, mapx, mapy, cv2.INTER_LINEAR)
 
-  # crop the image
-  x,y,w,h = roi
-  dst = dst[y:y+h, x:x+w]
-  cv2.imwrite(fname[:-4]+'_undistorted_remap.JPG',dst)
+    # Crop the image
+    x, y, w, h = roi
+    dst = dst[y:y+h, x:x+w]
+    cv2.imwrite(fname[:-4]+'_undistorted_remap.JPG', dst)
 
 cv2.destroyAllWindows()
+
 {% endhighlight %}
