@@ -5,6 +5,7 @@ date:   2014-06-29 09:01:13 +0000
 permalink: /projects/python-tone-generator
 ---
 ![Python Tone Generator Logo](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/python-tone-generator/logo.png)
+
 This script generates a frequency sweep from 50 Hz to 10 kHz and is easily adjustable. Make sure you've installed pyaudio to make this run.
 
 On Ubuntu: `sudo apt-get install python-pyaudio`
