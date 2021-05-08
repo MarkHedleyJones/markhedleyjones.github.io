@@ -30,17 +30,17 @@ layout: default
             <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img src="{{ post.image }}" style="max-width: 260px; max-height: 200px"/></a>
           {%- endif -%}
         {%- endif -%}
-        <h3 style="color: #525252; font-size: 28px; margin: 20px 0 5px 0; text-decoration: none;">
-          <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}">
+        <h3 style="margin: 20px 0 5px 0; text-decoration: none;">
+          <a style="color: #333; font-size: 23px !important;" class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
         </h3>
         {%- if site.show_excerpts -%}
           {%- if post.description -%}
-            <p style="color: #555">{{ post.description }}</p>
+            <p style="color: #777">{{ post.description }}</p>
           {%- endif -%}
         {%- endif -%}
-        <span style="font-size: 0.8em; color: #888">{{ post.date | date: date_format }}</span>
+        <span style="font-size: 0.8em; color: #AAA">{{ post.date | date: date_format }}</span>
       </div>
       {%- endfor -%}
     <!-- </ul> -->
