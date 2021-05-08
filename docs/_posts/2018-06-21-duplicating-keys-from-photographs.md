@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "Camera-based Key Duplication"
-date:   2018-10-02 09:01:13 +0000
+date:   2018-06-21 09:01:13 +0000
 permalink: /projects/duplicating-keys-from-photographs
-image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/GameBike/DSC_6517_resized.jpg
-description: Turning an exercise bike into a racing-car game-controller
+image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/thumb.jpg
+description: Can people copy your keys by taking a photo of them? Yes.
 ---
 <p style="text-align: justify;">
   Can you copy a key from a photo? Yes. This idea isn't new, but I wanted to try it for myself and see if I could use my CNC milling machine to cut the key from a blank key purchased at a hardware store. The duplicated key worked perfectly on the first try. And yes, by showing you this I'm essentially showing you how to break into my house!
