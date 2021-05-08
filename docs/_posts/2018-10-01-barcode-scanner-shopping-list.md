@@ -4,7 +4,7 @@ title:  "Automatic Shopping List"
 date:   2018-10-01 09:01:13 +0000
 permalink: /projects/barcode-scanner-shopping-list
 image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/barcode-scanner-shopping-list/shopping-list-pc.jpg
-description: Raspberry Pi and a barcode scanner in the kitchen
+description: Scan empty products to automatically add them to your shopping list
 ---
 <p>
   Source code for this project is available on <a href="https://github.com/MarkHedleyJones/homeDisplay">GitHub</a>.
