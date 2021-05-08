@@ -41,23 +41,23 @@ To duplicate the key, this guide will take you through each of the following ste
 <p>
   <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/screenshot.jpg" alt="Inkscape Screenshot">
 </p>
-<h2>Determine profile to be cut from blank key</h2>
+<h2>Determine Cutting Profile</h2>
 <p style="float: right; text-align: center;">
-  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/key_template.svg" alt="Key template" width="290" height="193">
+  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/key_template.svg" alt="Key template" width="300" height="200">
 </p>
 <p style="text-align: justify;">
   This could be done either in the CAD package or Inkscape. For illustration purposes I've shown the cutting profile as created in Inkscape, but for creating the cutting profile this was done in SolidWorks. HSMWorks (a CAM package that runs inside SolidWorks) was used to generate the machining toolpaths. The first pass was a rough clearing operation to remove most of the material. The second pass was a contoured profile cut that left the desired contour.
 </p>
 <h2>Cut the blank key</h2>
 <p style="text-align: justify;">
-  To hold the key down I cut the shape of the key out from a piece of MDF. A well was cut into the MDF underneath where the profile was to be cut. To keep the key from jumping out of its I screwed a piece of wood over the top while cutting. One mistake I made was assuming that the dimensions of the blank key would be the same as the target key - they wern't. This meant that the profile wasn't cut in the right spot.</p>
+To hold the key down I cut the shape of the key out from a piece of MDF. A well was cut into the MDF underneath where the profile was to be cut. To keep the key from jumping out of its I screwed a piece of wood over the top while cutting. One mistake I made was assuming that the dimensions of the blank key would be the same as the target key - they wern't. This meant that the profile wasn't cut in the right spot.</p>
 <p style="text-align: center;">
   <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5101.JPG" alt="DSC 5101" width="49.7%">
   <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5100.JPG" alt="DSC 5100" width="49.7%">
 </p>
 <h2 style="text-align: left;">Result</h2>
 <p style="text-align: justify;">
-  I'm really happy with the shape of the contour in the new key (front), it's smooth and follows the original contours very well. You can see the misalignment between the keys when looking at the fronf of the key (notice the front key sticks out a millimeter or so further). Luckily, the position error of the contour didn't affect the operation of the key, as the following video proves.</p>
+I'm really happy with the shape of the contour in the new key (front), it's smooth and follows the original contours very well. You can see the misalignment between the keys when looking at the fronf of the key (notice the front key sticks out a millimeter or so further). Luckily, the position error of the contour didn't affect the operation of the key, as the following video proves.</p>
 <p>
 <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5115.jpg" alt="Comparison of new key (dark blue) with original key (light blue)"></p>
 <p style="text-align: center;">
