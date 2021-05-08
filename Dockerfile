@@ -18,24 +18,25 @@ RUN if [ ! -z $(ls /build/pip) ] ; then for path in /build/pip/pip*-req*.txt ; \
 # Copy any installation resources from the host
 COPY build/resources /build/resources
 
-ENV GEM_HOME="/home/user/gems"
-ENV PATH="/home/user/gems/bin:$PATH"
+ENV GEM_HOME="/root/gems"
+ENV PATH="/root/gems/bin:$PATH"
 RUN gem install jekyll bundler
+RUN echo '5'
 
 ################################################################################
 # DEVELOPMENT TARGET - generate development-friendly image
 ################################################################################
 FROM base AS development-image
 ARG WORKDIR
-ENV WORKDIR $WORKDIR
-WORKDIR $WORKDIR
+ENV WORKDIR /docs
+WORKDIR /docs
 # Install development tools
 
 ################################################################################
 # PRE-PRODUCTION STAGE - transform workspace into production-ready state
 ################################################################################
 FROM base AS pre-production
-COPY workspace $WORKDIR
+COPY docs /docs
 # Build workspace and/or remove files not intended for production
 
 ################################################################################
@@ -43,7 +44,7 @@ COPY workspace $WORKDIR
 ################################################################################
 FROM base AS production-image
 ARG WORKDIR
-ENV WORKDIR $WORKDIR
+ENV WORKDIR /docs
 # Copy the clean workspace into production image
-COPY --from=pre-production $WORKDIR $WORKDIR
-WORKDIR $WORKDIR
+COPY --from=pre-production /docs /docs
+WORKDIR /docs

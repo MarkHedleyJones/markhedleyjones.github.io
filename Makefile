@@ -1,7 +1,7 @@
 BASE_IMAGE ?= debian:buster-slim
 IMAGE_NAME := $(shell basename $(CURDIR))
 IMAGE_TAG  := latest
-WORKDIR    := /workspace
+WORKDIR    := /docs
 
 .PHONY: development
 development: pre-build build-development-image post-build
