@@ -7,9 +7,10 @@ image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.
 description: Can people copy your keys by taking a photo of them? Yes.
 ---
 <p style="text-align: justify;">
-  Can you copy a key from a photo? Yes. This idea isn't new, but I wanted to try it for myself and see if I could use my CNC milling machine to cut the key from a blank key purchased at a hardware store. The duplicated key worked perfectly on the first try. And yes, by showing you this I'm essentially showing you how to break into my house!
+  Can you copy a key from a photo? It turns out you can. I wanted to try it for myself and see if I could use my CNC milling machine to cut the key from a blank key purchased at a hardware store. The duplicated key worked perfectly on the first try. And yes, this guide is showing you how to break into my house.
 </p>
 <h2 style="text-align: justify;">Briefly</h2>
+To duplicate the key, this guide will take you through each of the following steps:
 <ol style="text-align: justify;">
   <li>Calibrate the camera</li>
   <li>Photograph the key</li>
@@ -50,7 +51,8 @@ description: Can people copy your keys by taking a photo of them? Yes.
 <p style="text-align: justify;">
   To hold the key down I cut the shape of the key out from a piece of MDF. A well was cut into the MDF underneath where the profile was to be cut. To keep the key from jumping out of its I screwed a piece of wood over the top while cutting. One mistake I made was assuming that the dimensions of the blank key would be the same as the target key - they wern't. This meant that the profile wasn't cut in the right spot.</p>
 <p style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5101.JPG" alt="DSC 5101" width="390"> <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5100.JPG" alt="DSC 5100" width="390">
+  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5101.JPG" alt="DSC 5101" width="49.7%">
+  <img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/duplicating-keys-from-photographs/DSC_5100.JPG" alt="DSC 5100" width="49.7%">
 </p>
 <h2 style="text-align: left;">Result</h2>
 <p style="text-align: justify;">
