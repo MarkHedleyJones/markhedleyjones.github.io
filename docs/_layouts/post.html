@@ -3,7 +3,7 @@ layout: default
 ---
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <header class="post-header" style="text-align: center">
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -24,8 +24,11 @@ layout: default
             {%- if forloop.last == false %}, {% endif -%}
         {% endfor %}
       {%- endif -%}</p>
+      {%- if page.image -%}
+        <img style="max-height: 400px" alt="Project logo" src="{{ page.image}}"/>
+      {%- endif -%}
   </header>
-
+  <hr style="color: #CCC; margin: 20px 0">
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
