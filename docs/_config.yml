@@ -23,7 +23,7 @@ email: markhedleyjones@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Projects and blog from a robotics researcher/engineer. Feel free to get in touch
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://markhedleyjones.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  markhedleyjones
 
 google_analytics: "UA-117545174-1"
