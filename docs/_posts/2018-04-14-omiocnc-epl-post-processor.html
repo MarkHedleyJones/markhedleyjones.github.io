@@ -8,20 +8,20 @@ description: An HSM-works / Fusion360 post-processor for OmioCNC-EPL
 excerpt_separator: \{% endhighlight %\}
 ---
 <p style="text-align: justify;">
-After purchasing a
-<a href="https://www.omiocnc.com/products/x8-2200epl.html">
-  X8-2200EPL
-</a>
-from Omio CNC I quickly found incompatabilities between the "orange box" that drives with the machine and Autocad CAM software such as HSM Express, HSM Works and Fusion 360.
-The built-in GRBL postprocessor could be used with the machine but the controller misinterpreted the commands for curves/arcs.
+  After purchasing a
+  <a href="https://www.omiocnc.com/products/x8-2200epl.html">
+    X8-2200EPL
+  </a>
+  from Omio CNC I quickly found incompatabilities between the "orange box" that drives with the machine and Autocad CAM software such as HSM Express, HSM Works and Fusion 360.
+  The built-in GRBL postprocessor could be used with the machine but the controller misinterpreted the commands for curves/arcs.
 </p>
 <p style="text-align: justify;">
-By creating various test cases I determined the issues lay with how the controller was interpreting the compact .nc files that the GRBL postprocessor was generating.
-I noticed that the default GRBL postprocessor omits X, Y, and Z coordinates between commands if those coordinates don't change between commands.
-The orange box doesn't like this.
-Instead of assuming those coordinates remain the same and continuing on, it would use different values (I didn't spend the time to figure out where those values came from).
-To prevent this happening I created a custom postprocessor for the OmioCNC Orange Box that solves this and modifies the numerical precision to match the controllers internal precision.
-Using this custom post-processor the OmioCNC Orange Box runs smoothly.
+  By creating various test cases I determined the issues lay with how the controller was interpreting the compact .nc files that the GRBL postprocessor was generating.
+  I noticed that the default GRBL postprocessor omits X, Y, and Z coordinates between commands if those coordinates don't change between commands.
+  The orange box doesn't like this.
+  Instead of assuming those coordinates remain the same and continuing on, it would use different values (I didn't spend the time to figure out where those values came from).
+  To prevent this happening I created a custom postprocessor for the OmioCNC Orange Box that solves this and modifies the numerical precision to match the controllers internal precision.
+  Using this custom post-processor the OmioCNC Orange Box runs smoothly.
 </p>
 <p style="text-align: center;">
   <a style="
