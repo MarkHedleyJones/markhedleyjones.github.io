@@ -8,3 +8,13 @@
 * Change thumb for Gamebike
 * Make text justified by default (use tags when wanting centered)
 * Standardise image path in posts 
+
+# Building
+
+From inside the Docker image (using docker-bbq modified to use /docs instead of /workspace) run
+
+    bundle install
+
+This installs the required gems
+
+    bundle exec jekyll serve
