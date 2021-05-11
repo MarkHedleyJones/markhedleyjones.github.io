@@ -24,7 +24,7 @@ layout: default
     <!-- <ul class="post-list"> -->
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <div style="display: block; position: relative; float: left; margin: 35px; text-align: center; padding: 20px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important; width: 260px; height: 380px; ">
+      <div style="display: block; position: relative; float: left; margin: 35px; text-align: center; padding: 20px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important; width: 260px; height: 380px;">
         {%- if site.show_excerpts -%}
           {%- if post.image -%}
             <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img src="{{ post.image }}" style="max-width: 260px; max-height: 200px"/></a>
