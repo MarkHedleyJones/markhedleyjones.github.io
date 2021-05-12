@@ -9,11 +9,15 @@
 * Make text justified by default (use tags when wanting centered)
 * Standardise image path in posts 
 
-# Building
+# Testing
 
-From inside the Docker image (using docker-bbq modified to use /docs instead of /workspace) run
+Using docker-bbq:
 
-    bundle install
+    workspace=/docs run
+    
+Then once inside the container
+
+    cd /docs && bundle install
 
 This installs the required gems
 
