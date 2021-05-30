@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Dmenu-extended"
+title:  "dmenu-extended"
 date:   2013-11-29 09:01:13 +0000
 permalink: /projects/dmenu-extended
-image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/dmenu-extended/dmenu-extended.png
+featureimage: logo.svg
+thumb: logo.svg
 description: A menu offering super fast access to your files, folders, and programs.
 excerpt_separator: \{% endhighlight %\}
 ---
