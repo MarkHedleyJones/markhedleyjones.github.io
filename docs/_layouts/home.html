@@ -21,9 +21,7 @@ layout: default
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-    <!-- <ul class="post-list"> -->
     <div class="grid-container" style="display: grid;
-    padding: 20px;
     grid-auto-columns: max-content;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 50px 50px;
@@ -47,6 +45,9 @@ layout: default
           {%- if post.image -%}
             <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img src="{{ post.image }}" style="max-width: 320px; max-height: 240px"/></a>
           {%- endif -%}
+          {%- if post.thumb -%}
+            <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media{{ post.permalink }}/{{ post.thumb }}" style="max-width: 320px; max-height: 240px"/></a>
+          {%- endif -%}
         {%- endif -%}
         <h3 style="margin: 20px 0 5px 0; text-decoration: none;">
           <a style="color: #333; font-size: 23px !important;" class="post-link" href="{{ post.url | relative_url }}">
@@ -61,7 +62,6 @@ layout: default
         <span style="font-size: 0.8em; color: #AAA">{{ post.date | date: date_format }}</span>
       </div>
       {%- endfor -%}
-    <!-- </ul> -->
 
     {% if site.paginate %}
       <div class="pager">
