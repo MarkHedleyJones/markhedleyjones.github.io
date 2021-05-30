@@ -7,40 +7,40 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   sodipodi:docname="logo.svg"
-   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
-   id="svg8"
-   version="1.1"
-   viewBox="0 0 201.08334 150.8125"
+   width="760"
    height="570"
-   width="760">
+   viewBox="0 0 201.08334 150.8125"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="logo-source.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
-     units="px"
-     inkscape:window-maximized="0"
-     inkscape:window-y="77"
-     inkscape:window-x="1736"
-     inkscape:window-height="1697"
-     inkscape:window-width="1730"
-     fit-margin-bottom="8"
-     fit-margin-right="8"
-     fit-margin-left="8"
-     lock-margins="true"
-     fit-margin-top="8"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="204.2379"
-     inkscape:cx="410.78294"
-     inkscape:zoom="0.98994949"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="381.77822"
+     inkscape:cy="53.765263"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="8"
+     lock-margins="true"
+     fit-margin-left="8"
+     fit-margin-right="8"
+     fit-margin-bottom="8"
+     inkscape:window-width="1079"
+     inkscape:window-height="1262"
+     inkscape:window-x="2456"
+     inkscape:window-y="77"
+     inkscape:window-maximized="0"
+     units="px" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -49,66 +49,66 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(-22.824931,-190.40334)"
-     id="layer1"
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     inkscape:label="Layer 1">
+     id="layer1"
+     transform="translate(-22.824931,-190.40334)">
     <g
-       transform="matrix(3.1364196,0,0,3.1364196,-67.395782,-419.70706)"
-       id="g947">
+       id="g947"
+       transform="matrix(3.0079549,0,0,3.0079549,-59.582343,-391.62897)">
       <path
-         id="path871"
-         d="m 42.095436,227.70265 c -1.623054,-0.46106 -3.004736,-1.35046 -3.381072,-2.17643 -0.193599,-0.42491 -0.309859,-2.19089 -0.309603,-4.70285 4.5e-4,-4.43719 0.234007,-5.3291 1.671944,-6.38489 0.675149,-0.49573 1.230183,-0.56117 5.820833,-0.68632 4.317337,-0.11771 5.197476,-0.21189 5.898554,-0.63118 1.361737,-0.81441 1.787337,-1.83735 1.908985,-4.58829 l 0.108225,-2.4474 h 1.800222 c 1.557221,0 1.911675,0.0938 2.625876,0.69474 3.096338,3.19884 2.605601,11.02057 -0.61726,13.08513 -0.747559,0.45584 -1.383112,0.50575 -6.451645,0.50664 -5.445677,9.6e-4 -5.622395,0.0176 -5.622395,0.53016 0,0.50303 0.176389,0.52917 3.571875,0.52917 h 3.571874 v 2.08098 c 0,2.44676 -0.393447,3.14672 -2.177859,3.87448 -1.484846,0.60558 -6.708925,0.80171 -8.418554,0.31606 z m 8.42683,-2.35569 c 0.174625,-0.17462 0.3175,-0.56753 0.3175,-0.87312 0,-0.3056 -0.142875,-0.6985 -0.3175,-0.87313 -0.174625,-0.17462 -0.567531,-0.3175 -0.873125,-0.3175 -1.056144,0 -1.61528,1.32159 -0.873125,2.06375 0.174625,0.17463 0.567531,0.3175 0.873125,0.3175 0.305594,0 0.6985,-0.14287 0.873125,-0.3175 z"
+         sodipodi:nodetypes="ssssssscsccssscssssssssss"
          style="fill:#fbce3e;stroke-width:0.264583"
-         sodipodi:nodetypes="ssssssscsccssscssssssssss" />
+         d="m 42.095436,227.70265 c -1.623054,-0.46106 -3.004736,-1.35046 -3.381072,-2.17643 -0.193599,-0.42491 -0.309859,-2.19089 -0.309603,-4.70285 4.5e-4,-4.43719 0.234007,-5.3291 1.671944,-6.38489 0.675149,-0.49573 1.230183,-0.56117 5.820833,-0.68632 4.317337,-0.11771 5.197476,-0.21189 5.898554,-0.63118 1.361737,-0.81441 1.787337,-1.83735 1.908985,-4.58829 l 0.108225,-2.4474 h 1.800222 c 1.557221,0 1.911675,0.0938 2.625876,0.69474 3.096338,3.19884 2.605601,11.02057 -0.61726,13.08513 -0.747559,0.45584 -1.383112,0.50575 -6.451645,0.50664 -5.445677,9.6e-4 -5.622395,0.0176 -5.622395,0.53016 0,0.50303 0.176389,0.52917 3.571875,0.52917 h 3.571874 v 2.08098 c 0,2.44676 -0.393447,3.14672 -2.177859,3.87448 -1.484846,0.60558 -6.708925,0.80171 -8.418554,0.31606 z m 8.42683,-2.35569 c 0.174625,-0.17462 0.3175,-0.56753 0.3175,-0.87312 0,-0.3056 -0.142875,-0.6985 -0.3175,-0.87313 -0.174625,-0.17462 -0.567531,-0.3175 -0.873125,-0.3175 -1.056144,0 -1.61528,1.32159 -0.873125,2.06375 0.174625,0.17463 0.567531,0.3175 0.873125,0.3175 0.305594,0 0.6985,-0.14287 0.873125,-0.3175 z"
+         id="path871" />
       <path
-         id="path869"
-         d="m 33.393058,220.15363 c -0.560468,-0.30058 -1.21008,-1.02689 -1.715664,-1.91823 -1.323873,-2.87199 -1.266592,-8.89528 0.987093,-11.04772 0.986246,-0.92033 2.189054,-1.08913 7.809784,-1.09607 4.724706,-0.006 5.105891,-0.0414 5.023817,-0.46934 -0.07838,-0.40862 -0.500327,-0.47169 -3.591275,-0.53684 l -3.502463,-0.0738 0.0088,-2.04284 c 0.01035,-2.40294 0.326472,-2.93232 2.28809,-3.83165 3.160906,-1.04254 7.016188,-1.18516 9.755596,0.20743 0.868605,0.44422 1.71147,1.09126 1.895621,1.45521 0.225451,0.44557 0.332521,2.05272 0.3345,5.02096 0.0044,6.66553 -0.05507,6.72078 -7.519394,6.97952 -5.578499,0.19338 -6.175856,0.36187 -7.140893,2.01425 -0.394724,0.67586 -0.555944,1.5283 -0.636234,3.36407 l -0.107541,2.45883 h -1.49392 c -0.94188,0 -1.827232,-0.17876 -2.395917,-0.48375 z m 8.927125,-17.29625 c 0.174625,-0.17463 0.3175,-0.56753 0.3175,-0.87313 0,-1.05614 -1.321594,-1.61528 -2.06375,-0.87312 -0.40812,0.40812 -0.40812,1.33813 0,1.74625 0.174625,0.17462 0.567532,0.3175 0.873125,0.3175 0.305594,0 0.6985,-0.14288 0.873125,-0.3175 z"
+         sodipodi:nodetypes="scccsscsccscssscsssssssss"
          style="fill:#3470a0;stroke-width:0.264583"
-         sodipodi:nodetypes="scccsscsccscssscsssssssss" />
+         d="m 33.393058,220.15363 c -0.560468,-0.30058 -1.21008,-1.02689 -1.715664,-1.91823 -1.323873,-2.87199 -1.266592,-8.89528 0.987093,-11.04772 0.986246,-0.92033 2.189054,-1.08913 7.809784,-1.09607 4.724706,-0.006 5.105891,-0.0414 5.023817,-0.46934 -0.07838,-0.40862 -0.500327,-0.47169 -3.591275,-0.53684 l -3.502463,-0.0738 0.0088,-2.04284 c 0.01035,-2.40294 0.326472,-2.93232 2.28809,-3.83165 3.160906,-1.04254 7.016188,-1.18516 9.755596,0.20743 0.868605,0.44422 1.71147,1.09126 1.895621,1.45521 0.225451,0.44557 0.332521,2.05272 0.3345,5.02096 0.0044,6.66553 -0.05507,6.72078 -7.519394,6.97952 -5.578499,0.19338 -6.175856,0.36187 -7.140893,2.01425 -0.394724,0.67586 -0.555944,1.5283 -0.636234,3.36407 l -0.107541,2.45883 h -1.49392 c -0.94188,0 -1.827232,-0.17876 -2.395917,-0.48375 z m 8.927125,-17.29625 c 0.174625,-0.17463 0.3175,-0.56753 0.3175,-0.87313 0,-1.05614 -1.321594,-1.61528 -2.06375,-0.87312 -0.40812,0.40812 -0.40812,1.33813 0,1.74625 0.174625,0.17462 0.567532,0.3175 0.873125,0.3175 0.305594,0 0.6985,-0.14288 0.873125,-0.3175 z"
+         id="path869" />
       <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.9993px;line-height:1.25;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';word-spacing:0px;fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
-         x="62.911106"
+         id="text880"
          y="213.54733"
-         id="text880"><tspan
-           sodipodi:role="line"
-           id="tspan878"
-           x="62.911106"
-           y="213.54733"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#3470a0;fill-opacity:1;stroke-width:0.249985">ALSA</tspan></text>
-      <text
-         id="text880-3"
-         y="221.47206"
-         x="62.326492"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.60644px;line-height:1.25;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';word-spacing:0px;fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+         x="62.911106"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.9993px;line-height:1.25;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';word-spacing:0px;fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
          xml:space="preserve"><tspan
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
-           y="221.47206"
-           x="62.326492"
-           id="tspan878-6"
-           sodipodi:role="line">pyAudio</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
+           y="213.54733"
+           x="62.911106"
+           id="tspan878"
+           sodipodi:role="line">ALSA</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76997px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';word-spacing:0px;fill:#808080;fill-opacity:1;stroke-width:0.194249"
-         x="30.187794"
-         y="238.71249"
-         id="text880-3-7"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.60644px;line-height:1.25;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';word-spacing:0px;fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+         x="62.326492"
+         y="221.47206"
+         id="text880-3"><tspan
            sodipodi:role="line"
+           id="tspan878-6"
+           x="62.326492"
+           y="221.47206"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161">pyAudio</tspan></text>
+      <text
+         id="text880-3-7"
+         y="237.98215"
+         x="38.952984"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.52622px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';word-spacing:0px;fill:#808080;fill-opacity:1;stroke-width:0.138155"
+         xml:space="preserve"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           y="237.98215"
+           x="38.952984"
            id="tspan878-6-5"
-           x="30.187794"
-           y="238.71249"
-           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.194249">TONE GENERATOR</tspan></text>
+           sodipodi:role="line">TONE GENERATOR</tspan></text>
       <path
-         style="fill:none;stroke:#808080;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.7, 1.4;stroke-dashoffset:0"
-         d="m 62.792058,227.31891 c 12.58278,-6.55157 15.640759,6.47955 27.265079,0"
+         sodipodi:nodetypes="cc"
          id="path918"
-         sodipodi:nodetypes="cc" />
+         d="m 62.792058,227.31891 c 12.58278,-6.55157 15.640759,6.47955 27.265079,0"
+         style="fill:none;stroke:#808080;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.7, 1.4;stroke-dashoffset:0" />
     </g>
   </g>
 </svg>
