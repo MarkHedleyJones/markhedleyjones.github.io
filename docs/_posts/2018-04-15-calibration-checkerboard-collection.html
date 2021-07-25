@@ -7,7 +7,155 @@ image: https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.
 description: Calibrate your vision system with these checkerboards
 excerpt_separator: \{% endhighlight %\}
 ---
-<p>These checkerboards are made to be used with camera calibration tools such as the <a href="http://wiki.ros.org/camera_calibration">camera_calibration</a> package for <a href="http://www.ros.org/">ROS</a>. Click on the desired checkerboard to download the PDF version suitable for printing. Make sure that any page scaling or automatic page fitting features are disabled when printing otherwise the dimensions of the checker squares will be incorrect.</p>
+<style>
+.help-tip{
+  display: inline-block;
+  vertical-align: top;
+  color:  #777;
+  text-align: center;
+  background-color: #EEE;
+  border: 1px solid #AAA;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  font-size: 10px;
+  line-height: 15px;
+  cursor: default;
+}
+</style>
+<p style="text-align: justify;">
+  Checkerboards can be used with camera calibration tools such as the <a href="http://wiki.ros.org/camera_calibration">camera_calibration</a> package for <a href="http://www.ros.org/">ROS</a>.
+  You can freely download a wide range of checkerboards, with no watermarks or advertising, in PDF format by clicking any of the links below.
+  Additionally, a javascript based checkerboard generator has been added that allows you to generate custom sizes.
+</p>
+<p>
+  <b>TIP:</b> Make sure to disable any page scaling or automatic page fitting features when printing otherwise the checker dimensions will be incorrect.
+</p>
+
+<hr style="color: #CCC; margin: 20px 0">
+
+<h2>Generate Your Own Checkerboards</h2>
+<p style="text-align: justify;">
+  As many people <span class="help-tip" title="Slightly over 1600 per month (as of July 2021)">?</span> find this checkerboard collection useful, and
+  due to requests for custom sized checkerboards, I have put a simple generator script together.
+  This script generates Scalable Vector Graphic (SVG) files, which can be opened and saved into other formats (such as PDF, or PNG) using free software such as the amazing <a href="https://inkscape.org/">Inkscape</a>.
+  Feel free to get in touch if you have any questions or issues.
+</p>
+<p>
+  <b>WARNING:</b> Your browser may become unresponsive if the requested checker sizes becomes very small!
+</p>
+<div style="margin: 20px 0">
+  <label for="page_size">Page size:</label>
+  <select name="page_size" id="page_size" onchange="generate_checkerboard()">
+    <option value="A0">A0</option>
+    <option value="A1">A1</option>
+    <option value="A2">A2</option>
+    <option value="A3">A3</option>
+    <option value="A4" selected="selected">A4</option>
+  </select>
+  <label for="checker_size_mm">Checker size:</label>
+  <input style="width: 80px; text-align: right;" type="number" id="checker_size_mm" name="checker_size_mm" step="1.0" min="0" max="1189" value="25" onchange="generate_checkerboard()"><span>mm</span>
+</div>
+<div id="hidden-checkers" style="display: none"></div>
+<div id="checkerboard" onclick="download_checkerboard()" style="cursor: pointer; display: inline-block; width: 200px; height:  141.417px; margin-right: 15px; border: 1px solid #CCC; box-shadow: 5px 5px 10px #AAA;">
+</div><a id="generated_checkerboard" href="javascript:download_checkerboard()"></a>
+<hr style="color: #CCC; margin: 20px 0">
+
+<script type="text/javascript">
+
+function generate_header(page_width, page_height, for_display=true) {
+  header = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
+  if (for_display){
+    header += '<svg width="100%" height="100%" '
+  }
+  else {
+    header += '<svg width="' + page_width + 'mm" height="' + page_height + 'mm" '
+  }
+  header += 'viewBox="0 0 ' + page_width + ' ' + page_height + '" version="1.1" id="svg5" '
+  header += 'xmlns="http://www.w3.org/2000/svg" '
+  header += 'xmlns:svg="http://www.w3.org/2000/svg">\n'
+  header += '<g id="checkers">'
+  return header;
+}
+
+function generate_footer() {
+  return '\n</g>\n</svg>\n'
+}
+
+function download_checkerboard() {
+  var details = document.getElementById('generated_checkerboard').innerHTML.split(' ');
+  var filename = 'Checkerboard-' + details[0] + '-' + details[2] + '-' + details[5];
+  var checkerboard = generate_header(page_width, page_height, false) + document.getElementById('checkers').innerHTML + generate_footer();
+  var element = document.createElement('a');
+  element.style.display = 'none';
+  element.setAttribute('href', 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(checkerboard));
+  element.setAttribute('download', filename);
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+}
+
+function generate_checkerboard() {
+
+  page_size = document.getElementById('page_size').value;
+  checker_size_mm = document.getElementById('checker_size_mm').value;
+  if (checker_size_mm <= 0) {
+    return;
+  }
+
+  page_sizes = {
+      'A0': [841, 1189],
+      'A1': [594, 841],
+      'A2': [420, 594],
+      'A3': [297, 420],
+      'A4': [210, 297],
+  }
+  page_layout_landscape = false
+
+  page_height = page_sizes[page_size][0]
+  page_width = page_sizes[page_size][1]
+
+  if (page_layout_landscape) {
+    page_height = page_sizes[page_size][1]
+    page_width = page_sizes[page_size][0]
+  }
+
+  cols = Math.floor(page_width / checker_size_mm)
+  rows = Math.floor(page_height / checker_size_mm)
+  padx = (page_width - checker_size_mm * cols) / 2.0
+  pady = (page_height - checker_size_mm * rows) / 2.0
+  max_boxes_per_row = Math.ceil(cols / 2)
+
+  out = ""
+  rect_num = 0
+
+  for (let row = 0; row < rows; row++) {
+    row_is_odd = row % 2
+    offset_x = checker_size_mm * row_is_odd
+    if (cols % 2 == 1) {
+      boxes_per_row = max_boxes_per_row - row_is_odd
+    }
+    else{
+      boxes_per_row = max_boxes_per_row
+    }
+    for (let col = 0; col < boxes_per_row; col++) {
+      x = padx + offset_x + (col * checker_size_mm * 2)
+      y = pady + row * checker_size_mm
+      out += '\n<rect width="' + checker_size_mm + '" '
+      out += 'height="' + checker_size_mm + '" x="' + x + '" y="' + y + '" />'
+      rect_num += 1
+    }
+  }
+  var div = document.getElementById('checkerboard');
+  div.innerHTML = generate_header(page_width, page_height, true) + out + generate_footer();
+  content = out;
+  document.getElementById('generated_checkerboard').innerHTML = page_size + ' - ' + checker_size_mm + 'mm squares - ' + (cols - 1) + 'x' + (rows - 1) + ' verticies, ' + cols + 'x' + rows + ' squares';
+}
+
+generate_checkerboard();
+</script>
+
+
 <h2>8x6 Checkerboards</h2>
 <p><a href="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/calibration-checkerboard-collection/Checkerboard-A4-25mm-8x6.pdf"><img loading="lazy" style="width: 200px; margin-right: 15px; border: 1px solid #CCC; box-shadow: 5px 5px 10px #AAA;" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/calibration-checkerboard-collection/Checkerboard-A4-25mm-8x6.svg">A4 - 25mm squares - 8x6 verticies, 9x7 squares</a></p>
 <p><a href="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/calibration-checkerboard-collection/Checkerboard-A4-30mm-8x6.pdf"><img loading="lazy" style="width: 200px; margin-right: 15px; border: 1px solid #CCC; box-shadow: 5px 5px 10px #AAA;" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/calibration-checkerboard-collection/Checkerboard-A4-30mm-8x6.svg">A4 - 30mm squares - 8x6 verticies, 9x7 squares</a></p>
