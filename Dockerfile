@@ -44,6 +44,13 @@ ARG WORKDIR
 ARG WORKSPACE_NAME
 ENV WORKSPACE $WORKDIR/$WORKSPACE_NAME
 WORKDIR $WORKDIR
+
+# Install Jekyll dependencies and create server launcher
+COPY ${WORKSPACE_NAME}/Gemfile ${WORKSPACE_NAME}/Gemfile.lock /tmp
+RUN cd /tmp && bundle install && cd && rm /tmp/* -rf
+RUN printf "#!/usr/bin/env bash\n\ncd ${WORKSPACE}\nbundle exec jekyll serve" \
+  > /usr/bin/server && chmod +x /usr/bin/server
+
 ################################################################################
 # DEVELOPMENT TARGET - generate development-friendly image
 ################################################################################

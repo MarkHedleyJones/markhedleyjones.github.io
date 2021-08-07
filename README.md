@@ -9,16 +9,10 @@
 * Make text justified by default (use tags when wanting centered)
 * Standardise image path in posts 
 
-# Testing
+# Development
 
-Using docker-bbq:
+This repository uses [docker-bbq](https://www.github.com/markhedleyjones/docker-bbq) for rapid development.
+Steps in this document assume you have this installed.
 
-    workspace=/docs run
-    
-Then once inside the container
-
-    cd /docs && bundle install
-
-This installs the required gems
-
-    bundle exec jekyll serve
+Build the image with `make`.
+Once built, run the development server using: `run server`
