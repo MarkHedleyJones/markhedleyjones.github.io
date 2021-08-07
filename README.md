@@ -16,3 +16,5 @@ Steps in this document assume you have this installed.
 
 Build the image with `make`.
 Once built, run the development server using: `run server`
+
+You can then modify the contents of <docs> and it should be updated live.
