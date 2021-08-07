@@ -5,7 +5,7 @@ date:   2013-11-29 09:01:13 +0000
 permalink: /projects/dmenu-extended
 featureimage: logo.svg
 thumb: logo.svg
-description: A menu offering super fast access to your files, folders, and programs.
+description: A menu offering super fast access to your files, folders, and programs
 excerpt_separator: \{% endhighlight %\}
 ---
 
