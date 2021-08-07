@@ -21,10 +21,15 @@
 title: Mark Hedley Jones
 email: markhedleyjones@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Projects and blog from a robotics researcher/engineer. Feel free to get in touch
+  Random projects from a robotics engineer and researcher living in Tokyo.
+  Feel free to get in touch!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://markhedleyjones.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  markhedleyjones
+
+author:
+  name: Mark Hedley Jones
+  email: markhedleyjones@gmail.com
 
 google_analytics: "UA-117545174-1"
 
