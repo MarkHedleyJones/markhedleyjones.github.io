@@ -42,18 +42,49 @@ excerpt_separator: \{% endhighlight %\}
 <p>
   <b>WARNING:</b> Your browser may become unresponsive if the requested checker sizes becomes very small!
 </p>
-<div style="margin: 20px 0">
-  <label for="page_size">Page size:</label>
-  <select name="page_size" id="page_size" onchange="generate_checkerboard()">
-    <option value="A0">A0</option>
-    <option value="A1">A1</option>
-    <option value="A2">A2</option>
-    <option value="A3">A3</option>
-    <option value="A4" selected="selected">A4</option>
-  </select>
-  <label for="checker_size_mm">Checker size:</label>
-  <input style="width: 80px; text-align: right;" type="number" id="checker_size_mm" name="checker_size_mm" step="1.0" min="0" max="1189" value="25" onchange="generate_checkerboard()"><span>mm</span>
-</div>
+<style>
+  table th {
+    font-weight: normal;
+    text-align: right;
+  }
+  table {
+    margin: 20px;
+  }
+</style>
+<table>
+  <tr>
+    <th><label for="page_size">Page size:</label></th>
+    <td>
+      <select name="page_size" id="page_size" onchange="generate_checkerboard()">
+        <option value="A0">A0</option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+        <option value="A3">A3</option>
+        <option value="A4" selected="selected">A4</option>
+        <option value="Custom">Custom</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <th><label for="checker_size_mm">Checker size:</label></th>
+    <td>
+      <input style="width: 80px; text-align: right;" type="number" id="checker_size_mm" name="checker_size_mm" step="1.0" min="0" max="1189" value="25" onchange="generate_checkerboard()"> <span>mm</span>
+    </td>
+  </tr>
+  <tr>
+    <th><label for="checker_size_mm">Page width:</label></th>
+    <td>
+      <input style="width: 80px; text-align: right;" type="number" id="page_width_mm" name="page_width_mm" disabled="disabled" onchange="generate_checkerboard()"> <span>mm</span>
+    </td>
+  </tr>
+  <tr>
+    <th><label for="checker_size_mm">Page height:</label></th>
+    <td>
+      <input style="width: 80px; text-align: right;" type="number" id="page_height_mm" name="page_height_mm" disabled="disabled" onchange="generate_checkerboard()"> <span>mm</span>
+    </td>
+  </tr>
+</table>
+
 <div id="hidden-checkers" style="display: none"></div>
 <div id="checkerboard" onclick="download_checkerboard()" style="cursor: pointer; display: inline-block; width: 200px; height:  141.417px; margin-right: 15px; border: 1px solid #CCC; box-shadow: 5px 5px 10px #AAA;">
 </div><a id="generated_checkerboard" href="javascript:download_checkerboard()"></a>
@@ -101,17 +132,34 @@ function generate_checkerboard() {
     return;
   }
 
-  page_sizes = {
+  width_element = document.getElementById('page_width_mm');
+  height_element = document.getElementById('page_height_mm');
+  page_layout_landscape = false;
+
+  if (page_size != "Custom")
+  {
+    page_sizes = {
       'A0': [841, 1189],
       'A1': [594, 841],
       'A2': [420, 594],
       'A3': [297, 420],
       'A4': [210, 297],
-  }
-  page_layout_landscape = false
+      'Custom': [200, 200]
+    }
 
-  page_height = page_sizes[page_size][0]
-  page_width = page_sizes[page_size][1]
+    page_height = page_sizes[page_size][0];
+    page_width = page_sizes[page_size][1];
+    height_element.disabled = true;
+    height_element.value = page_height;
+    width_element.disabled = true;
+    width_element.value = page_width;
+  }
+  else {
+    height_element.disabled = false;
+    page_height = height_element.value;
+    width_element.disabled = false;
+    page_width = width_element.value;
+  }
 
   if (page_layout_landscape) {
     page_height = page_sizes[page_size][1]
@@ -147,7 +195,23 @@ function generate_checkerboard() {
   var div = document.getElementById('checkerboard');
   div.innerHTML = generate_header(page_width, page_height, true) + out + generate_footer();
   content = out;
-  document.getElementById('generated_checkerboard').innerHTML = page_size + ' - ' + checker_size_mm + 'mm squares - ' + (cols - 1) + 'x' + (rows - 1) + ' verticies, ' + cols + 'x' + rows + ' squares';
+  page_size_string = page_size;
+  if (page_size_string == "Custom") {
+    page_size_string = "Custom - " + page_width + "mm x " + page_height + "mm";
+  }
+  document.getElementById('generated_checkerboard').innerHTML = page_size_string + ' - ' + checker_size_mm + 'mm squares - ' + (cols - 1) + 'x' + (rows - 1) + ' verticies, ' + cols + 'x' + rows + ' squares';
+
+  preview_width = 200;
+  preview_height = 141.417;
+  preview_aspect = page_width / page_height;
+  if (preview_aspect > 1) {
+    preview_height = preview_width / preview_aspect;
+  }
+  else {
+    preview_width = preview_height * preview_aspect;
+  }
+  document.getElementById('checkerboard').style.width = preview_width + 'px';
+  document.getElementById('checkerboard').style.height = preview_height + 'px';
 }
 
 generate_checkerboard();
