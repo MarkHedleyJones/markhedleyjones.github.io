@@ -105,7 +105,7 @@ excerpt_separator: \{% endhighlight %\}
 <script type="text/javascript">
 
 function generate_header(page_width, page_height, for_display=true) {
-  header = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
+  let header = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n'
   if (for_display){
     header += '<svg width="100%" height="100%" '
   }
@@ -124,10 +124,10 @@ function generate_footer() {
 }
 
 function download_checkerboard() {
-  var details = document.getElementById('generated_checkerboard').innerHTML.split(' ');
-  var filename = 'Checkerboard-' + details[0] + '-' + details[2] + '-' + details[5];
-  var checkerboard = generate_header(page_width, page_height, false) + document.getElementById('checkers').innerHTML + generate_footer();
-  var element = document.createElement('a');
+  let details = document.getElementById('generated_checkerboard').innerHTML.split(' ');
+  let filename = 'Checkerboard-' + details[0] + '-' + details[2] + '-' + details[5];
+  let checkerboard = generate_header(page_width, page_height, false) + document.getElementById('checkers').innerHTML + generate_footer();
+  let element = document.createElement('a');
   element.style.display = 'none';
   element.setAttribute('href', 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(checkerboard));
   element.setAttribute('download', filename);
@@ -138,19 +138,23 @@ function download_checkerboard() {
 
 function generate_checkerboard() {
 
-  page_size = document.getElementById('page_size').value;
-  checker_size_mm = document.getElementById('checker_size_mm').value;
+  const page_size = document.getElementById('page_size').value;
+  const checker_size_mm = document.getElementById('checker_size_mm').value;
+
   if (checker_size_mm <= 0) {
     return;
   }
 
-  width_element = document.getElementById('page_width_mm');
-  height_element = document.getElementById('page_height_mm');
-  page_layout_landscape = false;
+  const page_layout_landscape = false;
+  const width_element = document.getElementById('page_width_mm');
+  const height_element = document.getElementById('page_height_mm');
+
+  page_height = height_element.value;
+  page_width = width_element.value;
 
   if (page_size != "Custom")
   {
-    page_sizes = {
+    const page_sizes = {
       'A0': [841, 1189],
       'A1': [594, 841],
       'A2': [420, 594],
@@ -168,9 +172,7 @@ function generate_checkerboard() {
   }
   else {
     height_element.disabled = false;
-    page_height = height_element.value;
     width_element.disabled = false;
-    page_width = width_element.value;
   }
 
   if (page_layout_landscape) {
@@ -178,44 +180,37 @@ function generate_checkerboard() {
     page_width = page_sizes[page_size][0]
   }
 
-  cols = Math.floor(page_width / checker_size_mm)
-  rows = Math.floor(page_height / checker_size_mm)
-  padx = (page_width - checker_size_mm * cols) / 2.0
-  pady = (page_height - checker_size_mm * rows) / 2.0
-  max_boxes_per_row = Math.ceil(cols / 2)
+  const cols = Math.floor(page_width / checker_size_mm)
+  const rows = Math.floor(page_height / checker_size_mm)
+  const padx = (page_width - checker_size_mm * cols) / 2.0
+  const pady = (page_height - checker_size_mm * rows) / 2.0
+  const max_boxes_per_row = Math.ceil(cols / 2)
+  const num_cols_is_odd = cols % 2;
 
-  out = ""
-  rect_num = 0
-
+  let out = ""
   for (let row = 0; row < rows; row++) {
-    row_is_odd = row % 2
-    offset_x = checker_size_mm * row_is_odd
-    if (cols % 2 == 1) {
-      boxes_per_row = max_boxes_per_row - row_is_odd
-    }
-    else{
-      boxes_per_row = max_boxes_per_row
-    }
+    const row_is_odd = row % 2
+    const offset_x = checker_size_mm * row_is_odd
+    const boxes_per_row = num_cols_is_odd ? max_boxes_per_row - row_is_odd : max_boxes_per_row;
     for (let col = 0; col < boxes_per_row; col++) {
-      x = padx + offset_x + (col * checker_size_mm * 2)
-      y = pady + row * checker_size_mm
+      let x = padx + offset_x + (col * checker_size_mm * 2)
+      let y = pady + row * checker_size_mm
       out += '\n<rect width="' + checker_size_mm + '" '
       out += 'height="' + checker_size_mm + '" x="' + x + '" y="' + y + '" />'
-      rect_num += 1
     }
   }
-  var div = document.getElementById('checkerboard');
+  const div = document.getElementById('checkerboard');
   div.innerHTML = generate_header(page_width, page_height, true) + out + generate_footer();
-  content = out;
-  page_size_string = page_size;
+
+  let page_size_string = page_size;
   if (page_size_string == "Custom") {
     page_size_string = "Custom - " + page_width + "mm x " + page_height + "mm";
   }
   document.getElementById('generated_checkerboard').innerHTML = page_size_string + ' - ' + checker_size_mm + 'mm squares - ' + (cols - 1) + 'x' + (rows - 1) + ' verticies, ' + cols + 'x' + rows + ' squares';
 
-  preview_width = 200;
-  preview_height = 141.417;
-  preview_aspect = page_width / page_height;
+  let preview_width = 200;
+  let preview_height = 141.417;
+  let preview_aspect = page_width / page_height;
   if (preview_aspect > 1) {
     preview_height = preview_width / preview_aspect;
   }
