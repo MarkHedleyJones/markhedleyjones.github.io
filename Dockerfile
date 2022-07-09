@@ -4,7 +4,7 @@ COPY build/tmp/ /build/
 
 # Configure the apt mirror
 ARG APT_MIRROR=""
-RUN if [ "${APT_MIRROR}" != "" ]; then if [ "${APT_MIRROR}" = "auto" ]; then \ 
+RUN if [ "${APT_MIRROR}" != "" ]; then if [ "${APT_MIRROR}" = "auto" ]; then \
   APT_MIRROR="mirror://mirrors.ubuntu.com/mirrors.txt"; fi && sed --in-place \
   "s|http://archive.ubuntu.com/ubuntu/|${APT_MIRROR}|g" /etc/apt/sources.list; \
   fi
@@ -26,18 +26,14 @@ RUN if [ ! -z $(ls /build/pip) ] ; then for path in /build/pip/pip*-req*.txt ; \
 COPY build/resources /build/resources
 
 # Create user account (if necessary)
-ARG GROUP_ID
-ARG USER_ID
+ARG USER_GID
+ARG USER_UID
 ARG USER_NAME
 RUN if [ "${USER_NAME}" != "root" ]; then \
-  addgroup --gid ${GROUP_ID} ${USER_NAME} \
-  && adduser --disabled-password --gecos '' --gid ${GROUP_ID} --uid ${USER_ID} ${USER_NAME} ; \
+  addgroup --gid ${USER_GID} ${USER_NAME} \
+  && adduser --disabled-password --gecos '' --gid ${USER_GID} --uid ${USER_UID} ${USER_NAME} ; \
 fi
 USER ${USER_NAME}
-
-ENV GEM_HOME="${HOME}/gems"
-ENV PATH="${HOME}/gems/bin:$PATH"
-RUN gem install jekyll bundler
 
 # Setup workspace variables
 ARG WORKDIR
@@ -45,11 +41,18 @@ ARG WORKSPACE_NAME
 ENV WORKSPACE $WORKDIR/$WORKSPACE_NAME
 WORKDIR $WORKDIR
 
+ENV GEM_HOME=${WORKDIR}/gems
+ENV PATH=${WORKDIR}/gems/bin:$PATH
+RUN gem install jekyll bundler
+
 # Install Jekyll dependencies and create server launcher
-COPY ${WORKSPACE_NAME}/Gemfile ${WORKSPACE_NAME}/Gemfile.lock /tmp
-RUN cd /tmp && bundle install && cd && rm /tmp/* -rf
+COPY ${WORKSPACE_NAME}/Gemfile ${WORKSPACE_NAME}/Gemfile.lock /tmp/
+RUN cd /tmp && bundle install
+
+USER root
 RUN printf "#!/usr/bin/env bash\n\ncd ${WORKSPACE}\nbundle exec jekyll serve" \
   > /usr/bin/server && chmod +x /usr/bin/server
+USER ${USER_NAME}
 
 ################################################################################
 # DEVELOPMENT TARGET - generate development-friendly image
@@ -61,7 +64,9 @@ FROM base AS development-image
 # PRE-PRODUCTION STAGE - transform workspace into production-ready state
 ################################################################################
 FROM base AS pre-production
-COPY $WORKSPACE_NAME $WORKSPACE
+ARG USER_NAME
+ARG WORKSPACE_NAME
+COPY --chown=${USER_NAME} $WORKSPACE_NAME $WORKSPACE
 # Build workspace and/or remove files not intended for production
 
 ################################################################################
@@ -69,4 +74,4 @@ COPY $WORKSPACE_NAME $WORKSPACE
 ################################################################################
 FROM base AS production-image
 # Copy the clean workspace into production image
-COPY --from=pre-production $WORKSPACE $WORKSPACE
+COPY --from=pre-production --chown=${USER_NAME} $WORKSPACE $WORKSPACE
