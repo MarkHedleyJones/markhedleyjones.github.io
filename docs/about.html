@@ -20,23 +20,40 @@ permalink: /about/
   <img alt="Test robots" style="width: 49%" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/DSC_0230.webp"/>
 </p>
 
-<h3>Robotics Researcher - New Zealand</h3>
+<h3>Robotics Post-Doctoral Researcher - New Zealand</h3>
 
-<p style="text-align: justify;">
-  While in New Zealand, I spent four years as a post-doctoral researcher based at <a href="https://www.roboticsplus.co.nz/">Robotics Plus</a>, a growing start-up company developing robotics for horticulture.
-  I focusd on the development of an autonomous vehicle capable of self-driving in kiwifruit orchards.
-  Kiwifruit orchards are particularly challenging due to an inability to reliably receive GNSS signals.
-  This means autonomous vehicles must use perception based sensors.
-  Other projects I was involved with there were a robotic kiwifruit harvesting system and a targeted kiwifruit pollination system.
-  Both used machine vision and deep learning to detect fruit or flowers. In the case of the harvester, four robotic arms were coordinated to harvest detected fruit.
-  In the case of the pollinator, a height adjustable spray boom would deliver a precise dosage of pollen to individual flowers.
-</p>
-
-<p style="text-align: center">
+<p>
+  Between 2015-2018 I was a post-doctoral researcher on a kiwifruit orchard robotics project.
+  The project was a collaboration between two universities, a government research institution and a private robotics company and was government funded.
+  As a team of about 12 people, we developed robotics for autonomously pollinating and harvesting kiwifruit as well as a multi-purpose platform to which we could attach the pollinating and harvesting robots.
   <img alt="AMMP" style="margin-bottom: 5px" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/robotics-orchard.webp"/>
-  <img alt="Pollination" style="width: 43%; vertical-align: top" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/pollinator.webp"/>
-  <img alt="Harvesting" style="width: 55%" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/kiwi-harvester.webp"/>
+</p>
+<h4>Autonomous platform</h4>
+<p>
+  My work primarily focused on the development of the multi-purpose platform for which I was responsible for  the hardware, software and firmware, plus some of the mechanical design.
+  The platform was capable of autonomous row-following in kiwifruit orchards by way of lidar based sensing of the orchard's structure.
+  It could drive fully electrically by way of six electric motor/gearbox units while providing AC and DC power outputs any mounted robotic systems.
+  Also, it had a carrying capacity of 1 tonne on its payload space, plus extra capacity to carry kiwifruit in the space between the rear wheels.
   <iframe width="760" height="427.5" src="https://www.youtube-nocookie.com/embed/hUT4qLRqMBE" title="YouTube video player" frameborder="0" allowfullscreen style="margin-top: 5px"></iframe>
+</p>
+<h4>Kiwifruit harvesting</h4>
+<p>
+  The kiwifruit harvesting and pollinating units are quite spectacular to watch.
+  The harvester could identify kiwifruit in 3D using stereo cameras and artificial neural network, decide in which order to harvest the kiwifruit (to minimise damage to neighboring fruit), then instruct the custom robotic harvesting arms to take the fruit.
+  You can see it working in the video below.
+  <iframe width="760" height="427.5" src="https://www.youtube-nocookie.com/embed/b4L-oMd0yVk" title="YouTube video player" frameborder="0" allowfullscreen style="margin-top: 5px"></iframe>
+</p>
+<h4>Kiwifruit pollination</h4>
+<p>
+  The pollinator could use the same cameras and neural-networks to identify flowers in 3D and then shoot pollen solution at flowers as the vehicle drove underneath.
+  The time-of-flight of the pollen solution was calculated for each shot so the pollen would hit the flower while the vehicle was in motion.
+  Unfortunately there is no publicly available video of this robot to show, but this animation shows the general process.
+  <img alt="Pollination" style="width: 100%; vertical-align: top" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/pollinator.webp"/>
+</p>
+<p>
+  Overall, my role was quite varied and involved mechanical design and fabrication, electrical design and fitment, as well as software development.
+  Software included custom computer-vision algorithms to detect kiwifruit, lidar processing for autonomous navigation, custom firmware to control motor drivers, as well as low-level software for safety.
+  Looking back at this work, it was an amazing experience and opened my eyes to the possibilities of robotics in the agriculture industry.
 </p>
 
 <h2>Publications:</h2>
