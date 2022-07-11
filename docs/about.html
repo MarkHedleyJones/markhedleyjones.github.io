@@ -5,20 +5,38 @@ permalink: /about/
 ---
 
 <h2>Work History:</h2>
-<h3>Robotics Engineer - Japan</h3>
+<h3>Robotics Software Engineer - Japan</h3>
 
-<p style="text-align: justify;">
-  Since 2018 I have been working in Tokyo as a software engineer at <a href="https://www.seqsense.com/">SEQSENSE</a>.
-  The company is a start-up making indoor security robots for the Japanese market.
-  These robots primarily operate in corporate office buildings.
-  My contributions here are mostly around mapping and robot simulation.
-  Most robot software is ROS-based and runs inside Docker containers.
+<p>
+  Currently I am working at <a href="https://www.seqsense.com/">SEQSENSE</a> / シークセンス writing software for SQ2 series of security robot.
+  Primarily the robot acts as an autonomous security camera that carries out scheduled, pre-defined patrols each day in large office buildings.
+  The types of buildings our robots operate in all have dedicated security centres, so there robots are used to complement the jobs of the already-present security personnel.
+</p>
+<figure>
+  <img alt="SQ2 at Narita Airport" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/1499339.webp">
+  <figcaption style="text-align: center">SQ2 performing a patrol at Narita Airport (Tokyo)</figcaption>
+</figure>
+
+<figure style="width: 49%; float: right; margin: 10px 0 10px 10px">
+  <img alt="Test robots" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/DSC_0230.webp"/>
+  <figcaption style="text-align: center">Test robots being serviced in the laboratory</figcaption>
+</figure>
+
+<p>
+  SQ2 uses a cluster of three 2D laser scanners which are rotated on a turntable to perceive the surrounding environment and navigate.
+  Additionally it uses four wide-angled cameras placed around the body for image capture.
+  Data is continuously streamed to a web-based interface which allows security guards to review patrols and see what the robot is doing at any time.
+  The robot is capable of self-docking with it's battery charger when required and can also use specific elevators to enable multi-floor patrols.
+</p>
+<p>
+  My work is mainly focused on object detection and tracking for a safety feature which is currently still under development.
+  Previously I worked on a mapping system used to generate the 3D maps used for navigation.
+  Working here has taught me about software containerisation, continuous integration, and how different cultures think about development.
 </p>
 
-<p style="text-align: center">
-  <img alt="SQ2 on patrol" style="width: 49%" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/DxubnPpU0AAwKa8.webp"/>
-  <img alt="Test robots" style="width: 49%" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/DSC_0230.webp"/>
-</p>
+<hr style="clear: both; border: 1px solid rgba(0, 0, 0, 0);">
+
+<hr style="border: 1px dashed rgba(0, 0, 0, 0.8);">
 
 <h3>Robotics Post-Doctoral Researcher - New Zealand</h3>
 
@@ -26,8 +44,13 @@ permalink: /about/
   Between 2015-2018 I was a post-doctoral researcher on a kiwifruit orchard robotics project.
   The project was a collaboration between two universities, a government research institution and a private robotics company and was government funded.
   As a team of about 12 people, we developed robotics for autonomously pollinating and harvesting kiwifruit as well as a multi-purpose platform to which we could attach the pollinating and harvesting robots.
-  <img alt="AMMP" style="margin-bottom: 5px" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/robotics-orchard.webp"/>
 </p>
+
+<figure>
+  <img alt="AMMP" style="margin-bottom: 5px" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/robotics-orchard.webp"/>
+  <figcaption style="text-align: center;">The multi-purpose platform in a kiwifruit orchard</figcaption>
+</figure>
+
 <h4>Autonomous platform</h4>
 <p>
   My work primarily focused on the development of the multi-purpose platform for which I was responsible for  the hardware, software and firmware, plus some of the mechanical design.
@@ -48,8 +71,11 @@ permalink: /about/
   The pollinator could use the same cameras and neural-networks to identify flowers in 3D and then shoot pollen solution at flowers as the vehicle drove underneath.
   The time-of-flight of the pollen solution was calculated for each shot so the pollen would hit the flower while the vehicle was in motion.
   Unfortunately there is no publicly available video of this robot to show, but this animation shows the general process.
-  <img alt="Pollination" style="width: 100%; vertical-align: top" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/pollinator.webp"/>
 </p>
+<figure>
+  <img alt="Pollination" style="width: 100%; vertical-align: top" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/pollinator.webp"/>
+  <figcaption style="text-align: center;">The pollinator spraying a cluster of kiwifruit flowers</figcaption>
+</figure>
 <p>
   Overall, my role was quite varied and involved mechanical design and fabrication, electrical design and fitment, as well as software development.
   Software included custom computer-vision algorithms to detect kiwifruit, lidar processing for autonomous navigation, custom firmware to control motor drivers, as well as low-level software for safety.
