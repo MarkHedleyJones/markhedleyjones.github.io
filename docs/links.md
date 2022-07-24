@@ -14,7 +14,6 @@ This page is an experiment in storing web-links longer term and to facilitate sh
 * [WebGL BVH Viewer](http://mocap.cs.sfu.ca/index1d9d4.html?id=0007_Crawling001.bvh) - database and viewer of human motion capture datasets
 
 ## Documents & Reference
-* [Preliminary Assessment:  Unidentified Aerial Phenomena](https://media.heartlandtv.com/documents/DNI+UAP+Assessment.pdf) - first report released on UAPs
 * [So, You Want to Build a House More Efficiently](https://austinvernon.eth.link/blog/construction.html) - information on relative expenses when building homes
 
 ## Guides
@@ -42,14 +41,16 @@ This page is an experiment in storing web-links longer term and to facilitate sh
 * [Hackernews](https://news.ycombinator.com/) - technology news (where a lot of the content listed on this page was found)
 * [Wikipedia - Current events](https://en.wikipedia.org/wiki/Portal:Current_events) - non-sensationalised news from around the world
 
-## Products
-* [Mudita Pure](https://mudita.com/) - open-source, e-ink, minimalist phone
+## Phones
+* [Punkt MP02](https://www.punkt.ch/en/products/mp02-4g-mobile-phone/) - a minimalist dumb-phone with ability to call and message using the Signal protocol
+* [Mudita Pure](https://mudita.com/) - open-source, minimalist, e-ink, minimalist dumb-phone
+* [Librem 5](https://puri.sm/products/librem-5/) - open-source debian based smart-phone
+* [Fairphone](https://www.fairphone.com/en/) - a repairable, android-based, smart-phone with access to spare parts.
 
 ## Tools
 * [Simple Analytics](https://simpleanalytics.com/) - a nice looking alternative to Google Analytics
 * [Sorted Colors](https://enes.in/sorted-colors/) - a website for finding HTML colour names
 * [Youtube Downloader](https://yt1s.com/en14) - site for downloading YouTube videos in a variety of formats (including MP3)
 
-
-
-
+## Others
+* [Apartments-in](https://www.apartments-in.jp/fukuoka) - A website for easily finding apartments in Japan
