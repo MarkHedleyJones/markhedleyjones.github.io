@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  "Docker-BBQ"
 date:   2022-07-23 19:12:00 +0000
 permalink: /projects/docker-bbq

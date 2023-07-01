@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: project
 title:  "dmenu-extended"
 date:   2013-11-29 09:01:13 +0000
 permalink: /projects/dmenu-extended
@@ -36,4 +36,3 @@ excerpt_separator: \{% endhighlight %\}
     View/Download project on GitHub
 </a>
 </p>
-

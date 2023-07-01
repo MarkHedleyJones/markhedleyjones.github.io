@@ -11,9 +11,9 @@ layout: default
 
 
   {% if site.paginate %}
-    {% assign posts = paginator.posts %}
+    {% assign posts = paginator.posts | where: "layout","project" %}
   {% else %}
-    {% assign posts = site.posts %}
+    {% assign posts = site.posts | where: "layout","project" %}
   {% endif %}
 
 
@@ -33,37 +33,37 @@ layout: default
     ">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       {%- for post in posts -%}
-      <div class="grid-item" style="
-        display: inline-block;
-        box-sizing: border-box;
-        text-align: center;
-        box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
-        width: 320px;
-        height: 400px;
-        cursor: pointer;
-        " onclick="window.location = '{{ post.url | relative_url }}';">
-        {%- if site.show_excerpts -%}
-          {%- if post.image -%}
-            <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img loading="lazy" src="{{ post.image }}" style="width: 320px; height: 240px"/></a>
-          {%- endif -%}
-          {%- if post.thumb -%}
-            <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img loading="lazy" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media{{ post.permalink }}/{{ post.thumb }}" style="width: 320px; height: 240px"/></a>
-          {%- endif -%}
-        {%- endif -%}
-        <div style="position: relative; bottom: 0; left: 10px; right: 10px; width: 300px; height: 150px; top: 10px">
-          <h3 style="margin: 0 0 5px 0; text-decoration: none;">
-            <a style="color: #333; font-size: 23px !important;" class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
+        <div class="grid-item" style="
+          display: inline-block;
+          box-sizing: border-box;
+          text-align: center;
+          box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.15);
+          width: 320px;
+          height: 400px;
+          cursor: pointer;
+          " onclick="window.location = '{{ post.url | relative_url }}';">
           {%- if site.show_excerpts -%}
-            {%- if post.description -%}
-              <p style="color: #777">{{ post.description }}</p>
+            {%- if post.image -%}
+              <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img loading="lazy" src="{{ post.image }}" style="width: 320px; height: 240px"/></a>
+            {%- endif -%}
+            {%- if post.thumb -%}
+              <a style="color: #525252;" class="post-link" href="{{ post.url | relative_url }}"><img loading="lazy" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media{{ post.permalink }}/{{ post.thumb }}" style="width: 320px; height: 240px"/></a>
             {%- endif -%}
           {%- endif -%}
-          <span style="position: absolute; bottom: 5px; right: 5px; font-size: 0.8em; color: #AAA">{{ post.date | date: date_format }}</span>
+          <div style="position: relative; bottom: 0; left: 10px; right: 10px; width: 300px; height: 150px; top: 10px">
+            <h3 style="margin: 0 0 5px 0; text-decoration: none;">
+              <a style="color: #333; font-size: 23px !important;" class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {%- if post.description -%}
+                <p style="color: #777">{{ post.description }}</p>
+              {%- endif -%}
+            {%- endif -%}
+            <span style="position: absolute; bottom: 5px; right: 5px; font-size: 0.8em; color: #AAA">{{ post.date | date: date_format }}</span>
+          </div>
         </div>
-      </div>
       {%- endfor -%}
 
     {% if site.paginate %}

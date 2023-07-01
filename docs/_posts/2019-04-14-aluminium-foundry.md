@@ -1,11 +1,11 @@
 ---
-layout: post
+layout: project
 title:  "Aluminium Foundry"
 date:   2019-04-14 09:01:13 +0000
 permalink: /projects/aluminium-foundry
 featureimage: feature.webp
 thumb: thumb.webp
-description: Melt aluminium with a home-made aluminium foundry 
+description: Melt aluminium with a home-made aluminium foundry
 ---
 
 After taking inspiration from a number of furnaces seen you YouTube, I decided to build a furnace, or home foundary, for melting aluminium. I didn't have anything in-particular that I wanted to cast, but was just generally interested in creating a foundary hot enough to melt metal.
@@ -21,9 +21,9 @@ The first version of the furnace was electric. I sourced high-temperature bricks
 Unfortunately, after running the furnace for about 30 minutes, the electric element wire burnt itself out. After replacing the element, the same problem occured. I believe this was due to localised overheating of the wire, at-least partly because of how I had imbedded it into the insulative fire-bricks. Essentially, the heat couldn't radiate out and away from the element quick enough. Replacing the element wire was quite difficult since the bricks had been cemented together.
 
 ![Burnt-out heating element](https://lh3.googleusercontent.com/QX7zUdl-s_E8PXDnNQq5ra3RYAhs-cA0GlquKqWenw-jJRHa4j6Wc9HJy7tV067YDiNN7f8mwyE88OiNYPiYDCupwtN8v3yvR3D-p5lvAatK7FAap8Hd1Maajfe9qBJtIXWHjm9NFWgXLfITxtAtFi9nI6kqNyCzn969NIbV8mM6XqwkAoSA6bVODGZ20g1SjY7QsYa05oj9Ii5cEibNK7XLdk_val4VPbKyA1EbAUdfCODbch0eejbuYzT4gbsT2wyunIaWErRkkQWtxc4E2uobB27mZzByZxYLmULSKlKsUJJ_rk42McY4ReaVrINFqA0-I23Y9Lw1760Sb5lJfL8bsjsEsn3AH-_APl5VI0cOvXhJwgSoZG-Mdksax6M6a-FcU10U2RmioMaGFnnzolQ3v3fVLJVckb6TMgKNrlVxub0F8C16TSXhoiVeJLpMxa8wn_hhfASB6Y-vXKraCnTCRYeyWSouH7ocJo3ypxZ4WXwIQmw7pjkzTt-DBciVxuQmPAYRULzhhjzE0UU0XJDk7U3LtGSRFPfQIAkUCSeHoiYKIW4Pu7SJuEsHnOCDct1KUv1dcXazuvWt27E2mGBTbzqySG3gEG95YnuUqRH0oA7czdI4vw1n43FVBnQmfrT390WtFVfVtT8-n-uOsfb6_N3lpMciRXzkHL0CKayCiuOtUZ6rW23Gd-X6Bp0TCfcZWs5OercTa7fw9kAcrwuDgg=w1390-h1043-no)
- 
 
-In the end, I broke the bricks apart and added an entry hole for a propane torch. 
+
+In the end, I broke the bricks apart and added an entry hole for a propane torch.
 
 ![Propane powered foundry](https://lh3.googleusercontent.com/7X6ICg8mRFtTfJS5SIoEzx6DRcVW06SfCNYWfY2BwZZ7rjTe_pPMSqm88tSS2qy9MdrVYdAbU_da7e7WuihTj-OH7IvwYAvS_lSMJixH1-UumPpsSpeNYW4ELChKNPZGwZ0ZoiEl1yNPhBryiEpEKA2ITZkLRKz3HlDCAX65WHDpCNnIijof79n7xNTSvmrHQqKVyeHfvEiS78sXkDkMTC3Ammb4saA1BBUP7uBkpIJeuGsbKuF9oYM-o4Jji7_lWp10YgxHeM_HgeKJP8-GdNtuEBFzpfwcozIg-YeNu2jmmKc5QbF84BYrds9xaGJOx1vbCNU8_AF8hxvVItj53FcSB3MGW_3_QwxQVKDsPqCq6UqzfKGFJtHLd_jFfdYPZ6ySCkDSJ9SngSz6ae9TBoTKPqyMcoPy_Sv92fIh31Fny8TlYj00TTiUbnzKGpWh1m6TgJrg7r5DhUFS8bosvtyVamrI8KDt9K1kj7ZDXn3Q0YAni2ygQuF2pc7NqWNdT6q2KncAihn6PMFDOL8uVOJh9zTvoy7Pps9qqNXIZZxh5GWHleJtWev739P1q5OyUKBp7tKiEbF6_xV2mnzT9PsuB8Q_B4hVSPFXSI5-6hSSpCbpOyvU0FaT2EsN5kDUnsN7n5oOCQd21BcS5RXQHn3yPJaPVerXFkiMOFdKIJDJU7FnHfMcAOLqlSorEqbtAXw9bEFKqgo1zJ0pgwSOA-nOqQ=w1390-h1043-no)
 
@@ -43,7 +43,7 @@ The burner itself was made from a combination of pneumatic tool fittings, a MIG 
 
 <iframe width="100%" height="480px" src="https://www.youtube.com/embed/y7v98cf1fbg" frameborder="0" allowfullscreen="true"></iframe>
 
-As a trial, I had made a stainless steel mold to see if I could cast a small hexagon. It was made from 8mm laser cut stainless steel plate that was stacked to make a hexagonal cavity. The animation below shows how it was constructed. 
+As a trial, I had made a stainless steel mold to see if I could cast a small hexagon. It was made from 8mm laser cut stainless steel plate that was stacked to make a hexagonal cavity. The animation below shows how it was constructed.
 
 ![Stainless Steel Mold Trial](https://lh3.googleusercontent.com/i7oq0PS18aX5lL7l45OsME5OOukbyCILtFwrEkJUgmEXcf4WGc-3tpDNGwMj2WYybMzM7B-hGDnpKliPOhI9-T7j9aAxmnw9hzOqR0HwX0lh7xfuKt6EoN0cTa-Otptu0lwgdshQngsXFtF4fGSI3_IKge7OhgYX8sP2XFJPx1eBGvQwkVw_Kl4n3r0f_heFU7p7HWO9UwmsY0tJknCVKCLH1ft9kmZENl_h7X-evd_zErei_AYvvuPrAvH8F8qZDu0EnLT6sK_B3VkTaFOIsb-RLgJsCRcTO4qc4hVCwcENMTm__ZazLaVgXDUmEeHTXF2PHxGZOcsjcDBJli1W_2h4zsZwTs6u18sxgNE36HbH_Ofq8Et4PYxqy2sdEj9RDKOEje1Niz7TvYQBOF-ftjmF39haxIYM6kt3aYbxdMil8pb1BMkOvLBOCP937x4AwXZ4hyF5VorFQv7zLhsH5A-Y21kK7l7FOihcC9uisTv-6IjcsjSt5bS2_sGYxnqR7qyKcrphj9KUWn8zfX4mqdZgcDZK9L2_e90B8H1RaOmXdaqhIsVEi2rwBBGg-KWPto2T7vgsuB-09VdeyCzR9naBAjLvM77kP1fZN9vvNWdwNQwdlawsWw1yQDC_DcZbKJV4pEpBhds8NiW7oDptKFXH_QyTrF-ISz6hHKjcj_Shr1YTWs-rtRCjB0ienorCGoZ0WRSrf1jv_F4f3zeZwj40dg=w972-h644-no)
 
