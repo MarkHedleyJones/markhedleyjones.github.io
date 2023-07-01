@@ -13,6 +13,9 @@ This page is an experiment in storing web-links longer term and to facilitate sh
 * [CMU Graphics Lab Motion Capture Database ](http://mocap.cs.cmu.edu/) - dataset of human motion capture
 * [WebGL BVH Viewer](http://mocap.cs.sfu.ca/index1d9d4.html?id=0007_Crawling001.bvh) - database and viewer of human motion capture datasets
 
+## Devices
+* [Air Gradient](https://www.airgradient.com/kits/) - cost effective and open air quality meter kits
+
 ## Documents & Reference
 * [So, You Want to Build a House More Efficiently](https://austinvernon.eth.link/blog/construction.html) - information on relative expenses when building homes
 
