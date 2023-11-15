@@ -1,9 +1,8 @@
 ---
 layout: note
-title:  "Execute command at a specific time"
+title:  "Execute a bash command at a specific time"
 date:   2023-11-12
-permalink: /notes/wait-until-command
-description: "(schedule a coammnd to run at a specific time)"
+permalink: /notes/execute-bash-command-at-specific-time
 ---
 
 The following bash function, when entered into your ~/.bashrc file, will allow you to execute a command at a specific time.
