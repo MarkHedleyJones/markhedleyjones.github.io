@@ -56,4 +56,5 @@ This page is an experiment in storing web-links longer term and to facilitate sh
 * [Youtube Downloader](https://yt1s.com/en14) - site for downloading YouTube videos in a variety of formats (including MP3)
 
 ## Others
-* [Apartments-in](https://www.apartments-in.jp/fukuoka) - A website for easily finding apartments in Japan
+* [Apartments-in](https://www.apartments-in.jp/fukuoka) - A website for easily finding apartments in Fukuoka
+* [Akiyahopper](https://akiyahopper.com/) - A website for finding abandoned houses for sale in Japan
