@@ -50,10 +50,21 @@ This page is an experiment in storing web-links longer term and to facilitate sh
 * [Librem 5](https://puri.sm/products/librem-5/) - open-source debian based smart-phone
 * [Fairphone](https://www.fairphone.com/en/) - a repairable, android-based, smart-phone with access to spare parts.
 
-## Tools
+## Software
+* [sent](https://tools.suckless.org/sent/) - Simple plaintext presentation tool
 * [Simple Analytics](https://simpleanalytics.com/) - a nice looking alternative to Google Analytics
-* [Sorted Colors](https://enes.in/sorted-colors/) - a website for finding HTML colour names
+
+## Tools
 * [Youtube Downloader](https://yt1s.com/en14) - site for downloading YouTube videos in a variety of formats (including MP3)
+
+### Design
+* [Carbon](https://carbon.now.sh/) - Create and share images of source code
+* [Coolors](https://coolors.co/) - Colour palette generator
+* [Dafont](https://www.dafont.com/) - Selection of fonts
+* [FreePick](https://www.freepik.com/) - High-quality photos, videos, vectors, PSD, AI images, icons...
+* [Noun Project](https://thenounproject.com/) - Icons and photos for everything
+* [Sorted Colors](https://enes.in/sorted-colors/) - a website for finding HTML colour names
+* [uiGradients](https://uigradients.com) - Colour gradient generator
 
 ## Others
 * [Apartments-in](https://www.apartments-in.jp/fukuoka) - A website for easily finding apartments in Fukuoka
