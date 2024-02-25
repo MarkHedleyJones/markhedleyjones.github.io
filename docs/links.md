@@ -65,7 +65,3 @@ This page is an experiment in storing web-links longer term and to facilitate sh
 * [Noun Project](https://thenounproject.com/) - Icons and photos for everything
 * [Sorted Colors](https://enes.in/sorted-colors/) - a website for finding HTML colour names
 * [uiGradients](https://uigradients.com) - Colour gradient generator
-
-## Others
-* [Apartments-in](https://www.apartments-in.jp/fukuoka) - A website for easily finding apartments in Fukuoka
-* [Akiyahopper](https://akiyahopper.com/) - A website for finding abandoned houses for sale in Japan
