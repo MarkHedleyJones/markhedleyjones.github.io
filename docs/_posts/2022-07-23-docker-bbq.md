@@ -3,8 +3,8 @@ layout: project
 title:  "Docker-BBQ"
 date:   2022-07-23 19:12:00 +0000
 permalink: /projects/docker-bbq
-featureimage: logo.svg
-thumb: logo.svg
+featureimage: logo.webp
+thumb: logo.webp
 description: A set of bash scripts for creating and running templated docker projects
 excerpt_separator: \{% endhighlight %\}
 ---
