@@ -26,10 +26,10 @@ layout: default
           {% endfor %}
         {%- endif -%}</p>
         {%- if page.image -%}
-          <img style="max-height: 400px" alt="Project logo" src="{{ page.image}}"/>
+          <img style="max-height: 400px; border-radius: 0.5rem;" alt="Project logo" src="{{ page.image}}"/>
         {%- endif -%}
         {%- if page.featureimage -%}
-          <img alt="Project logo" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media{{ page.permalink }}/{{ page.featureimage }}"/>
+          <img style="border-radius: 0.5rem;" alt="Project logo" src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media{{ page.permalink }}/{{ page.featureimage }}"/>
         {%- endif -%}
     </header>
     <hr style="color: #CCC; margin: 20px 0">
