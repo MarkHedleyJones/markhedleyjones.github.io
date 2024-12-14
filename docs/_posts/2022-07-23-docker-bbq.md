@@ -37,7 +37,7 @@ My local development environment for [this website](https://github.com/MarkHedle
 ## Demonstration
 This clip is a little out-of-date, but it shows the general idea of the project.
 
-![](https://camo.githubusercontent.com/46521bd0959c1b7347439da0c87cacf38846edc036de2872f03c4eaa36522583/68747470733a2f2f7261772e6769746875622e636f6d2f6d61726b6865646c65796a6f6e65732f646f636b65722d6262712f6d61737465722f6d656469612f64656d6f2e676966)
+![](https://camo.githubusercontent.com/6fcee0f8047f64a59afd1b93ad59e6bfa9d6cf7081e65274c51bc26294d0e6e9/68747470733a2f2f7261772e6769746875622e636f6d2f6d61726b6865646c65796a6f6e65732f646f636b65722d6262712f6d61737465722f6d656469612f64656d6f2e676966)
 
 <p style="text-align: center;">
   <a style="
