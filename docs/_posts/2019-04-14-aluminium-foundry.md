@@ -10,34 +10,43 @@ description: Melt aluminium with a home-made aluminium foundry
 
 After taking inspiration from a number of furnaces seen you YouTube, I decided to build a furnace, or home foundary, for melting aluminium. I didn't have anything in-particular that I wanted to cast, but was just generally interested in creating a foundary hot enough to melt metal.
 
-
 # Electric Foundry
 
-The first version of the furnace was electric. I sourced high-temperature bricks & tiles from firebricks.co.nz, capable of withstanding a termperature of 1000 degrees, and electric element wire from ebay. To hold the furnace together I sourced workshop shelving from Bunnings which bolted together like Meccano. The photo on the left shows the electric element wire being embedded in the fire-bricks as they are being cemented together. The photo on the right shows the final unit ready to turn on. As a crucible, a section of 40mm box-section mild steel was cut and welded to a steel plate. Two holes were drilled into the sides of the crucible, which allowed the tongs to lock-in for raising and lowering into the furnace, as well as pouring the moltern aluminium out.
+I settled on a design of electric furnace as it seemed to me to be the easiest and safest method. I sourced high-temperature bricks & tiles from firebricks.co.nz, capable of withstanding a termperature of 1000 degrees Celsius, and electric element wire from Ebay. To hold the furnace together I sourced workshop shelving from Bunnings Warehouse which bolted together like Meccano. The photo on the left shows the electric element wire being embedded in the fire-bricks as they are being cemented together. The photo on the right shows the final unit ready to turn on. As a crucible, a section of 40mm box-section mild steel was cut and welded to a steel plate. Two holes were drilled into the sides of the crucible, which allowed the tongs to lock-in for raising and lowering into the furnace, as well as pouring the moltern aluminium out.
 
-[![Assembly of electric furnace](https://lh3.googleusercontent.com/QyGy0mfDWXbJa-BX3bd-dQ8yQGPxr9E7FnBRvO-_4HmDLi7Phng_bFpQxH4ScJUbRshxFn6RajXTD5tgl4af_AHGomwfGulrlp9hbTxnKgAaIO33nsrsWDl85el1wC0VZZk2KbZuG1f5BygJkLAT4GSKGO_6me0-9A6KIgRlrydSOR3TAdISqdKmc_Sc7DYn0ZT5sTwYopJTnGyEV5jK5uXrflLkuZrggntLNFucndITIkLKjzUV_xEVL10WC--UFfoGXruQOV0RK2u9AqZjjJjRmZFcxPxoLxpRk6K9f8ozv_jpNw25YRpQYHaTtVE-mNqj1y74AzFUf6sNF_MmI-zpnHc06WBFNadZTNOgOuRqaj-pe1QXfP0p4RNwdqmumf2MvgKjLF7cLaF8rXZ_nUZ4gLwk_c6oIEo9p64KXsYljBwTZFcibibdkGm7io0NrfpbEMR5J_Hlw53qpWpV2TtKE8UwEWT_H08_NHazFMBvQRqKkuzEaXCEanU_fsdnBVRWMe6IfEraFqLsGasKnVecWyCm9SOJORB2-GKEUERNtsEcorpWecV7TSwfdgS7hZ9CFCF1zOTQNKU-SyhkUXi4pk1bbgZfcabxE3EINzpklqcl3XIGQ6lkvH6W2-3N_348aafOgL4Jy4NT0S7QTU49jlHpy_bG1hJTtdo2cx1DjcrcWebEXOBkOw9qtAEAODEzgqlhQ2fGHFGlPngW8nbMQQ=w1390-h1043-no){:width="49.7%"}](https://lh3.googleusercontent.com/QyGy0mfDWXbJa-BX3bd-dQ8yQGPxr9E7FnBRvO-_4HmDLi7Phng_bFpQxH4ScJUbRshxFn6RajXTD5tgl4af_AHGomwfGulrlp9hbTxnKgAaIO33nsrsWDl85el1wC0VZZk2KbZuG1f5BygJkLAT4GSKGO_6me0-9A6KIgRlrydSOR3TAdISqdKmc_Sc7DYn0ZT5sTwYopJTnGyEV5jK5uXrflLkuZrggntLNFucndITIkLKjzUV_xEVL10WC--UFfoGXruQOV0RK2u9AqZjjJjRmZFcxPxoLxpRk6K9f8ozv_jpNw25YRpQYHaTtVE-mNqj1y74AzFUf6sNF_MmI-zpnHc06WBFNadZTNOgOuRqaj-pe1QXfP0p4RNwdqmumf2MvgKjLF7cLaF8rXZ_nUZ4gLwk_c6oIEo9p64KXsYljBwTZFcibibdkGm7io0NrfpbEMR5J_Hlw53qpWpV2TtKE8UwEWT_H08_NHazFMBvQRqKkuzEaXCEanU_fsdnBVRWMe6IfEraFqLsGasKnVecWyCm9SOJORB2-GKEUERNtsEcorpWecV7TSwfdgS7hZ9CFCF1zOTQNKU-SyhkUXi4pk1bbgZfcabxE3EINzpklqcl3XIGQ6lkvH6W2-3N_348aafOgL4Jy4NT0S7QTU49jlHpy_bG1hJTtdo2cx1DjcrcWebEXOBkOw9qtAEAODEzgqlhQ2fGHFGlPngW8nbMQQ=w1390-h1043-no) [![Assembled electric furnace](https://lh3.googleusercontent.com/HaBfR46oYi3D-fc0HK86vk59UQnbbdb279T-meJ7x4ZCerW_x8DVMFeHxAvViiW6rlUpPinoqMuT8Ap926wpkua2_-E65ITQLm5izFlYNduoXEEAwDF9ezVPq31j400uC6ag1DwQDY9M42nY4xu85jfwoirSfM6QcPbj9DBxvvu9KPVUepdGMkcDxzoE3BgJaylriaYCCh3zqMyFHGZZLCG_SjwaLPIOb3JUzTW7rUaa4xsahHx0-eu9Yv0EhkEd-RYZAhGnneLPTqaqBc9fBUsn3-1lcxWrPt_5_AstJWJTOOtDRA9a48peCm1npGwIuuG_HnV9B5gztw81Oo5wABFZV4hUqd6V3iKCslepaIjEM3JJBaRKH3j7UdQX2ym-kvkDmh0tqFHKVgLYhVwO40vgkqKXmpydeaWktfxmV51gxL3e_3Jeb6MJ4C_zD2X5CI-3FomP8i2RgqbwqtDPQkDUg1fszor2bhUVXXUGh0Kt9YtwRjkEq8aJZ9mqeFbqtzW0F1XatYN0k0dON5Ah6RYkZa-p6buuQkCsTy8MeIPlj3knaNazAvhXbMOaMggJxCZ73QyocMJJ_lvH-h_of6xc5yOnJX7WYmfBBuTIodwaoPtFvq11x2eh7FN4kByt5fNCTBdK_-bSab-MbcREcw8HRtR2MXNVo8pSBjdom-_9sW61saG20iGba6P19eGjGbs-ueiIf2f5KhCftBfnwqXqsw=w1390-h1043-no){:width="49.7%"}](https://lh3.googleusercontent.com/HaBfR46oYi3D-fc0HK86vk59UQnbbdb279T-meJ7x4ZCerW_x8DVMFeHxAvViiW6rlUpPinoqMuT8Ap926wpkua2_-E65ITQLm5izFlYNduoXEEAwDF9ezVPq31j400uC6ag1DwQDY9M42nY4xu85jfwoirSfM6QcPbj9DBxvvu9KPVUepdGMkcDxzoE3BgJaylriaYCCh3zqMyFHGZZLCG_SjwaLPIOb3JUzTW7rUaa4xsahHx0-eu9Yv0EhkEd-RYZAhGnneLPTqaqBc9fBUsn3-1lcxWrPt_5_AstJWJTOOtDRA9a48peCm1npGwIuuG_HnV9B5gztw81Oo5wABFZV4hUqd6V3iKCslepaIjEM3JJBaRKH3j7UdQX2ym-kvkDmh0tqFHKVgLYhVwO40vgkqKXmpydeaWktfxmV51gxL3e_3Jeb6MJ4C_zD2X5CI-3FomP8i2RgqbwqtDPQkDUg1fszor2bhUVXXUGh0Kt9YtwRjkEq8aJZ9mqeFbqtzW0F1XatYN0k0dON5Ah6RYkZa-p6buuQkCsTy8MeIPlj3knaNazAvhXbMOaMggJxCZ73QyocMJJ_lvH-h_of6xc5yOnJX7WYmfBBuTIodwaoPtFvq11x2eh7FN4kByt5fNCTBdK_-bSab-MbcREcw8HRtR2MXNVo8pSBjdom-_9sW61saG20iGba6P19eGjGbs-ueiIf2f5KhCftBfnwqXqsw=w1390-h1043-no)
+![IMG_20160828_095713](/media/aluminium-foundry/IMG_20160828_095713.webp)
+
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+<!-- <img src="/media/aluminium-foundry/IMG_20160828_095731.webp" alt="IMG_20160828_095731" style="width: 49%;"> -->
+<!-- ![IMG_20160828_104715](/media/aluminium-foundry/IMG_20160828_104715.webp) -->
+<img src="/media/aluminium-foundry/IMG_20160828_104715.webp" alt="IMG_20160828_104715" style="width: 49%;">
+<img src="/media/aluminium-foundry/IMG_20160828_103840.webp" alt="IMG_20160828_103840" style="width: 49%;">
+</div>
+![IMG_20160828_125740](/media/aluminium-foundry/IMG_20160828_125740.webp)
+<!-- [![Assembly of electric furnace](/media/aluminium-foundry/IMG_20170122_174136.webp){:width="40%"}](/media/aluminium-foundry/IMG_20170122_174136.webp) [![Assembled electric furnace](/media/aluminium-foundry/IMG_20170122_174324.webp){:width="40%"}](/media/aluminium-foundry/IMG_20170122_174324.webp) -->
 
 
 Unfortunately, after running the furnace for about 30 minutes, the electric element wire burnt itself out. After replacing the element, the same problem occured. I believe this was due to localised overheating of the wire, at-least partly because of how I had imbedded it into the insulative fire-bricks. Essentially, the heat couldn't radiate out and away from the element quick enough. Replacing the element wire was quite difficult since the bricks had been cemented together.
 
-![Burnt-out heating element](https://lh3.googleusercontent.com/QX7zUdl-s_E8PXDnNQq5ra3RYAhs-cA0GlquKqWenw-jJRHa4j6Wc9HJy7tV067YDiNN7f8mwyE88OiNYPiYDCupwtN8v3yvR3D-p5lvAatK7FAap8Hd1Maajfe9qBJtIXWHjm9NFWgXLfITxtAtFi9nI6kqNyCzn969NIbV8mM6XqwkAoSA6bVODGZ20g1SjY7QsYa05oj9Ii5cEibNK7XLdk_val4VPbKyA1EbAUdfCODbch0eejbuYzT4gbsT2wyunIaWErRkkQWtxc4E2uobB27mZzByZxYLmULSKlKsUJJ_rk42McY4ReaVrINFqA0-I23Y9Lw1760Sb5lJfL8bsjsEsn3AH-_APl5VI0cOvXhJwgSoZG-Mdksax6M6a-FcU10U2RmioMaGFnnzolQ3v3fVLJVckb6TMgKNrlVxub0F8C16TSXhoiVeJLpMxa8wn_hhfASB6Y-vXKraCnTCRYeyWSouH7ocJo3ypxZ4WXwIQmw7pjkzTt-DBciVxuQmPAYRULzhhjzE0UU0XJDk7U3LtGSRFPfQIAkUCSeHoiYKIW4Pu7SJuEsHnOCDct1KUv1dcXazuvWt27E2mGBTbzqySG3gEG95YnuUqRH0oA7czdI4vw1n43FVBnQmfrT390WtFVfVtT8-n-uOsfb6_N3lpMciRXzkHL0CKayCiuOtUZ6rW23Gd-X6Bp0TCfcZWs5OercTa7fw9kAcrwuDgg=w1390-h1043-no)
+![Burnt-out heating element](/media/aluminium-foundry/IMG_20160911_104849.webp)
+<!-- ![Burnt-out heating element](/media/aluminium-foundry/IMG_20170119_070014.webp) -->
 
 
 In the end, I broke the bricks apart and added an entry hole for a propane torch.
 
-![Propane powered foundry](https://lh3.googleusercontent.com/7X6ICg8mRFtTfJS5SIoEzx6DRcVW06SfCNYWfY2BwZZ7rjTe_pPMSqm88tSS2qy9MdrVYdAbU_da7e7WuihTj-OH7IvwYAvS_lSMJixH1-UumPpsSpeNYW4ELChKNPZGwZ0ZoiEl1yNPhBryiEpEKA2ITZkLRKz3HlDCAX65WHDpCNnIijof79n7xNTSvmrHQqKVyeHfvEiS78sXkDkMTC3Ammb4saA1BBUP7uBkpIJeuGsbKuF9oYM-o4Jji7_lWp10YgxHeM_HgeKJP8-GdNtuEBFzpfwcozIg-YeNu2jmmKc5QbF84BYrds9xaGJOx1vbCNU8_AF8hxvVItj53FcSB3MGW_3_QwxQVKDsPqCq6UqzfKGFJtHLd_jFfdYPZ6ySCkDSJ9SngSz6ae9TBoTKPqyMcoPy_Sv92fIh31Fny8TlYj00TTiUbnzKGpWh1m6TgJrg7r5DhUFS8bosvtyVamrI8KDt9K1kj7ZDXn3Q0YAni2ygQuF2pc7NqWNdT6q2KncAihn6PMFDOL8uVOJh9zTvoy7Pps9qqNXIZZxh5GWHleJtWev739P1q5OyUKBp7tKiEbF6_xV2mnzT9PsuB8Q_B4hVSPFXSI5-6hSSpCbpOyvU0FaT2EsN5kDUnsN7n5oOCQd21BcS5RXQHn3yPJaPVerXFkiMOFdKIJDJU7FnHfMcAOLqlSorEqbtAXw9bEFKqgo1zJ0pgwSOA-nOqQ=w1390-h1043-no)
+![Propane powered foundry](/media/aluminium-foundry/IMG_20170305_104710.webp)
 
 # Propane Foundry
 
 For the second version of the foundary I decided to have the propane torch come up from the under-side of the furnace to keep the heat even. I reused the same frame, but instead of using fire-bricks, I used fire-tiles. Once the angled edges were cut into the tiles they slotted into the frame quite well.
 
-[![New burner position](https://lh3.googleusercontent.com/4uLXLLNCk4aKd9erXoB7UpCFulbATggNzLneDbeTj8rMlFPw-qPUdhHHsniH_6M33DWGIkwhMij2ekWgOrWOq2fHDS9EUhOaUk3i5eQRoH50fH1xkO0gWlY7FAZrOnnDOoDgaZp9sfoQulsYlDKUrlxJAlH8aZolZH59wlJLx0omTBod9eWCY9_S0dLfSMu0nSniK0TBSE1uQdI3Az3mgiJ4gqwcxOJZaQnOdB12lZRzL0syTemI_9eYS0IzbJdITCGgOnRMb1CjGvdXQwazq2lKBxPIWOhJhQYSYGbuppEKnLkvdMY7k_ov055a5y4Dp0pSsYf4TWUjKQ145PJaPw5qlIrOtLB622cQedOV6HJ8kuy2I_NStwVGq5_gyoo1PvDqAr-e2i0xpl4fkoUAXq2jMW_g8qk9HixbVtOiTM_588aPU5xa16MTmo6ZsxLjIlm68iNuv0rawjkZQ9V_f430BHUZ0s5tAcXajECKtwPFYVUHCCUadc2U6IMyOoR2me6vqSg3i9ixmJbq3QW8eqTOiaZeCDMxsa46ynZ9exXNRxWDVBJdSn6yaW139ODDg1QOKFvvw1EAeIG2j71nYn_KzflERvKT3T1b_UUyQfK-qL5Wh9q06K-Gdc3RS0zYeve3JyePcrzp4pfnDsNL_2AwvSFRM8kQUV2kve4d-BW35KsZXEim0SdFJVMN8kYJMIAFkQ7lRigANzXPnAH9U_gYvA=w1390-h921-no){:width="49.7%"}](https://lh3.googleusercontent.com/4uLXLLNCk4aKd9erXoB7UpCFulbATggNzLneDbeTj8rMlFPw-qPUdhHHsniH_6M33DWGIkwhMij2ekWgOrWOq2fHDS9EUhOaUk3i5eQRoH50fH1xkO0gWlY7FAZrOnnDOoDgaZp9sfoQulsYlDKUrlxJAlH8aZolZH59wlJLx0omTBod9eWCY9_S0dLfSMu0nSniK0TBSE1uQdI3Az3mgiJ4gqwcxOJZaQnOdB12lZRzL0syTemI_9eYS0IzbJdITCGgOnRMb1CjGvdXQwazq2lKBxPIWOhJhQYSYGbuppEKnLkvdMY7k_ov055a5y4Dp0pSsYf4TWUjKQ145PJaPw5qlIrOtLB622cQedOV6HJ8kuy2I_NStwVGq5_gyoo1PvDqAr-e2i0xpl4fkoUAXq2jMW_g8qk9HixbVtOiTM_588aPU5xa16MTmo6ZsxLjIlm68iNuv0rawjkZQ9V_f430BHUZ0s5tAcXajECKtwPFYVUHCCUadc2U6IMyOoR2me6vqSg3i9ixmJbq3QW8eqTOiaZeCDMxsa46ynZ9exXNRxWDVBJdSn6yaW139ODDg1QOKFvvw1EAeIG2j71nYn_KzflERvKT3T1b_UUyQfK-qL5Wh9q06K-Gdc3RS0zYeve3JyePcrzp4pfnDsNL_2AwvSFRM8kQUV2kve4d-BW35KsZXEim0SdFJVMN8kYJMIAFkQ7lRigANzXPnAH9U_gYvA=w1390-h921-no) [![Top-down view of burner entry](https://lh3.googleusercontent.com/pPytLBvpqk9J-lme6NZaKmmVIQwxkthwy95ZBS3xveLHFdDJgOtKuyiTtPrH4hb_akQYYuTn9Mu7JMDFwx2E3wo60urWkNDs_2PVjhCFlX2B0F3OZqSPj0dIo7KrQ902NCBk8WRVGj9qORatojuCgyK47IM6yo9qrll9c4C01oaIbuP2NvEIwi55AMXYTdLOcANiku7ZjwtaW3pnvd-4hb2kl0CuHzO5yXOqJPHV8HyF_PmEpX4QdCrBXunW3C4VdC9kpUwJAIkXT0L-xofswIoCORxVdogp_ti5YA6KlKj6HN7l657mwUcvaoQWdI8Ixogb-8Vw60mHeKoSfD5zLwaH5_cSCg9rKHDjTK33fG9ybFriNgMB3Unmm7RmBbkWT5KTxQixRB9K2dLxGX64iXqA66E9iV5hEecFJlBDwaIOezxR-5emSZwKrakLpkua-3k2FWTHRkzos1c8u_u8qH_-Xv9KdjKuiLkF-NGrIcbd3FqycyQ0i57F5IIjVTiZZCjZGPCGUE6GlUi52o_fbMH4YWoAUX6p2b2V5Nm17zCL8C1RG7zd810kr4wJfmRJBhyVIacuSvGYiVfwOJuDGHwJiTKdLW2PScTqANJy4css3VqOO6ZRwEy4xyOv1ayfSn7PmIJapv7Qn-C9VYy_jzqoSrP8mabrYaPlOQllSuCteibKF7cIr5i9MqN3T-_YGLMAXxiEw92-2udvBU0XxPLHng=w1390-h921-no){:width="49.7%"}](https://lh3.googleusercontent.com/pPytLBvpqk9J-lme6NZaKmmVIQwxkthwy95ZBS3xveLHFdDJgOtKuyiTtPrH4hb_akQYYuTn9Mu7JMDFwx2E3wo60urWkNDs_2PVjhCFlX2B0F3OZqSPj0dIo7KrQ902NCBk8WRVGj9qORatojuCgyK47IM6yo9qrll9c4C01oaIbuP2NvEIwi55AMXYTdLOcANiku7ZjwtaW3pnvd-4hb2kl0CuHzO5yXOqJPHV8HyF_PmEpX4QdCrBXunW3C4VdC9kpUwJAIkXT0L-xofswIoCORxVdogp_ti5YA6KlKj6HN7l657mwUcvaoQWdI8Ixogb-8Vw60mHeKoSfD5zLwaH5_cSCg9rKHDjTK33fG9ybFriNgMB3Unmm7RmBbkWT5KTxQixRB9K2dLxGX64iXqA66E9iV5hEecFJlBDwaIOezxR-5emSZwKrakLpkua-3k2FWTHRkzos1c8u_u8qH_-Xv9KdjKuiLkF-NGrIcbd3FqycyQ0i57F5IIjVTiZZCjZGPCGUE6GlUi52o_fbMH4YWoAUX6p2b2V5Nm17zCL8C1RG7zd810kr4wJfmRJBhyVIacuSvGYiVfwOJuDGHwJiTKdLW2PScTqANJy4css3VqOO6ZRwEy4xyOv1ayfSn7PmIJapv7Qn-C9VYy_jzqoSrP8mabrYaPlOQllSuCteibKF7cIr5i9MqN3T-_YGLMAXxiEw92-2udvBU0XxPLHng=w1390-h921-no)
+[![New burner position](/media/aluminium-foundry/IMG_20170305_104802.webp){:width="49.7%"}](/media/aluminium-foundry/IMG_20170305_104802.webp) [![Top-down view of burner entry](/media/aluminium-foundry/IMG_20170122_174157.webp){:width="49.7%"}](/media/aluminium-foundry/IMG_20170122_174157.webp)
 
 A length of wood was bolted to the frame to keep the burner in position (visible in the right-hand image)
 
 The burner itself was made from a combination of pneumatic tool fittings, a MIG welding handpiece insert that I braised to the inside of a hose connection fitting, and a long pipe with tap that I purchased from the BBQ section of Bunnings Warehouse. The adjustable propane requlator was purchased from eBay.
 
-![Final Furnace Design](https://lh3.googleusercontent.com/SK6x5W5Op0IiBuiVpfLScmEopRTZCR0enfDTx3kCMxV3XbZDLuO4-yQO1p0CKWd-cvAoGbBbSUJAJsJCYmdSshgpBVoV90kcSUJzAqQ4k5OY0unt_xq6O0Zv_T8jSxHV0dU_poH8x5x71GOM0-eL-qImcb7WLzL0IlqaTWaA9IQ-z6L87EelT5pKtRqomEB6BkfFKGduwmZ0XhyachK65mRbm32xnGQLHQEeU4_Og2iKyUHYY9Kdv84z-9RTj458EvL4L-pZliJeCVgx8r-PeexDdpaO__YXOphOSBWL3khCrz8IUUMgTUws6vN9zTVqFHhk7Ob4_wYvG1vVWofgopYFKWUmYjoORhsfIUmosMeUnsC8I5l5Et63ipR003l86KnZd_PnngadASUN6WpS9Z6GHTBxt9nEchdVkQCM0pUwumJ2EoZTwu5-6uhotRDTtTxoPcF0MKJ8J8lsx4ZHnH4vkkyWf3uMgilUKgcXCeQBq1wBDMuEHULlls8LKw01C7iPYxRgYddZeaZ_WtkRGdId_4mhqVp4jZOihr5mJnoIqFyF0gAekv1Lu1774plf12v6KLGN8q3hOMbiJih562So85Z87MiFRswDeTR1knRmx2VYGxU9z_A8xdir_Arr2bvr1FnjmFbrAYZUIxzNJzhBdCqjrwlby9w3fLNgySDf3y_MrHF8PaV83Ce5OfWqIeQdJMitCKx8omYP6MmQ03PQlQ=w1390-h921-no)
+![Final Furnace Design](/media/aluminium-foundry/IMG_20170305_104802.webp)
 
 # Final Result
 
@@ -45,10 +54,60 @@ The burner itself was made from a combination of pneumatic tool fittings, a MIG 
 
 As a trial, I had made a stainless steel mold to see if I could cast a small hexagon. It was made from 8mm laser cut stainless steel plate that was stacked to make a hexagonal cavity. The animation below shows how it was constructed.
 
-![Stainless Steel Mold Trial](https://lh3.googleusercontent.com/i7oq0PS18aX5lL7l45OsME5OOukbyCILtFwrEkJUgmEXcf4WGc-3tpDNGwMj2WYybMzM7B-hGDnpKliPOhI9-T7j9aAxmnw9hzOqR0HwX0lh7xfuKt6EoN0cTa-Otptu0lwgdshQngsXFtF4fGSI3_IKge7OhgYX8sP2XFJPx1eBGvQwkVw_Kl4n3r0f_heFU7p7HWO9UwmsY0tJknCVKCLH1ft9kmZENl_h7X-evd_zErei_AYvvuPrAvH8F8qZDu0EnLT6sK_B3VkTaFOIsb-RLgJsCRcTO4qc4hVCwcENMTm__ZazLaVgXDUmEeHTXF2PHxGZOcsjcDBJli1W_2h4zsZwTs6u18sxgNE36HbH_Ofq8Et4PYxqy2sdEj9RDKOEje1Niz7TvYQBOF-ftjmF39haxIYM6kt3aYbxdMil8pb1BMkOvLBOCP937x4AwXZ4hyF5VorFQv7zLhsH5A-Y21kK7l7FOihcC9uisTv-6IjcsjSt5bS2_sGYxnqR7qyKcrphj9KUWn8zfX4mqdZgcDZK9L2_e90B8H1RaOmXdaqhIsVEi2rwBBGg-KWPto2T7vgsuB-09VdeyCzR9naBAjLvM77kP1fZN9vvNWdwNQwdlawsWw1yQDC_DcZbKJV4pEpBhds8NiW7oDptKFXH_QyTrF-ISz6hHKjcj_Shr1YTWs-rtRCjB0ienorCGoZ0WRSrf1jv_F4f3zeZwj40dg=w972-h644-no)
+![Stainless Steel Mold Trial](/media/aluminium-foundry/IMG_20170122_174324.webp)
 
 The idea was to pour aluminium in one of the holes in the top until the aluminium became visible at the exit hole. The image below shows the mold bolted together.
 
-![Aluminium Mold](https://markhedleyjones.com/storage/projects/furnace/IMG_20170305_120411.jpg)
+![Aluminium Mold](/media/aluminium-foundry/IMG_20170305_120411.webp)
 
 The first problem was that as heat was lost to the mold, the aluminium would solidify inside the sprue and cause a blockage. To try and solve this, I heated the mold up to roughly the same temperature as the aluminium and tried again. This time the aluminium made it part-way into the cavity, but still didn't fill the hexagonal volume. In a third attempt, instead of trying to pour aluminium into the cavity I melted the aluminium while it was inside the mould's sprue. This approach still didn't fill the cavity with aluminium, infact the aluminium just pooled inside the sprue. My theory is that the surface tension of the molten aluminium was too high, preventing it from running down into the narrow channels of the mold. I decided that in order to make this work, a forced injection method would be required; beyond the scope of my experiment.
+
+---
+
+
+
+
+<!-- ![IMG_20160828_095800](/media/aluminium-foundry/IMG_20160828_095800.webp) -->
+
+
+
+
+
+
+<!-- ![IMG_20160911_104837](/media/aluminium-foundry/IMG_20160911_104837.webp) -->
+
+
+
+<!-- ![IMG_20160911_104924](/media/aluminium-foundry/IMG_20160911_104924.webp) -->
+
+<!-- ![IMG_20160911_110336](/media/aluminium-foundry/IMG_20160911_110336.webp) -->
+
+![IMG_20161106_151440](/media/aluminium-foundry/IMG_20161106_151440.webp)
+
+![IMG_20161106_151450](/media/aluminium-foundry/IMG_20161106_151450.webp)
+
+![IMG_20161106_152809](/media/aluminium-foundry/IMG_20161106_152809.webp)
+
+![IMG_20161106_152910](/media/aluminium-foundry/IMG_20161106_152910.webp)
+
+![IMG_20170119_070014](/media/aluminium-foundry/IMG_20170119_070014.webp)
+
+![IMG_20170122_174136](/media/aluminium-foundry/IMG_20170122_174136.webp)
+
+![IMG_20170122_174157](/media/aluminium-foundry/IMG_20170122_174157.webp)
+
+![IMG_20170122_174324](/media/aluminium-foundry/IMG_20170122_174324.webp)
+
+![IMG_20170305_104710](/media/aluminium-foundry/IMG_20170305_104710.webp)
+
+![IMG_20170305_104717](/media/aluminium-foundry/IMG_20170305_104717.webp)
+
+![IMG_20170305_104733](/media/aluminium-foundry/IMG_20170305_104733.webp)
+
+![IMG_20170305_104747](/media/aluminium-foundry/IMG_20170305_104747.webp)
+
+![IMG_20170305_104802](/media/aluminium-foundry/IMG_20170305_104802.webp)
+
+![IMG_20170305_104812](/media/aluminium-foundry/IMG_20170305_104812.webp)
+
+![IMG_20170305_120411](/media/aluminium-foundry/IMG_20170305_120411.webp)
