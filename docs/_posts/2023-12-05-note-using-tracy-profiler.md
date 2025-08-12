@@ -70,7 +70,7 @@ Execute this binary to start the viewer.
 ./Tracy-release
 ```
 You should now have a profile viewer running on your machine like:
-![profile_viewer](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/2023-12-05-note-using-tracy-profiler/profile_viewer.png)
+![profile_viewer](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/2023-12-05-note-using-tracy-profiler/profile_viewer.webp)
 
 
 ### Profiling your application
@@ -82,4 +82,4 @@ sudo ./<your_project_executable>
 ```
 You should now be able to see a profile like:
 
-![profile_viewer](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/2023-12-05-note-using-tracy-profiler/captured_profile.png)
+![profile_viewer](https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/2023-12-05-note-using-tracy-profiler/captured_profile.webp)
