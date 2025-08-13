@@ -1,211 +1,462 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 ---
 
-<div style="position: relative">
-  <div style="position: absolute; top: -90px; right: 20px; width: 25%; border:rgb(0, 0, 0); padding: 2px">
-    <img src="https://avatars.githubusercontent.com/u/3971384"
-         style="float: right; border-radius: 9999px; 	outline-width: 3px; 	outline-color: #a7a7a7; 	outline-style: solid; 	outline-offset: 2px;" />
-  </div>
-
-  <h2>Work History:</h2>
-  <h3>Robotics Software Engineer - Japan</h3>
-
-  <p>
-    Currently I am working at <a href="https://www.seqsense.com/">SEQSENSE</a> / シークセンス writing software for our SQ2 and Forro robots.
-    SQ2 is an autonomous security robot that carries out scheduled, pre-defined patrols each day in large office buildings.
-    Forro is a delivery robot developed as part of a joint venture with Kawasaki Heavy Industries.
-  </p>
-  <figure>
-    <img style="margin-bottom: 5px"
-         alt="SQ2 at Narita Airport"
-         src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/1499339.webp">
-    <figcaption>SQ2 performing a patrol at Narita Airport (Tokyo)</figcaption>
-  </figure>
-
-  <p>
-    Both models of robot utilise a custom design of rotating turntable with three 2D LiDARs for environmental perception and navigation.
-    Additionally, the robots have wide-angle cameras placed around its structure to achieve a 360-degree field of view.
-    Robots feeds real-time data to a web-based platform, enabling security personnel to monitor patrols or jobs and view the robot's activities at any moment.
-    The robot is capable of self-docking for battery recharging and is equipped to use designated elevators, facilitating multi-level patrol operations.
-  </p>
-
-  <div class="row">
-    <div class="column"
-         style="padding-right: 10px; padding-bottom: 10px;">
-      My work focuses on a 3D object detection and tracking system and our in-house SLAM-based mapping solution.
-      The following shows a prototype interface for our SLAM system that I developed to run on the robot.
-      It allowed users to run SLAM in real-time and view the map as it is being built, with scan quality estimation shown in green.
-      The interface was designed to be displayed on a tablet or smartphone that was mounted to a Playstation controller, hence the circle and cross logos on the buttons.
-      Unfortunately, the system didn't make it onto our production robots.
-    </div>
-    <div class="column"
-         style="text-align: center;">
-      <figure style="width: 100%">
-        <video class="column"
-               style="width: 100%; margin-bottom: 10px"
-               id="bgVideo"
-               controls
-               preload="true"
-               autoplay
-               loop
-               muted>
-          <source src="https://github.com/MarkHedleyJones/markhedleyjones.github.io/raw/master/media/about/realtime-slam-interface.mp4"
-                  type="video/mp4">
-        </video>
-        <figcaption>Web-based interface for SLAM mapping</figcaption>
-      </figure>
-    </div>
-  </div>
-
-  <hr style="clear: both; border: 1px solid rgba(0, 0, 0, 0);">
-
-  <hr style="border: 1px dashed rgba(0, 0, 0, 0.8);">
-
-  <h3>Robotics Post-Doctoral Researcher - New Zealand</h3>
-
-  <p>
-    As a post-doctoral researcher for the <a href="https://www.waikato.ac.nz/">University of Waikato</a> and <a href="https://www.auckland.ac.nz/">The University of Auckland</a>, I contributed to the development of a robotic system for the kiwifruit industry.
-    This project was a collaboration between the universities, Plant and Food Research, and Robotics Plus Ltd and was funded by the Ministry of Business, Innovation and Employment.
-    As a team of about 12 people, we developed robotics for autonomously pollinating and harvesting kiwifruit as well as a multi-purpose platform to which we could attach the pollinating and harvesting robots.
-  </p>
-
-  <figure>
-    <img alt="AMMP"
-         src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/robotics-orchard.webp" />
-    <figcaption>The multi-purpose platform in a kiwifruit orchard</figcaption>
-  </figure>
-
-  <h4>Autonomous platform</h4>
-  <figure style="float: right; margin: 10px 0 10px 10px; width: 50%">
-    <iframe width="100%"
-            height="214"
-            src="https://www.youtube-nocookie.com/embed/hUT4qLRqMBE"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-            style="margin-top: 5px"></iframe>
-    <figcaption>The unloaded platform driving around an orchard</figcaption>
-  </figure>
-  <p>
-    My area was the development of our multi-purpose platform, a mobile base for the kiwifruit harvesting and pollinating modules.
-    The platform was a hybrid petrol-electric vehicle capable of autonomous row-following in kiwifruit orchards by way of lidar based sensing of the orchard's structure.
-    It could drive fully electrically by way of six electric motor/gearbox units while providing AC and DC power outputs any mounted robotic systems.
-    Also, it had a carrying capacity of 1 tonne on its payload space, plus extra capacity to carry kiwifruit in the space between the rear wheels.
-  </p>
-  <hr style="clear: both; border: 1px solid rgba(0, 0, 0, 0);">
-
-  <h4>Kiwifruit harvesting</h4>
-  <figure style="float: right; margin: 10px 0 10px 10px; width: 50%">
-    <iframe width="100%"
-            height="214"
-            src="https://www.youtube-nocookie.com/embed/b4L-oMd0yVk"
-            title="YouTube video player"
-            frameborder="0"
-            allowfullscreen
-            style="margin-top: 5px"></iframe>
-    <figcaption>The project's final season of kiwifruit harvesting</figcaption>
-  </figure>
-  <p>
-    The kiwifruit harvester could identify kiwifruit in 3D using stereo cameras and artificial neural network, decide in which order to harvest the kiwifruit (to minimise damage to neighboring fruit), then instruct the custom robotic harvesting arms to take the fruit.
-    The system used stereo vision, neural networks, and robotic arms to pick kiwifruit from the vines.
-    See the video for a demonstration of the system in action.
-  </p>
-  <hr style="clear: both; border: 1px solid rgba(0, 0, 0, 0);">
-
-  <h4>Kiwifruit pollination</h4>
-  <figure style="float: right; margin: 10px 0 10px 10px; width: 50%">
-    <img alt="Pollination"
-         style="width: 100%; vertical-align: top"
-         src="https://raw.githubusercontent.com/MarkHedleyJones/markhedleyjones.github.io/master/media/about/pollinator.webp" />
-    <figcaption>The pollinator spraying a targeted cluster of kiwifruit flowers</figcaption>
-  </figure>
-  <p>
-    The pollinator could use the same cameras and neural-networks to identify flowers in 3D and then shoot pollen solution at flowers as the vehicle drove underneath.
-    The time-of-flight of the pollen solution was calculated for each shot so the pollen would hit the flower while the vehicle was in motion.
-    This animation shows the general process.
-  </p>
-  <hr style="clear: both; border: 1px solid rgba(0, 0, 0, 0);">
-  <p>
-    This was an incredible project to be a part of, and I am really proud of the work we did.
-    I learned a lot about robotics, machine learning, and the kiwifruit industry.
-    I also learned a lot about working in a large team and the importance of good communication and documentation.
-  </p>
-
-  <h2>Publications:</h2>
-  <ul>
-    <li>
-      <a href="https://www.sciencedirect.com/science/article/pii/S1537511019308141"><strong>Mark Hedley Jones</strong>, Jamie Bell, Daniel Dredge, Matthew Seabright, Alistair Scarfe, Mike Duke, Bruce MacDonald (2019). <em>Design and Testing of a Heavy-Duty Platform for Autonomous Navigation in Kiwifruit Orchards.</em> Biosystems Engineering</a>
-    </li>
-    <li>
-      <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21861">Henry Williams, Mahla Nejati, Salome Hussein, Nicky Penhall, Jong Yoon Lim, <strong>Mark Hedley Jones</strong>, Jamie Bell, Ho Seok Ahn, Stuart Bradley, Peter Schaare, Paul Martinsen, Mohammad Alomar, Purak Patel, Matthew Seabright, Mike Duke, Alistair Scarfe, Bruce MacDonald (2019). <em>Autonomous pollination of individual kiwifruit flowers: Toward a robotic kiwifruit pollinator.</em> Journal of Field Robotics.</a>
-    </li>
-    <li>
-      <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21890">Henry Williams, Canaan Ting, Mahla Nejati, <strong>Mark Hedley Jones</strong>, Nicky Penhall, JongYoon Lim, Matthew Seabright, Jamie Bell, Ho Seok Ahn, Alistair Scarfe, Mike Duke, and Bruce MacDonald (2019). <em>Improvements to and large‐scale evaluation of a robotic kiwifruit harvester</em>. Journal of Field Robotics</a>
-    </li>
-    <li>
-      <a href="https://www.sciencedirect.com/science/article/pii/S153751101830638X">Henry A.M. Williams, <strong>Mark H. Jones</strong>, Mahla Nejati, Matthew J. Seabright, Jamie Bell, Nicky D. Penhall, Josh J. Barnett, Mike D. Duke, Alistair J. Scarfe, Ho Seok Ahn, JongYoon Lim, Bruce A. MacDonald (2019). <em>Robotic kiwifruit harvesting using machine vision, convolutional neural networks, and robotic arms</em>. Biosystems Engineering</a>
-    </li>
-    <li>
-      <a href="http://doi.org/10.5281/zenodo.1002306"><strong>Jones, M H</strong>, Seabright, M, Barnett, J, Neshausen, G, Duke, M, &amp; Scarfe, A. (2017). <em>An Electrically Driven, Computer Controlled Robotics Platform for Orchard Use</em>. Poster Presentation at The International Tri-Conference for Precision Agriculture in 2017, Hamilton, New Zealand</a>
-    </li>
-    <li>
-      <a href="http://doi.org/10.5281/zenodo.1002294">Seabright, M, <strong>Jones, M H</strong>, Williams, H, Nejati, M, Barnett, J, Duke, M, … MacDonald, B. (2017). <em>Robotic harvesting of kiwifruit</em>. Poster Presentation at The International Tri-Conference for Precision Agriculture in 2017, Hamilton, New Zealand</a>
-    </li>
-    <li>
-      <a href="https://hdl.handle.net/10289/10617"><strong>Jones, M. H.</strong> (2016). <em>The Electrical Properties of Interfacial Double Layers</em> (Thesis, Doctor of Philosophy (PhD)). University of Waikato, Hamilton, New Zealand.</a>
-    </li>
-    <li>
-      <a href="https://researchcommons.waikato.ac.nz/bitstream/handle/10289/11289/Use%20of%20Electrofishing.pdf">Hicks, B. J., <strong>Jones, M. H.</strong>, de Villiers, J. E., &amp; Ling, N. (2015). <em>Use of Electrofishing for Capturing Invasive Fish.</em> In K. J. Collier &amp; N. P. J. Grainger (Eds.), New Zealand Invasive Fish Management Handbook (pp. 72–79). Hamilton, New Zealand: Lake Ecosystem Restoration New Zealand (LERNZ) &amp; Department of Conservation.</a>
-    </li>
-    <li>
-      <a href="https://hdl.handle.net/10289/8882"><strong>Jones, M. H.</strong>, &amp; Scott, J. B. (2014). <em>Feasibility of Harvesting Power To Run A Domestic Water Meter Using Streaming Cell Technology</em>. Presented at the 21st Electronics New Zealand Conference (ENZCon), 20 - 21 Nov 2014, Hamilton, New Zealand.</a>
-    </li>
-    <li>
-      <a href="https://hdl.handle.net/10289/8878"><strong>Jones, M. H.</strong>, &amp; Scott, J. B. (2014). <em>Scaling of Electrode-Electrolyte Interface Model Parameters In Phosphate Buffered Saline</em>. IEEE Transactions on Biomedical Circuits and Systems, 9(3), 441–448.</a>
-    </li>
-    <li>
-      <a href="https://hdl.handle.net/10289/8294"><strong>Jones, M.H.</strong> &amp; Scott, J.B. (2011). <em>The energy efficiency of 8-bit low-power microcontrollers</em>. In Proceedings of the 18th Electronics New Zealand Conference, ENZCON 2011, Massey University, Palmerston North, 21-22 November 2011, pp. 87-90.</a>
-    </li>
-    <li>
-      <a href="https://hdl.handle.net/10289/5442"><strong>Jones, M. H.</strong> &amp; Scott, J. (2011). <em>Design study of a thermocouple power sensor as a monolithic fin-line</em>. Paper presented at the 77th ARFTG Microwave Measurement Conference. Baltimore, Maryland; June 10 2011.</a>
-    </li>
-    <li>
-      <a href="https://hdl.handle.net/10289/4302"><strong>Jones, M. H.</strong> (2010). <em>Millimetre Wave Power Measurement</em> (Thesis, Master of Engineering (ME)). The University of Waikato, Hamilton, New Zealand.</a>
-    </li>
-  </ul>
-
-  <h2>Curriculum Vitae:</h2>
-  <p style="text-align: justify;">
-    My CV is always available and up-to-date.
-    <a href="https://github.com/MarkHedleyJones/CV/raw/main/MarkHedleyJones-CV.pdf"
-       style="width: 300px; height: 388px; display: block; position: relative; margin: 35px auto; padding: 0; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6) !important;">
-      <img alt="CV"
-           src="https://github.com/MarkHedleyJones/markhedleyjones.github.io/raw/master/media/about/cv-thumb.webp" />
-    </a>
-  </p>
-</div>
 <style>
-  div {
-    box-sizing: border-box;
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 40px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid #ddd;
+}
+
+.intro-text {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section {
+  margin: 80px 0;
+}
+
+.section-title {
+  font-size: 2em;
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.subsection {
+  margin: 60px 0;
+}
+
+.subsection-title {
+  font-size: 1.4em;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.work-content {
+  margin-bottom: 40px;
+}
+
+.work-content p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.media-container {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.two-column-layout .media-container {
+  margin: 0;
+  text-align: center;
+}
+
+.media-container img,
+.media-container video,
+.media-container iframe {
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.media-container figcaption {
+  margin-top: 12px;
+  font-size: 0.9em;
+  color: #777;
+  font-style: italic;
+}
+
+.two-column-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 40px 0;
+  align-items: start;
+}
+
+.two-column-layout > * {
+  vertical-align: top;
+}
+
+.two-column-layout p:first-child {
+  margin-top: 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.publications-section {
+  background: #fafafa;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 40px 0;
+}
+
+.publications-list {
+  list-style: none;
+  padding: 0;
+}
+
+.publications-list li {
+  margin-bottom: 0;
+  border-bottom: 1px solid #eee;
+}
+
+.publications-list li:last-child {
+  border-bottom: none;
+}
+
+.publications-list a {
+  display: block;
+  color: #0066cc;
+  text-decoration: none;
+  line-height: 1.5;
+  padding: 15px;
+  margin: 0 -15px;
+  transition: background 0.2s ease;
+  border-radius: 4px;
+}
+
+.publications-list a:hover {
+  background: rgba(102, 126, 234, 0.08);
+  text-decoration: none;
+}
+
+.cv-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.cv-link {
+  display: inline-block;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.cv-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd, transparent);
+  margin: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 0 15px;
   }
 
-  .column {
-    float: left;
-    width: 50%;
+  .two-column-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  .two-column-layout .media-container img,
+  .two-column-layout .media-container video,
+  .two-column-layout .video-container {
+    width: 100%;
   }
 
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
+  .section {
+    margin: 60px 0;
   }
+
+  .publications-section {
+    padding: 30px 20px;
+  }
+
+  .profile-header > div {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 15px !important;
+    align-items: center !important;
+  }
+
+  .profile-header {
+    margin-bottom: 30px !important;
+  }
+
+  .profile-header img {
+    order: -1;
+  }
+
+  .mobile-spacing {
+    margin-top: 40px !important;
+  }
+}
 </style>
+
+<div class="wrapper">
+  <div class="section" style="margin: -20px 0px 5px 0px;">
+    <div class="profile-header" style="display: flex; align-items: center; justify-content: center; margin-bottom: 0px; padding: 30px 40px; background: #f0f4f8; border-radius: 8px; border: 1px solid #e6e6e6;">
+      <div style="display: flex; align-items: center; gap: 25px;">
+        <img loading="lazy" src="https://avatars.githubusercontent.com/u/3971384"
+             style="width: 200px; height: 200px; border-radius: 50%; border: 2px solid #c1c1c1;" alt="Profile photo" />
+        <div>
+          <h2 style="margin: 0 0 8px 0; color: #333; font-size: 1.8em; font-weight: 400;">Hi, I'm Mark</h2>
+          <p style="margin: 0; color: #666; font-size: 1.1em;">A researcher and electronic, robotic, and software engineer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section mobile-spacing" style="margin-top: 30px;">
+    <h2 class="section-title" style="margin-top: 0px;">Current Work</h2>
+    <div class="subsection">
+      <h3 class="subsection-title">Robotics Software Engineer</h3>
+
+      <div class="work-content">
+        <p>
+          At <a href="https://www.seqsense.com/">SEQSENSE</a>, I develop software for autonomous robots including SQ2, a security robot that performs scheduled patrols in office buildings, and Forro, a delivery robot developed with Kawasaki Heavy Industries.
+        </p>
+
+        <figure class="media-container">
+          <img loading="lazy" alt="SQ2 at Narita Airport" src="/media/about/1499339.webp">
+          <figcaption>SQ2 performing a patrol at Narita Airport (Tokyo)</figcaption>
+        </figure>
+
+        <p>
+          Both robots use a rotating turntable with three 2D LiDARs for navigation and wide-angle cameras for 360-degree vision.
+          They transmit real-time data to a web platform for monitoring and can autonomously dock for charging and operate elevators for multi-floor operations.
+        </p>
+
+        <div class="two-column-layout">
+          <div>
+            <p>
+              My work centers on 3D object detection and tracking systems, SLAM-based mapping solutions, and training new detection models for people and other robots using PyTorch and OpenVINO.
+              The video shows a prototype interface I developed for real-time SLAM mapping using ROS and C++.
+              Users could view maps as they were built, with scan quality indicated in green.
+              The interface was designed for tablet/smartphone display mounted to a PlayStation controller.
+            </p>
+          </div>
+          <figure class="media-container">
+            <video controls preload="metadata" loop muted>
+              <source src="/media/about/realtime-slam-interface.mp4" type="video/mp4">
+            </video>
+            <figcaption>Web-based interface for SLAM mapping</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <h2 class="section-title">Agricultural Robotics Research</h2>
+    <div class="subsection">
+      <h3 class="subsection-title">Kiwifruit Automation Project</h3>
+
+      <div class="work-content">
+        <p>
+          As a post-doctoral researcher with the <a href="https://www.waikato.ac.nz/">University of Waikato</a> and <a href="https://www.auckland.ac.nz/">University of Auckland</a>, I worked on robotic systems for kiwifruit operations.
+          The project involved collaboration between universities, Plant and Food Research, and Robotics Plus Ltd, funded by the Ministry of Business, Innovation and Employment.
+          The 12-person team developed autonomous systems for pollination, harvesting, and platform mobility, though the technology ultimately proved economically challenging for commercial deployment.
+        </p>
+
+        <figure class="media-container">
+          <img loading="lazy" alt="Multi-purpose platform in kiwifruit orchard" src="/media/about/robotics-orchard-800px.webp">
+          <figcaption>The multi-purpose platform in a kiwifruit orchard</figcaption>
+        </figure>
+
+        <div class="subsection">
+          <h4 class="subsection-title">Autonomous Platform Development</h4>
+          <div class="two-column-layout">
+            <div>
+              <p>
+                The multi-purpose platform served as a mobile base for harvesting and pollinating systems.
+                This hybrid petrol-electric vehicle achieved autonomous row-following using LiDAR-based orchard structure sensing.
+                Six electric motor/gearbox units provided full electric drive capability while supplying AC and DC power to mounted systems.
+                The platform supported 1 tonne payload capacity with additional fruit storage between rear wheels.
+              </p>
+            </div>
+            <figure class="media-container">
+              <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/hUT4qLRqMBE"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+              </div>
+              <figcaption>Platform autonomous navigation demonstration</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4 class="subsection-title">Harvesting System</h4>
+          <div class="two-column-layout">
+            <div>
+              <p>
+                The harvesting system identified kiwifruit in 3D space using stereo cameras and neural networks.
+                It determined optimal picking sequences to minimize damage to neighboring fruit before directing robotic arms to collect fruit.
+                The integrated approach combined computer vision, machine learning, and precision robotics for orchard operations.
+              </p>
+            </div>
+            <figure class="media-container">
+              <div class="video-container">
+                <iframe src="https://www.youtube-nocookie.com/embed/b4L-oMd0yVk"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+              </div>
+              <figcaption>Kiwifruit harvesting system in operation</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="subsection">
+          <h4 class="subsection-title">Pollination System</h4>
+          <div class="two-column-layout">
+            <div>
+              <p>
+                The pollination system used the same camera and neural network infrastructure to identify flowers in 3D space.
+                It calculated pollen solution trajectory timing to account for vehicle motion, ensuring accurate flower targeting while driving.
+                The system enabled autonomous pollination operations across orchard rows.
+              </p>
+            </div>
+            <figure class="media-container">
+              <img loading="lazy" alt="Pollination" src="/media/about/pollinator.webp">
+              <figcaption>Targeted pollination of kiwifruit flower clusters</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section">
+    <h2 class="section-title">Education</h2>
+    <div class="subsection">
+      <h3 class="subsection-title">University of Waikato</h3>
+      <div class="work-content">
+        <p>
+          <strong>Doctor of Philosophy (PhD)</strong> - The Electrical Properties of Interfacial Double Layers (2015)
+        </p>
+        <p>
+          <strong>Master of Engineering (ME)</strong> - Millimetre Wave Power Measurement (2009)
+        </p>
+        <p>
+          <strong>Bachelor of Science (BSc)</strong> - Electronic Engineering (2008)
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="publications-section">
+    <h2 class="section-title">Publications</h2>
+    <ul class="publications-list">
+      <li>
+        <a href="https://www.sciencedirect.com/science/article/pii/S1537511019308141"><strong>Mark Hedley Jones</strong>, Jamie Bell, Daniel Dredge, Matthew Seabright, Alistair Scarfe, Mike Duke, Bruce MacDonald (2019). <em>Design and Testing of a Heavy-Duty Platform for Autonomous Navigation in Kiwifruit Orchards.</em> Biosystems Engineering</a>
+      </li>
+      <li>
+        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21861">Henry Williams, Mahla Nejati, Salome Hussein, Nicky Penhall, Jong Yoon Lim, <strong>Mark Hedley Jones</strong>, Jamie Bell, Ho Seok Ahn, Stuart Bradley, Peter Schaare, Paul Martinsen, Mohammad Alomar, Purak Patel, Matthew Seabright, Mike Duke, Alistair Scarfe, Bruce MacDonald (2019). <em>Autonomous pollination of individual kiwifruit flowers: Toward a robotic kiwifruit pollinator.</em> Journal of Field Robotics.</a>
+      </li>
+      <li>
+        <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/rob.21890">Henry Williams, Canaan Ting, Mahla Nejati, <strong>Mark Hedley Jones</strong>, Nicky Penhall, JongYoon Lim, Matthew Seabright, Jamie Bell, Ho Seok Ahn, Alistair Scarfe, Mike Duke, and Bruce MacDonald (2019). <em>Improvements to and large‐scale evaluation of a robotic kiwifruit harvester</em>. Journal of Field Robotics</a>
+      </li>
+      <li>
+        <a href="https://www.sciencedirect.com/science/article/pii/S153751101830638X">Henry A.M. Williams, <strong>Mark H. Jones</strong>, Mahla Nejati, Matthew J. Seabright, Jamie Bell, Nicky D. Penhall, Josh J. Barnett, Mike D. Duke, Alistair J. Scarfe, Ho Seok Ahn, JongYoon Lim, Bruce A. MacDonald (2019). <em>Robotic kiwifruit harvesting using machine vision, convolutional neural networks, and robotic arms</em>. Biosystems Engineering</a>
+      </li>
+    </ul>
+
+    <div style="margin-top: 25px; text-align: right;">
+      <button onclick="toggleMorePublications()" id="toggle-btn" style="background: none; color: #0066cc; border: none; padding: 8px 0; cursor: pointer; font-size: 0.9em; text-decoration: underline; transition: color 0.2s ease;">
+        Show more publications
+      </button>
+    </div>
+
+    <div id="more-publications" style="display: none; margin-top: 20px;">
+      <ul class="publications-list">
+        <li>
+          <a href="http://doi.org/10.5281/zenodo.1002306"><strong>Jones, M H</strong>, Seabright, M, Barnett, J, Neshausen, G, Duke, M, &amp; Scarfe, A. (2017). <em>An Electrically Driven, Computer Controlled Robotics Platform for Orchard Use</em>. Poster Presentation at The International Tri-Conference for Precision Agriculture in 2017, Hamilton, New Zealand</a>
+        </li>
+        <li>
+          <a href="http://doi.org/10.5281/zenodo.1002294">Seabright, M, <strong>Jones, M H</strong>, Williams, H, Nejati, M, Barnett, J, Duke, M, … MacDonald, B. (2017). <em>Robotic harvesting of kiwifruit</em>. Poster Presentation at The International Tri-Conference for Precision Agriculture in 2017, Hamilton, New Zealand</a>
+        </li>
+        <li>
+          <a href="https://hdl.handle.net/10289/10617"><strong>Jones, M. H.</strong> (2016). <em>The Electrical Properties of Interfacial Double Layers</em> (Thesis, Doctor of Philosophy (PhD)). University of Waikato, Hamilton, New Zealand.</a>
+        </li>
+        <li>
+          <a href="https://researchcommons.waikato.ac.nz/bitstream/handle/10289/11289/Use%20of%20Electrofishing.pdf">Hicks, B. J., <strong>Jones, M. H.</strong>, de Villiers, J. E., &amp; Ling, N. (2015). <em>Use of Electrofishing for Capturing Invasive Fish.</em> In K. J. Collier &amp; N. P. J. Grainger (Eds.), New Zealand Invasive Fish Management Handbook (pp. 72–79). Hamilton, New Zealand: Lake Ecosystem Restoration New Zealand (LERNZ) &amp; Department of Conservation.</a>
+        </li>
+        <li>
+          <a href="https://hdl.handle.net/10289/8882"><strong>Jones, M. H.</strong>, &amp; Scott, J. B. (2014). <em>Feasibility of Harvesting Power To Run A Domestic Water Meter Using Streaming Cell Technology</em>. Presented at the 21st Electronics New Zealand Conference (ENZCon), 20 - 21 Nov 2014, Hamilton, New Zealand.</a>
+        </li>
+        <li>
+          <a href="https://hdl.handle.net/10289/8878"><strong>Jones, M. H.</strong>, &amp; Scott, J. B. (2014). <em>Scaling of Electrode-Electrolyte Interface Model Parameters In Phosphate Buffered Saline</em>. IEEE Transactions on Biomedical Circuits and Systems, 9(3), 441–448.</a>
+        </li>
+        <li>
+          <a href="https://hdl.handle.net/10289/8294"><strong>Jones, M.H.</strong> &amp; Scott, J.B. (2011). <em>The energy efficiency of 8-bit low-power microcontrollers</em>. In Proceedings of the 18th Electronics New Zealand Conference, ENZCON 2011, Massey University, Palmerston North, 21-22 November 2011, pp. 87-90.</a>
+        </li>
+        <li>
+          <a href="https://hdl.handle.net/10289/5442"><strong>Jones, M. H.</strong> &amp; Scott, J. (2011). <em>Design study of a thermocouple power sensor as a monolithic fin-line</em>. Paper presented at the 77th ARFTG Microwave Measurement Conference. Baltimore, Maryland; June 10 2011.</a>
+        </li>
+        <li>
+          <a href="https://hdl.handle.net/10289/4302"><strong>Jones, M. H.</strong> (2010). <em>Millimetre Wave Power Measurement</em> (Thesis, Master of Engineering (ME)). The University of Waikato, Hamilton, New Zealand.</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="cv-section">
+    <h2 class="section-title">Curriculum Vitae</h2>
+    <a href="https://github.com/MarkHedleyJones/CV/raw/main/MarkHedleyJones-CV.pdf" class="cv-link">
+      <img loading="lazy" alt="CV" src="/media/about/cv-thumb.webp" style="max-width: 300px; margin: 0">
+    </a>
+  </div>
+</div>
+
+<script>
+function toggleMorePublications() {
+  const morePublications = document.getElementById('more-publications');
+  const toggleBtn = document.getElementById('toggle-btn');
+
+  if (morePublications.style.display === 'none' || morePublications.style.display === '') {
+    morePublications.style.display = 'block';
+    toggleBtn.style.display = 'none';
+  }
+}
+</script>
