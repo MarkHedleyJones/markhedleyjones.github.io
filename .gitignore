@@ -1,3 +1,5 @@
 *.pyc
 .docker-bbq
 __pycache__
+.env
+umami_token.env
