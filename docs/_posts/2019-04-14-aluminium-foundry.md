@@ -7,6 +7,7 @@ permalink: /projects/aluminium-foundry
 featureimage: feature.webp
 thumb: thumb.webp
 description: Melt aluminium with a home-made aluminium foundry
+excerpt_separator: \{% endhighlight %\}
 ---
 
 After taking inspiration from a number of furnaces seen on YouTube, I decided to build a furnace, or home foundry, for melting aluminium. I didn't have anything in particular that I wanted to cast, but was just generally interested in creating a foundry hot enough to melt metal.
