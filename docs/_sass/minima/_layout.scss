@@ -84,6 +84,12 @@
       margin-right: 0;
     }
     margin-left: 20px;
+    
+    &.active {
+      color: lighten($text-color, 40%);
+      pointer-events: none;
+      cursor: default;
+    }
   }
 
   @media screen and (min-width: $on-medium) {
