@@ -74,17 +74,6 @@ excerpt_separator: \{% endhighlight %\}
 <p style="text-align: justify;">
   Generates Scalable Vector Graphic (SVG) files, which can be edited using free software such as <a href="https://inkscape.org/">Inkscape</a>.
 </p>
-<p style="text-align: justify;"></p>
-  Saving as PDF:
-  <ul>
-    <li>Click the generated thumbnail to <a href="javascript:download_checkerboard()">download</a> as SVG</li>
-    <li>Open the downloaded checkerboard in your browser</li>
-    <li>Print the document (File -> Print)</li>
-    <li>Select the <em>Save to PDF</em></li>
-    <li>Set scale to 100%, (uncheck Fit-to-page or similar options) and disable any headers & footers</li>
-    <li>Choose destination to save the PDF</li>
-  </ul>
-</p>
 <p>
   <b>WARNING:</b> Your browser may become unresponsive if the dimensions become too extreme
 </p>
@@ -132,8 +121,33 @@ excerpt_separator: \{% endhighlight %\}
 </table>
 
 <div id="hidden-checkers" style="display: none"></div>
-<div id="checkerboard" onclick="download_checkerboard()" style="cursor: pointer; display: inline-block; width: 200px; height:  141.417px; margin-right: 15px; border: 1px solid #CCC; box-shadow: 5px 5px 10px #AAA;">
-</div><a id="generated_checkerboard" href="javascript:download_checkerboard()"></a>
+
+<div style="display: flex; align-items: center; gap: 15px; margin: 20px 0; padding: 15px; background: #f8f9fa; border-radius: 6px; border-left: 4px solid #007bff;">
+  <div id="checkerboard" onclick="download_checkerboard()" style="cursor: pointer; display: inline-block; width: 200px; height: 141.417px; border: 1px solid #CCC; box-shadow: 5px 5px 10px #AAA; border-radius: 4px;">
+  </div>
+  <div style="flex: 1;">
+    <div style="font-weight: bold; color: #007bff; margin-bottom: 5px;">📋 Generated Checkerboard:</div>
+    <div id="generated_checkerboard" style="color: #666; font-size: 0.9em; line-height: 1.4;"></div>
+    <div style="margin-top: 8px; font-size: 0.85em; color: #28a745;">
+      💾 <strong>Click image above to download as SVG</strong>
+    </div>
+  </div>
+</div>
+
+<div style="background: #fff3cd; border: 1px solid #ffeaa7; border-radius: 6px; padding: 15px; margin: 15px 0;">
+  <div style="font-weight: bold; color: #856404; margin-bottom: 8px;">📄 How to Save as PDF:</div>
+  <ol style="margin: 0; padding-left: 18px; color: #856404; font-size: 0.9em;">
+    <li>Click the generated checkerboard above to download as SVG</li>
+    <li>Open the downloaded file in your browser</li>
+    <li>Print the document (File → Print or Ctrl+P)</li>
+    <li>Select <strong>"Save as PDF"</strong> as destination</li>
+    <li><strong>Set scale to 100%</strong> (uncheck "Fit to page") and disable headers/footers</li>
+    <li>Choose destination and save your PDF</li>
+  </ol>
+  <div style="margin-top: 10px; padding: 8px; background: #f8d7da; border-radius: 4px; font-size: 0.85em; color: #721c24;">
+    ⚠️ <strong>Important:</strong> Disable page scaling when printing - incorrect scaling will make calibration inaccurate!
+  </div>
+</div>
 <hr style="color: #CCC; margin: 20px 0">
 
 <script type="text/javascript">
