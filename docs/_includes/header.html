@@ -18,10 +18,10 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link{% if page.url == '/' or page.layout == 'project' %} active{% endif %}" href="/">Projects</a>
+          <a class="page-link{% if page.url == '/' %} active{% endif %}" href="/">Projects</a>
           <a class="page-link{% if page.url == '/about/' %} active{% endif %}" href="/about/">About</a>
           <a class="page-link{% if page.url == '/links/' %} active{% endif %}" href="/links/">Links</a>
-          <a class="page-link{% if page.url == '/notes/' or page.layout == 'note' %} active{% endif %}" href="/notes/">Notes</a>
+          <a class="page-link{% if page.url == '/notes/' %} active{% endif %}" href="/notes/">Notes</a>
         </div>
       </nav>
     {%- endif -%}
