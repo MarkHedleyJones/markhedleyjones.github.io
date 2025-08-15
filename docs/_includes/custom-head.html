@@ -3,7 +3,7 @@
 {% endcomment %}
 
 {%- if page.layout == 'project' -%}
-  {%- assign og_image = nil -%}
+  {%- assign og_image = '/media/og-images/default-project-og.webp' -%}
   
   {%- case page.permalink -%}
     {%- when '/projects/gamebike' -%}
@@ -16,14 +16,20 @@
       {%- assign og_image = '/media/og-images/barcode-scanner-og.webp' -%}
     {%- when '/projects/bamboo-lidar-mount' -%}
       {%- assign og_image = '/media/og-images/bamboo-lidar-og.webp' -%}
+    {%- when '/projects/blender-pcd-io' -%}
+      {%- assign og_image = '/media/og-images/blender-pcd-io-og.webp' -%}
+    {%- when '/projects/electronics-tutorial-website' -%}
+      {%- assign og_image = '/media/og-images/electronics-tutorial-og.webp' -%}
+    {%- when '/projects/php-htmlifier' -%}
+      {%- assign og_image = '/media/og-images/php-htmlifier-og.webp' -%}
+    {%- when '/projects/bosch-indradrive-cs-ros-node' -%}
+      {%- assign og_image = '/media/og-images/bosch-ros-node-og.webp' -%}
   {%- endcase -%}
   
-  {%- if og_image -%}
-    <meta property="og:image" content="{{ site.url }}{{ og_image }}">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:type" content="image/webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
-  {%- endif -%}
+  <meta property="og:image" content="{{ site.url }}{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
 {%- endif -%}
