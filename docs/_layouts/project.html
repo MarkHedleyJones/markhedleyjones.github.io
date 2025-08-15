@@ -1,6 +1,42 @@
 ---
 layout: default
 ---
+<!-- JSON-LD structured data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "name": "{{ page.title | escape }}",
+  "description": "{{ page.description | default: page.excerpt | strip_html | strip | escape }}",
+  "url": "{{ site.url }}{{ page.url }}",
+  "author": {
+    "@type": "Person",
+    "name": "{{ site.author.name | default: site.title }}",
+    "url": "{{ site.url }}/about/"
+  },
+  "creator": {
+    "@type": "Person", 
+    "name": "{{ site.author.name | default: site.title }}"
+  },
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {%- if page.modified_date -%}
+  "dateModified": "{{ page.modified_date | date_to_xmlschema }}",
+  {%- endif -%}
+  {%- if page.image -%}
+  "image": "{{ site.url }}{{ page.image }}",
+  {%- elsif page.featureimage -%}
+  "image": "{{ site.url }}/media{{ page.permalink }}/{{ page.featureimage }}",
+  {%- endif -%}
+  "inLanguage": "en-NZ",
+  "isAccessibleForFree": true,
+  "keywords": "{{ page.keywords | default: 'engineering, robotics, projects' | escape }}",
+  "publisher": {
+    "@type": "Person",
+    "name": "{{ site.author.name | default: site.title }}"
+  }
+}
+</script>
+
 <div style="width: 100%; max-width: 1000px; margin: auto">
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting" style="margin: 20px">
 
@@ -44,6 +80,18 @@ layout: default
     <div class="post-content e-content" itemprop="articleBody">
       {{ content }}
     </div>
+
+    {%- if page.keywords -%}
+    <div style="background: #f8f9fa; padding: 20px; border-radius: 6px; margin: 30px 0; border-left: 4px solid #007bff;">
+      <h3 style="margin-top: 0; margin-bottom: 10px; color: #495057; font-size: 1.1em;">🏷️ Keywords</h3>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        {%- assign keywords_list = page.keywords | split: ', ' -%}
+        {%- for keyword in keywords_list -%}
+          <span style="background: #e9ecef; color: #495057; padding: 4px 8px; border-radius: 4px; font-size: 0.9em; border: 1px solid #dee2e6;">{{ keyword | strip }}</span>
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- endif -%}
 
     {%- include related-projects.html -%}
 
