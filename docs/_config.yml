@@ -20,8 +20,7 @@
 
 title: Mark Hedley Jones
 description: >- # this means to ignore newlines until "baseurl:"
-  Projects and tools from an researcher/engineer working in robotics.
-  Feel free to get in touch!
+  Projects and tools from an engineer interested in robotics, agriculture, rail, and building underground.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://markhedleyjones.com"
 
