@@ -1,6 +1,13 @@
 {% comment %}
-  Custom favicon and Open Graph images for projects
+  Custom favicon, Open Graph images, and performance optimizations
 {% endcomment %}
+
+<!-- Performance optimizations -->
+<link rel="preload" href="/assets/css/style.css" as="style">
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+{%- if page.layout == 'project' -%}
+  <link rel="preload" href="{{ og_image | default: '/media/og-images/default-project-og.webp' }}" as="image">
+{%- endif -%}
 
 <!-- Favicons -->
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
