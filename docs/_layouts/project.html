@@ -45,6 +45,8 @@ layout: default
       {{ content }}
     </div>
 
+    {%- include related-projects.html -%}
+
     {%- if site.disqus.shortname -%}
       {%- include disqus_comments.html -%}
     {%- endif -%}
