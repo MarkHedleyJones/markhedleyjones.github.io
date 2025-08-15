@@ -277,6 +277,7 @@ permalink: /about/
               <iframe src="https://www.youtube-nocookie.com/embed/j8WnByetOsw"
                       title="Real-time SLAM interface demo"
                       frameborder="0"
+                      loading="lazy"
                       allowfullscreen></iframe>
             </div>
             <figcaption>Web-based interface for SLAM mapping</figcaption>
@@ -301,7 +302,12 @@ permalink: /about/
         </p>
 
         <figure class="media-container">
-          <img loading="lazy" alt="Multi-purpose platform in kiwifruit orchard" src="/media/about/robotics-orchard-800px.webp">
+          <img loading="lazy" alt="Multi-purpose platform in kiwifruit orchard" 
+               src="/media/about/robotics-orchard-800px.webp"
+               srcset="/media/about/responsive/robotics-orchard-400w.webp 400w,
+                       /media/about/responsive/robotics-orchard-600w.webp 600w,
+                       /media/about/robotics-orchard-800px.webp 800w"
+               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px">
           <figcaption>The multi-purpose platform in a kiwifruit orchard</figcaption>
         </figure>
 
@@ -321,6 +327,7 @@ permalink: /about/
                 <iframe src="https://www.youtube-nocookie.com/embed/hUT4qLRqMBE"
                         title="YouTube video player"
                         frameborder="0"
+                        loading="lazy"
                         allowfullscreen></iframe>
               </div>
               <figcaption>Platform autonomous navigation demonstration</figcaption>
@@ -343,6 +350,7 @@ permalink: /about/
                 <iframe src="https://www.youtube-nocookie.com/embed/b4L-oMd0yVk"
                         title="YouTube video player"
                         frameborder="0"
+                        loading="lazy"
                         allowfullscreen></iframe>
               </div>
               <figcaption>Kiwifruit harvesting system in operation</figcaption>
