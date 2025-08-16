@@ -48,3 +48,74 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
 {%- endif -%}
+
+<!-- Dark Mode JavaScript - Load early to prevent flash -->
+<script>
+(function() {
+  // Check for saved theme preference or default to light
+  const savedTheme = localStorage.getItem('theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+  
+  // Apply theme immediately to prevent flash
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+  
+  // Update theme color meta tag for dark mode
+  function updateThemeColor(theme) {
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeColorMeta) {
+      themeColorMeta.content = theme === 'dark' ? '#181818' : '#006aa7';
+    }
+  }
+  
+  updateThemeColor(theme);
+  
+  // Theme toggle functionality
+  function initThemeToggle() {
+    const toggleButton = document.getElementById('theme-toggle');
+    if (!toggleButton) return;
+    
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+      updateThemeColor(newTheme);
+      
+      // Update button aria-label
+      toggleButton.setAttribute('aria-label', 
+        newTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+      );
+    }
+    
+    toggleButton.addEventListener('click', toggleTheme);
+    
+    // Set initial aria-label
+    toggleButton.setAttribute('aria-label', 
+      theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+    );
+    
+    // Listen for system theme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      if (!localStorage.getItem('theme')) {
+        const newTheme = e.matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        updateThemeColor(newTheme);
+        toggleButton.setAttribute('aria-label', 
+          newTheme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+        );
+      }
+    });
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initThemeToggle);
+  } else {
+    initThemeToggle();
+  }
+})();
+</script>
