@@ -5,18 +5,19 @@ if [ -f .env ]; then
   source .env
   USERNAME=$UMAMI_USERNAME
   PASSWORD=$UMAMI_PASSWORD
+  HOST=$UMAMI_HOST
 else
-  echo "Error: .env file not found. Please create it with UMAMI_USERNAME and UMAMI_PASSWORD"
+  echo "Error: .env file not found. Please create it with UMAMI_USERNAME, UMAMI_PASSWORD, and UMAMI_HOST"
   exit 1
 fi
 
-if [ -z "$USERNAME" ] || [ -z "$PASSWORD" ]; then
-  echo "Error: Please set UMAMI_USERNAME and UMAMI_PASSWORD in .env file"
+if [ -z "$USERNAME" ] || [ -z "$PASSWORD" ] || [ -z "$HOST" ]; then
+  echo "Error: Please set UMAMI_USERNAME, UMAMI_PASSWORD, and UMAMI_HOST in .env file"
   exit 1
 fi
 
 # Get auth token
-RESPONSE=$(curl -s -X POST https://umami-analytic.netlify.app/api/auth/login \
+RESPONSE=$(curl -s -X POST ${HOST}/api/auth/login \
   -H "Content-Type: application/json" \
   -d "{\"username\":\"$USERNAME\",\"password\":\"$PASSWORD\"}")
 
