@@ -2,22 +2,25 @@
 layout: note
 title:  "Using Tracy Profiler"
 date:   2023-12-05
+modified_date: 2025-08-16
 permalink: /notes/using-tracy-profiler
-description: "- a quick guide to profiling a C++ application"
+description: "- a comprehensive guide to profiling C++ applications with Tracy"
 ---
 
-[Tracy Profiler](https://github.com/wolfpld/tracy) is a fantastic tool for profiling C++ applications and is something I have recently started integrating into my workflow.
-This guide serves as a quick guide on how to integrate it with an existing application and get your first profile. Note that these instructions assume that you are using Ubuntu 22.04 and that your project uses CMake.
+[Tracy Profiler](https://github.com/wolfpld/tracy) is a real-time profiler for C++ applications that I've been using in my recent projects. Unlike traditional sampling profilers, Tracy provides exact timing data with minimal overhead.
 
-Tracy Profiler has two parts, a set of macros that are included into your project and a server that receives the profiling data and displays it.
+This guide shows how to integrate Tracy with an existing CMake project and capture your first profile. The instructions assume Ubuntu 22.04, though the process is similar on other platforms.
 
-### Project Integration
-From the root of your project, clone the Tracy Profiler repository into a subdirectory of your project (master branch should be fine).
+Tracy consists of two components: client-side macros that you embed in your code, and a viewer application that receives and displays the profiling data in real-time.
+
+## Project Integration
+
+First, clone the Tracy repository into your project directory:
 ```bash
 git clone https://github.com/wolfpld/tracy
 ```
 
-Then update your project's CMakeLists.txt as such:
+Next, update your project's CMakeLists.txt to include Tracy:
 ```cmake
 include_directories(
   include
@@ -38,48 +41,50 @@ target_link_libraries(<your_project>
   ...
 )
 ```
-Compile your project in debug mode.
+
+Now compile your project in debug mode:
 ```bash
 mkdir build && cd build
 cmake -DCMAKE_BUILD_TYPE=DEBUG ..
 make
 ```
 
-### Building the profile viewer
-Install dependencies
-This will compile the viewer from source, which guarantees that the viewer is compatible with the version of profiler you are using. This will build for an
-X11 based system (legacy mode, not for Wayland), see [the PDF documentation](https://github.com/wolfpld/tracy/releases/latest/download/tracy.pdf) for Wayland-based build.
+### Building the Tracy Viewer
+The Tracy viewer compiles from source to ensure compatibility with your client version. First, install the required dependencies:
 
 ```bash
 sudo apt install libglfw3-dev libfreetype-dev libcapstone-dev libdbus-1-dev
 ```
-Build for X11 (won't work on Wayland)
+
+Then build the viewer. For X11 systems:
 ```bash
 cd tracy/profiler/build/unix
 make LEGACY=1
 ```
-Build for Wayland (won't work on X11)
+
+For Wayland systems:
 ```bash
 cd tracy/profiler/build/unix
 make
 ```
 
-This should create a binary called `Tracy-release` in the `tracy/profiler/build/unix` directory.
-Execute this binary to start the viewer.
+This creates a binary called `Tracy-release` in the build directory. Launch it with:
 ```bash
 ./Tracy-release
 ```
-You should now have a profile viewer running on your machine like:
+
+The Tracy viewer interface will appear:
 ![profile_viewer](/media/2023-12-05-note-using-tracy-profiler/profile_viewer.webp)
 
 
-### Profiling your application
-Now that you have the viewer built (and running) it's time to profile your application.
-Running your application under sudo is required to allow the profiler to access the system's performance counters.
+### Running Your Application
+With the Tracy viewer running, you can now profile your application. Running with sudo allows Tracy to access system performance counters for more detailed profiling:
+
 ```bash
 cd build
 sudo ./<your_project_executable>
 ```
-You should now be able to see a profile like:
+
+Once your application starts, Tracy will display real-time profiling data:
 
 ![profile_viewer](/media/2023-12-05-note-using-tracy-profiler/captured_profile.webp)
