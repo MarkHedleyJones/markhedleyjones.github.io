@@ -217,6 +217,19 @@ pre, code {
   }
 }
 
+// Improve syntax highlighting contrast in dark mode
+[data-theme="dark"] .highlight {
+  .c     { color: #8a8a8a !important; } // Comments - lighter than #545454
+  .gp    { color: #888 !important; } // Generic.Prompt - keep as is
+  .gh    { color: #bbb !important; } // Generic.Heading - lighter than #999
+  .go    { color: #aaa !important; } // Generic.Output - lighter than #888
+  .nn    { color: #888 !important; } // Name.Namespace - keep as is
+  .bp    { color: #bbb !important; } // Name.Builtin.Pseudo - lighter than #999
+  .na    { color: #4dd0e1 !important; } // Name.Attribute - much lighter than #008080
+  .no    { color: #4dd0e1 !important; } // Name.Constant - much lighter than #008080
+  .nt    { color: #81C784 !important; } // Name.Tag - bright green for command flags
+}
+
 // Tables
 table {
   border-color: var(--color-border);
