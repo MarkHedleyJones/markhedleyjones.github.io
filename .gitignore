@@ -3,3 +3,4 @@
 __pycache__
 .env
 umami_token.env
+.vscode

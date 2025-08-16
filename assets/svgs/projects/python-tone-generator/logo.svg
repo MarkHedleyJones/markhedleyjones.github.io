@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 201.08334 150.8125"
+   height="570"
+   width="760">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient846"
+       inkscape:collect="always">
+      <stop
+         id="stop842"
+         offset="0"
+         style="stop-color:#ececec;stop-opacity:1;" />
+      <stop
+         id="stop844"
+         offset="1"
+         style="stop-color:#ececec;stop-opacity:0;" />
+    </linearGradient>
+    <linearGradient
+       gradientUnits="userSpaceOnUse"
+       y2="341.21585"
+       x2="123.36659"
+       y1="265.80957"
+       x1="123.36659"
+       id="linearGradient848"
+       xlink:href="#linearGradient846"
+       inkscape:collect="always" />
+  </defs>
+  <sodipodi:namedview
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="true"
+     units="px"
+     inkscape:window-maximized="0"
+     inkscape:window-y="77"
+     inkscape:window-x="1039"
+     inkscape:window-height="931"
+     inkscape:window-width="1671"
+     fit-margin-bottom="8"
+     fit-margin-right="8"
+     fit-margin-left="8"
+     lock-margins="true"
+     fit-margin-top="8"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="text880"
+     inkscape:document-units="mm"
+     inkscape:cy="88.624458"
+     inkscape:cx="138.64824"
+     inkscape:zoom="0.7"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-22.824931,-190.40334)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       y="190.40334"
+       x="22.82493"
+       height="150.8125"
+       width="201.08333"
+       id="rect840"
+       style="fill:url(#linearGradient848);fill-opacity:1;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1, 2" />
+    <g
+       transform="matrix(3.0079549,0,0,3.0079549,-59.582343,-391.62897)"
+       id="g947">
+      <path
+         id="path871"
+         d="m 42.095436,227.70265 c -1.623054,-0.46106 -3.004736,-1.35046 -3.381072,-2.17643 -0.193599,-0.42491 -0.309859,-2.19089 -0.309603,-4.70285 4.5e-4,-4.43719 0.234007,-5.3291 1.671944,-6.38489 0.675149,-0.49573 1.230183,-0.56117 5.820833,-0.68632 4.317337,-0.11771 5.197476,-0.21189 5.898554,-0.63118 1.361737,-0.81441 1.787337,-1.83735 1.908985,-4.58829 l 0.108225,-2.4474 h 1.800222 c 1.557221,0 1.911675,0.0938 2.625876,0.69474 3.096338,3.19884 2.605601,11.02057 -0.61726,13.08513 -0.747559,0.45584 -1.383112,0.50575 -6.451645,0.50664 -5.445677,9.6e-4 -5.622395,0.0176 -5.622395,0.53016 0,0.50303 0.176389,0.52917 3.571875,0.52917 h 3.571874 v 2.08098 c 0,2.44676 -0.393447,3.14672 -2.177859,3.87448 -1.484846,0.60558 -6.708925,0.80171 -8.418554,0.31606 z m 8.42683,-2.35569 c 0.174625,-0.17462 0.3175,-0.56753 0.3175,-0.87312 0,-0.3056 -0.142875,-0.6985 -0.3175,-0.87313 -0.174625,-0.17462 -0.567531,-0.3175 -0.873125,-0.3175 -1.056144,0 -1.61528,1.32159 -0.873125,2.06375 0.174625,0.17463 0.567531,0.3175 0.873125,0.3175 0.305594,0 0.6985,-0.14287 0.873125,-0.3175 z"
+         style="fill:#fbce3e;stroke-width:0.264583"
+         sodipodi:nodetypes="ssssssscsccssscssssssssss" />
+      <path
+         id="path869"
+         d="m 33.393058,220.15363 c -0.560468,-0.30058 -1.21008,-1.02689 -1.715664,-1.91823 -1.323873,-2.87199 -1.266592,-8.89528 0.987093,-11.04772 0.986246,-0.92033 2.189054,-1.08913 7.809784,-1.09607 4.724706,-0.006 5.105891,-0.0414 5.023817,-0.46934 -0.07838,-0.40862 -0.500327,-0.47169 -3.591275,-0.53684 l -3.502463,-0.0738 0.0088,-2.04284 c 0.01035,-2.40294 0.326472,-2.93232 2.28809,-3.83165 3.160906,-1.04254 7.016188,-1.18516 9.755596,0.20743 0.868605,0.44422 1.71147,1.09126 1.895621,1.45521 0.225451,0.44557 0.332521,2.05272 0.3345,5.02096 0.0044,6.66553 -0.05507,6.72078 -7.519394,6.97952 -5.578499,0.19338 -6.175856,0.36187 -7.140893,2.01425 -0.394724,0.67586 -0.555944,1.5283 -0.636234,3.36407 l -0.107541,2.45883 h -1.49392 c -0.94188,0 -1.827232,-0.17876 -2.395917,-0.48375 z m 8.927125,-17.29625 c 0.174625,-0.17463 0.3175,-0.56753 0.3175,-0.87313 0,-1.05614 -1.321594,-1.61528 -2.06375,-0.87312 -0.40812,0.40812 -0.40812,1.33813 0,1.74625 0.174625,0.17462 0.567532,0.3175 0.873125,0.3175 0.305594,0 0.6985,-0.14288 0.873125,-0.3175 z"
+         style="fill:#3470a0;stroke-width:0.264583"
+         sodipodi:nodetypes="scccsscsccscssscsssssssss" />
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.9993px;line-height:1.25;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';word-spacing:0px;fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
+         id="text880"
+         aria-label="ALSA">
+        <path
+           id="path850"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
+           d="m 70.220594,213.54733 v -0.46996 h -0.189986 c -0.499965,0 -0.559961,-0.08 -0.789945,-0.63996 l -2.549821,-6.24956 h -0.419971 l -2.299839,5.82959 c -0.359975,0.90994 -0.499965,1.05993 -0.99993,1.05993 h -0.13999 v 0.46996 h 2.649814 v -0.46996 H 65.28094 c -0.539962,0 -0.809943,-0.18999 -0.809943,-0.56996 0,-0.12 0.03,-0.25999 0.08999,-0.41998 l 0.329977,-0.87993 h 2.649814 l 0.539962,1.3399 c 0.06,0.14999 0.08,0.21999 0.08,0.26998 0,0.15999 -0.249983,0.25999 -0.619957,0.25999 h -0.419971 v 0.46996 z m -2.889797,-2.8798 h -2.239843 l 1.109922,-2.8398 z" />
+        <path
+           id="path852"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
+           d="m 76.590131,210.80752 h -0.43997 c -0.229983,1.5499 -0.659953,2.26985 -2.329836,2.26985 h -0.419971 c -0.509964,0 -0.71995,-0.06 -0.71995,-0.47997 v -5.32963 c 0,-0.41997 0.08999,-0.46996 0.899937,-0.46996 h 0.179988 v -0.46997 h -3.279771 v 0.46997 h 0.179988 c 0.809943,0 0.899937,0.05 0.899937,0.46996 v 5.33963 c 0,0.41997 -0.08999,0.46997 -0.899937,0.46997 h -0.179988 v 0.46996 h 5.899587 z" />
+        <path
+           id="path854"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
+           d="m 82.799677,211.49748 c 0,-0.61996 -0.209985,-1.14992 -0.599958,-1.5299 -0.269981,-0.25998 -0.659954,-0.42997 -1.459898,-0.62995 l -1.069925,-0.26998 c -0.889937,-0.22999 -1.309908,-0.61996 -1.309908,-1.22992 0,-0.69995 0.56996,-1.17991 1.419901,-1.17991 0.699951,0 1.269911,0.29997 1.669883,0.86993 0.289979,0.40998 0.469967,0.82995 0.599958,1.33991 h 0.42997 l -0.119992,-2.59982 h -0.369974 l -0.399972,0.59996 c -0.469967,-0.44997 -1.109922,-0.68995 -1.819873,-0.68995 -1.309908,0 -2.189846,0.83994 -2.189846,2.08985 0,1.08993 0.539962,1.62989 2.009859,2.00986 l 0.949933,0.23998 c 0.739949,0.18999 0.809944,0.20999 1.019929,0.36998 0.299979,0.22998 0.459968,0.55996 0.459968,0.94993 0,0.39997 -0.14999,0.72995 -0.449969,0.99993 -0.329977,0.28998 -0.659953,0.39997 -1.209915,0.39997 -0.739948,0 -1.269911,-0.22998 -1.739878,-0.74994 -0.419971,-0.46997 -0.629956,-0.93994 -0.779946,-1.70988 h -0.429969 l 0.04,2.8498 h 0.389972 l 0.449969,-0.67996 c 0.669953,0.54997 1.229914,0.74995 2.099853,0.74995 1.469897,0 2.409831,-0.85994 2.409831,-2.19984 z" />
+        <path
+           id="path856"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#3470a0;fill-opacity:1;stroke-width:0.249985"
+           d="m 90.509129,213.54733 v -0.46996 h -0.189987 c -0.499965,0 -0.559961,-0.08 -0.789945,-0.63996 l -2.549821,-6.24956 h -0.419971 l -2.299839,5.82959 c -0.359975,0.90994 -0.499965,1.05993 -0.99993,1.05993 h -0.13999 v 0.46996 h 2.649814 v -0.46996 h -0.199986 c -0.539962,0 -0.809943,-0.18999 -0.809943,-0.56996 0,-0.12 0.03,-0.25999 0.08999,-0.41998 l 0.329977,-0.87993 h 2.649814 l 0.539962,1.3399 c 0.06,0.14999 0.08,0.21999 0.08,0.26998 0,0.15999 -0.249983,0.25999 -0.619957,0.25999 h -0.41997 v 0.46996 z m -2.889798,-2.8798 h -2.239843 l 1.109922,-2.8398 z" />
+      </g>
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.60644px;line-height:1.25;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';word-spacing:0px;fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+         id="text880-3"
+         aria-label="pyAudio">
+        <path
+           id="path859"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 66.395938,219.68455 c 0,-1.04969 -0.654154,-1.87119 -1.490863,-1.87119 -0.471599,0 -0.783463,0.19777 -1.049688,0.65416 v -0.54006 l -1.315914,0.0837 v 0.32708 h 0.273831 c 0.281439,0 0.327077,0.0532 0.327077,0.38032 v 3.6587 c 0,0.30426 -0.0076,0.3575 -0.494418,0.3575 h -0.10649 v 0.27383 h 1.977674 v -0.27383 h -0.10649 c -0.494419,0 -0.55527,-0.0532 -0.55527,-0.3575 v -1.40719 c 0.251012,0.44117 0.540057,0.61612 1.00405,0.61612 0.882347,0 1.536501,-0.81389 1.536501,-1.90161 z m -0.798676,-0.0456 c 0,0.98123 -0.311865,1.5365 -0.851922,1.5365 -0.540057,0 -0.89756,-0.56288 -0.89756,-1.43762 0,-0.9432 0.34229,-1.51368 0.92038,-1.51368 0.524844,0 0.829102,0.52485 0.829102,1.4148 z" />
+        <path
+           id="path861"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 70.465366,218.20129 v -0.27383 h -1.521289 v 0.27383 h 0.121704 c 0.289044,0 0.410747,0.0837 0.410747,0.28144 0,0.0761 -0.02282,0.17495 -0.07606,0.30426 l -0.692186,1.71905 -0.836709,-1.95485 c -0.03042,-0.0685 -0.04564,-0.1217 -0.04564,-0.15974 0,-0.13691 0.09128,-0.19016 0.349896,-0.19016 h 0.159735 v -0.27383 H 66.52523 v 0.27383 h 0.09888 c 0.243406,0 0.365109,0.10649 0.502025,0.41075 l 1.23985,2.80678 -0.129309,0.26622 c -0.281439,0.57809 -0.631335,0.98123 -0.874741,0.98123 -0.06846,0 -0.121703,-0.0304 -0.121703,-0.0761 0,-0.0533 0.05325,-0.18256 0.05325,-0.26623 0,-0.19776 -0.167342,-0.34229 -0.387928,-0.34229 -0.266226,0 -0.456387,0.19777 -0.456387,0.4716 0,0.33469 0.296651,0.5857 0.692186,0.5857 0.403142,0 0.745431,-0.19777 1.049689,-0.60852 0.2358,-0.31947 0.380322,-0.62373 0.722612,-1.46804 l 0.867134,-2.14502 c 0.190161,-0.46399 0.304257,-0.61612 0.593302,-0.61612 z" />
+        <path
+           id="path863"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 76.071302,221.47206 v -0.3575 h -0.144523 c -0.380322,0 -0.42596,-0.0609 -0.600908,-0.48681 l -1.939643,-4.75403 h -0.31947 l -1.749481,4.43456 c -0.273832,0.69218 -0.380322,0.80628 -0.760644,0.80628 h -0.106491 v 0.3575 h 2.015707 v -0.3575 H 72.31372 c -0.410748,0 -0.616121,-0.14452 -0.616121,-0.43357 0,-0.0913 0.02282,-0.19777 0.06846,-0.31947 l 0.251012,-0.66937 h 2.015707 l 0.410747,1.01927 c 0.04564,0.11409 0.06085,0.16734 0.06085,0.20537 0,0.1217 -0.190161,0.19777 -0.471599,0.19777 h -0.319471 v 0.3575 z m -2.198262,-2.19065 h -1.703842 l 0.844315,-2.16023 z" />
+        <path
+           id="path865"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 80.40695,221.47206 v -0.32708 h -0.190161 c -0.418354,0 -0.479206,-0.0685 -0.479206,-0.55527 v -2.66225 l -1.430011,0.0837 v 0.32708 h 0.387929 c 0.281438,0 0.327077,0.0532 0.327077,0.38032 v 0.93559 c 0,0.43357 -0.04564,0.68458 -0.159736,0.93559 -0.159735,0.33469 -0.463992,0.53245 -0.836708,0.53245 -0.2358,0 -0.433567,-0.0837 -0.532451,-0.23579 -0.09888,-0.14453 -0.114096,-0.22059 -0.114096,-0.63895 v -2.31996 l -1.331127,0.0837 v 0.32708 h 0.289044 c 0.281439,0 0.327077,0.0532 0.327077,0.38032 v 1.64299 c 0,0.38793 0.03043,0.56288 0.144523,0.73783 0.205373,0.31186 0.570483,0.48681 1.026869,0.48681 0.502025,0 0.851921,-0.20538 1.186605,-0.69219 v 0.63134 z" />
+        <path
+           id="path867"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 84.750213,221.47206 v -0.32708 h -0.136916 c -0.410748,0 -0.471599,-0.0761 -0.471599,-0.55527 v -4.7236 l -1.490862,0.0837 v 0.32707 h 0.44878 c 0.273831,0 0.327077,0.0532 0.327077,0.38032 v 1.71906 c -0.281439,-0.38793 -0.608516,-0.56288 -1.049689,-0.56288 -0.859528,0 -1.513682,0.82911 -1.513682,1.92443 0,1.08012 0.631335,1.84837 1.513682,1.84837 0.479206,0 0.806282,-0.20538 1.049689,-0.66176 v 0.60091 z m -1.331127,-1.75709 c 0,0.88235 -0.349896,1.46044 -0.89756,1.46044 -0.532451,0 -0.859528,-0.50203 -0.859528,-1.34634 0,-0.44878 0.04564,-0.79107 0.144523,-1.04969 0.129309,-0.33468 0.410748,-0.55527 0.722612,-0.55527 0.311864,0 0.608515,0.22819 0.745431,0.57809 0.09128,0.22819 0.144522,0.54766 0.144522,0.91277 z" />
+        <path
+           id="path870"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 87.100599,221.47206 v -0.27383 h -0.09128 c -0.494419,0 -0.540057,-0.0532 -0.540057,-0.3575 v -2.91327 l -1.430011,0.0837 v 0.32708 h 0.387928 c 0.281439,0 0.327077,0.0608 0.327077,0.38032 v 2.1222 c 0,0.30425 -0.04564,0.3575 -0.53245,0.3575 h -0.09128 v 0.27383 z m -0.608515,-4.63993 c 0,-0.20537 -0.174948,-0.38032 -0.380322,-0.38032 -0.205374,0 -0.380322,0.17495 -0.380322,0.38032 0,0.20538 0.174948,0.38032 0.372716,0.38032 0.21298,0 0.387928,-0.16734 0.387928,-0.38032 z" />
+        <path
+           id="path872"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'TeX Gyre Schola';-inkscape-font-specification:'TeX Gyre Schola';fill:#fbce3e;fill-opacity:1;stroke-width:0.190161"
+           d="m 90.842956,219.69976 c 0,-1.04208 -0.730218,-1.8864 -1.627778,-1.8864 -0.927986,0 -1.658204,0.82911 -1.658204,1.89401 0,1.04208 0.730218,1.87879 1.642991,1.87879 0.912773,0 1.642991,-0.83671 1.642991,-1.8864 z m -0.798676,0 c 0,1.01166 -0.296651,1.55932 -0.844315,1.55932 -0.547664,0 -0.844315,-0.54766 -0.844315,-1.55171 0,-1.03448 0.289045,-1.56693 0.859528,-1.56693 0.532451,0 0.829102,0.55527 0.829102,1.55932 z" />
+      </g>
+      <g
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.52622px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';word-spacing:0px;fill:#808080;fill-opacity:1;stroke-width:0.138155"
+         id="text880-3-7"
+         aria-label="TONE GENERATOR">
+        <path
+           id="path875"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 39.765338,237.98215 h 0.795776 l 0.580253,-2.9289 h 0.933931 l 0.127103,-0.66867 h -2.663638 l -0.132629,0.66867 h 0.933931 z" />
+        <path
+           id="path877"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 43.473421,238.04846 c 0.967088,0 1.840231,-0.91182 1.840231,-2.20496 0,-0.96709 -0.54157,-1.52524 -1.364976,-1.52524 -0.972615,0 -1.840232,0.91183 -1.840232,2.20497 0,0.96156 0.54157,1.52523 1.364977,1.52523 z m 0.03868,-0.69078 c -0.375783,0 -0.585779,-0.33157 -0.585779,-0.88419 0,-0.83446 0.502886,-1.46998 0.978141,-1.46998 0.381309,0 0.591305,0.33158 0.591305,0.88973 0,0.83446 -0.502886,1.46444 -0.983667,1.46444 z" />
+        <path
+           id="path879"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 45.612058,237.98215 h 0.751566 l 0.265259,-1.32077 c 0.08289,-0.41447 0.127103,-0.9063 0.154734,-1.30971 h 0.02211 c 0.05526,0.30394 0.121577,0.58025 0.176839,0.79025 l 0.541569,1.84023 h 0.79025 l 0.723934,-3.59757 h -0.757092 l -0.259732,1.31524 c -0.08842,0.41999 -0.132629,0.9063 -0.16026,1.30971 h -0.0221 c -0.04974,-0.28736 -0.110525,-0.57472 -0.171313,-0.78472 l -0.547096,-1.84023 h -0.790249 z" />
+        <path
+           id="path881"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 49.176462,237.98215 h 2.204961 l 0.13263,-0.66868 H 50.09934 l 0.182366,-0.85656 h 1.15498 l 0.132629,-0.66867 h -1.160506 l 0.143681,-0.73499 h 1.364977 l 0.127103,-0.66867 h -2.1497 z" />
+        <path
+           id="path883"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 54.791094,238.04846 c 0.45315,0 0.86209,-0.16578 1.138401,-0.37578 l 0.3371,-1.74076 h -1.276557 l -0.116051,0.65209 h 0.569201 l -0.143682,0.6742 c -0.09395,0.0663 -0.237627,0.11053 -0.370257,0.11053 -0.541569,0 -0.757092,-0.34263 -0.757092,-0.8842 0,-0.79577 0.480781,-1.48103 1.099718,-1.48103 0.237627,0 0.45315,0.094 0.602358,0.30947 l 0.442098,-0.47525 c -0.198944,-0.3371 -0.563675,-0.51947 -1.005772,-0.51947 -1.105244,0 -1.956282,0.96157 -1.956282,2.21602 0,0.95603 0.547095,1.51418 1.436817,1.51418 z" />
+        <path
+           id="path885"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 56.592633,237.98215 h 2.204962 l 0.132629,-0.66868 h -1.414712 l 0.182365,-0.85656 h 1.15498 l 0.132629,-0.66867 H 57.82498 l 0.143682,-0.73499 h 1.364976 l 0.127103,-0.66867 h -2.1497 z" />
+        <path
+           id="path887"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 59.510476,237.98215 h 0.751566 l 0.265258,-1.32077 c 0.08289,-0.41447 0.127103,-0.9063 0.154734,-1.30971 h 0.0221 c 0.05526,0.30394 0.121577,0.58025 0.176839,0.79025 l 0.54157,1.84023 h 0.790249 l 0.723935,-3.59757 H 62.17964 l -0.259732,1.31524 c -0.08842,0.41999 -0.13263,0.9063 -0.160261,1.30971 h -0.02211 c -0.04974,-0.28736 -0.110524,-0.57472 -0.171313,-0.78472 l -0.547095,-1.84023 h -0.79025 z" />
+        <path
+           id="path889"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 63.074879,237.98215 h 2.204962 l 0.132629,-0.66868 h -1.414712 l 0.182365,-0.85656 h 1.15498 l 0.132629,-0.66867 h -1.160506 l 0.143682,-0.73499 h 1.364976 l 0.127103,-0.66867 h -2.149699 z" />
+        <path
+           id="path891"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="M 65.992724,237.98215 H 66.7885 l 0.254206,-1.29314 h 0.425519 l 0.442097,1.29314 h 0.839986 l -0.552622,-1.40919 c 0.519464,-0.18236 0.9063,-0.58578 0.9063,-1.25998 0,-0.67972 -0.536044,-0.9284 -1.248926,-0.9284 h -1.143927 z m 1.182611,-1.92313 0.20447,-1.04445 h 0.359204 c 0.370257,0 0.574727,0.1271 0.574727,0.41999 0,0.37578 -0.259732,0.62446 -0.77367,0.62446 z" />
+        <path
+           id="path893"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 70.535274,236.04797 c 0.16026,-0.35368 0.29289,-0.69078 0.447624,-1.06103 h 0.0221 c 0.0055,0.37578 0.0221,0.70735 0.03868,1.06103 l 0.01658,0.45315 h -0.734987 z m -1.779443,1.93418 h 0.873143 l 0.414466,-0.87867 h 1.044456 l 0.03316,0.87867 h 0.839986 l -0.359205,-3.59757 h -0.95051 z" />
+        <path
+           id="path895"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 72.71812,237.98215 h 0.795776 l 0.580253,-2.9289 h 0.933931 l 0.127103,-0.66867 h -2.663638 l -0.132629,0.66867 h 0.933931 z" />
+        <path
+           id="path897"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 76.426202,238.04846 c 0.967088,0 1.840231,-0.91182 1.840231,-2.20496 0,-0.96709 -0.541569,-1.52524 -1.364976,-1.52524 -0.972615,0 -1.840231,0.91183 -1.840231,2.20497 0,0.96156 0.541569,1.52523 1.364976,1.52523 z m 0.03868,-0.69078 c -0.375782,0 -0.585779,-0.33157 -0.585779,-0.88419 0,-0.83446 0.502886,-1.46998 0.978141,-1.46998 0.381309,0 0.591306,0.33158 0.591306,0.88973 0,0.83446 -0.502886,1.46444 -0.983668,1.46444 z" />
+        <path
+           id="path899"
+           style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro Bold Italic';fill:#808080;fill-opacity:1;stroke-width:0.138155"
+           d="m 78.564841,237.98215 h 0.795775 l 0.254207,-1.29314 h 0.425519 l 0.442097,1.29314 h 0.839986 l -0.552622,-1.40919 c 0.519464,-0.18236 0.9063,-0.58578 0.9063,-1.25998 0,-0.67972 -0.536044,-0.9284 -1.248926,-0.9284 h -1.143928 z m 1.182611,-1.92313 0.20447,-1.04445 h 0.359204 c 0.370257,0 0.574727,0.1271 0.574727,0.41999 0,0.37578 -0.259732,0.62446 -0.773671,0.62446 z" />
+      </g>
+      <path
+         style="fill:none;stroke:#808080;stroke-width:0.7;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.7, 1.4;stroke-dashoffset:0"
+         d="m 62.792058,227.31891 c 12.58278,-6.55157 15.640759,6.47955 27.265079,0"
+         id="path918"
+         sodipodi:nodetypes="cc" />
+    </g>
+  </g>
+</svg>

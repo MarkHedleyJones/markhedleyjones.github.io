@@ -1,0 +1,292 @@
+// Dark mode implementation using CSS custom properties
+// This allows for smooth theme switching without page reload
+
+:root {
+  // Light theme colors (default)
+  --color-bg: #fdfdfd;
+  --color-text: #111111;
+  --color-text-muted: #828282;
+  --color-link: #2a7ae2;
+  --color-link-visited: #1756a9;
+  --color-link-hover: #111111;
+  --color-border: #e8e8e8;
+  --color-border-light: #e8e8e8;
+  --color-code-bg: #eeeeff;
+  --color-header-bg: #fdfdfd;
+  --color-footer-bg: #fdfdfd;
+  --color-nav-text: #111111;
+  --color-nav-bg: #fdfdfd;
+  --color-nav-border: #e8e8e8;
+  --color-button-bg: #f8f9fa;
+  --color-button-hover: #e9ecef;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  // Project-specific colors
+  --color-project-card-bg: #fff;
+  --color-project-card-border: #e9ecef;
+  --color-highlight-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  // Dark theme colors with improved contrast
+  --color-bg: #1a1a1a;
+  --color-text: #e8e8e8;
+  --color-text-muted: #b0b0b0;
+  --color-link: #79b8ff;
+  --color-link-visited: #79b8ff;
+  --color-link-hover: #ffffff;
+  --color-border: #404040;
+  --color-border-light: #353535;
+  --color-code-bg: #2a2a2a;
+  --color-header-bg: #1a1a1a;
+  --color-footer-bg: #1a1a1a;
+  --color-nav-text: #ffffff;
+  --color-nav-bg: #1a1a1a;
+  --color-nav-border: #404040;
+  --color-button-bg: #353535;
+  --color-button-hover: #454545;
+  --color-shadow: rgba(0, 0, 0, 0.4);
+
+  // Project-specific colors with better contrast
+  --color-project-card-bg: #353535;
+  --color-project-card-border: #555555;
+  --color-highlight-bg: #2f2f2f;
+}
+
+// Theme toggle button styles
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 20px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  color: var(--color-nav-text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  line-height: 1.5;
+
+  &:hover {
+    background-color: var(--color-button-hover);
+  }
+
+  &:focus {
+    outline: 2px solid var(--color-link);
+    outline-offset: 2px;
+  }
+}
+
+.theme-icon {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  position: absolute;
+}
+
+// Show/hide icons based on theme
+:root .theme-icon-light {
+  opacity: 1;
+  transform: scale(1);
+}
+
+:root .theme-icon-dark {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+[data-theme="dark"] .theme-icon-light {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+[data-theme="dark"] .theme-icon-dark {
+  opacity: 1;
+  transform: scale(1);
+}
+
+// Update mobile navigation for dark mode
+@media screen and (max-width: 600px) {
+  .theme-toggle {
+    margin-left: 0;
+    margin-top: 5px;
+    align-self: flex-start;
+  }
+}
+
+// Better alignment for desktop navigation
+@media screen and (min-width: 600px) {
+  .site-nav .trigger {
+    display: flex;
+    align-items: center;
+  }
+
+  .theme-toggle {
+    margin-left: 20px;
+    align-self: center;
+  }
+}
+
+// Smooth transition for theme changes
+* {
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+// Override specific elements to use CSS variables
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-link);
+
+  &:visited {
+    color: var(--color-link-visited);
+  }
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
+}
+
+.site-header {
+  background-color: var(--color-header-bg);
+  border-bottom-color: var(--color-border);
+}
+
+.site-footer {
+  background-color: var(--color-footer-bg);
+  border-top-color: var(--color-border);
+}
+
+.site-title,
+.site-title:visited {
+  color: var(--color-nav-text) !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.site-logo {
+  display: inline-block;
+  vertical-align: middle;
+  filter: none;
+}
+
+// Ensure logo shows up properly in dark mode
+[data-theme="dark"] .site-logo {
+  filter: brightness(0.9) saturate(1.1);
+}
+
+.site-nav {
+  background-color: var(--color-nav-bg);
+  border-color: var(--color-nav-border);
+
+  .page-link {
+    color: var(--color-nav-text);
+  }
+}
+
+// Code blocks
+pre, code {
+  background-color: var(--color-code-bg);
+  border-color: var(--color-border);
+}
+
+.highlight {
+  background-color: var(--color-code-bg);
+}
+
+// Tables
+table {
+  border-color: var(--color-border);
+  color: var(--color-text);
+
+  th {
+    background-color: var(--color-highlight-bg);
+    border-color: var(--color-border-light);
+  }
+
+  td {
+    border-color: var(--color-border);
+  }
+
+  tr:nth-child(even) {
+    background-color: var(--color-highlight-bg);
+  }
+}
+
+// Project cards and content areas
+.post-content img {
+  box-shadow: 0 2px 8px var(--color-shadow);
+}
+
+// Custom elements from the site - handle inline styles
+[data-theme="dark"] div[style*="background: #f8f9fa"],
+[data-theme="dark"] div[style*="background:#f8f9fa"],
+[data-theme="dark"] div[style*="background-color: #f8f9fa"],
+[data-theme="dark"] div[style*="background-color:#f8f9fa"] {
+  background-color: var(--color-highlight-bg) !important;
+}
+
+[data-theme="dark"] div[style*="background: #fff"],
+[data-theme="dark"] div[style*="background:#fff"],
+[data-theme="dark"] div[style*="background: white"],
+[data-theme="dark"] div[style*="background:white"],
+[data-theme="dark"] div[style*="background-color: #fff"],
+[data-theme="dark"] div[style*="background-color:#fff"],
+[data-theme="dark"] div[style*="background-color: white"],
+[data-theme="dark"] div[style*="background-color:white"] {
+  background-color: var(--color-project-card-bg) !important;
+}
+
+[data-theme="dark"] div[style*="border: 1px solid #e9ecef"],
+[data-theme="dark"] div[style*="border:1px solid #e9ecef"],
+[data-theme="dark"] div[style*="border: 1px solid #ddd"],
+[data-theme="dark"] div[style*="border:1px solid #ddd"],
+[data-theme="dark"] div[style*="border-color: #e9ecef"],
+[data-theme="dark"] div[style*="border-color:#e9ecef"],
+[data-theme="dark"] div[style*="border-color: #ddd"],
+[data-theme="dark"] div[style*="border-color:#ddd"] {
+  border-color: var(--color-project-card-border) !important;
+}
+
+// Specific elements that need dark mode treatment
+[data-theme="dark"] .related-project-card {
+  background-color: var(--color-project-card-bg) !important;
+  border-color: var(--color-project-card-border) !important;
+}
+
+// Profile section
+[data-theme="dark"] div[style*="background: #f0f4f8"] {
+  background-color: var(--color-highlight-bg) !important;
+}
+
+// Buttons and interactive elements
+[data-theme="dark"] a[style*="background-color: #489be0"] {
+  background-color: var(--color-link) !important;
+}
+
+// Homepage project grid cards
+[data-theme="dark"] .grid-item {
+  background-color: var(--color-project-card-bg) !important;
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+[data-theme="dark"] .grid-item:hover {
+  box-shadow: 3px 3px 8px 3px rgba(0, 0, 0, 0.4) !important;
+}
+
+// Homepage project card text colors
+[data-theme="dark"] .grid-item a[style*="color: #333"] {
+  color: var(--color-text) !important;
+}
+
+[data-theme="dark"] .grid-item p[style*="color: #777"] {
+  color: var(--color-text-muted) !important;
+}
+
+[data-theme="dark"] .grid-item span[style*="color: #AAA"] {
+  color: var(--color-text-muted) !important;
+}
