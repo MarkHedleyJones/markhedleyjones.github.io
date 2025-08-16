@@ -195,12 +195,26 @@ a {
 
 // Code blocks
 pre, code {
-  background-color: var(--color-code-bg);
-  border-color: var(--color-border);
+  background-color: var(--color-code-bg) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text) !important;
 }
 
 .highlight {
-  background-color: var(--color-code-bg);
+  background-color: var(--color-code-bg) !important;
+}
+
+// More specific targeting for code blocks in posts
+.post-content {
+  pre, code {
+    background-color: var(--color-code-bg) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text) !important;
+  }
+  
+  .highlight {
+    background-color: var(--color-code-bg) !important;
+  }
 }
 
 // Tables
