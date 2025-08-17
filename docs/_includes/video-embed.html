@@ -1,0 +1,15 @@
+{% comment %}
+Usage: {% include video-embed.html url="VIDEO_ID" caption="Caption text" %}
+VIDEO_ID should be just the YouTube video ID (e.g., "Iov8SzQ97aU")
+{% endcomment %}
+
+<figure class="media-container">
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/{{ include.url }}?controls=1" 
+            loading="lazy" 
+            allowfullscreen></iframe>
+  </div>
+  {% if include.caption %}
+  <figcaption>{{ include.caption }}</figcaption>
+  {% endif %}
+</figure>
